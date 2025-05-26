@@ -13,31 +13,6 @@
   font-family: Myfont;
 } */
 
-@theme {
-  --color-gray-50: #f7f8f9;
-  --color-gray-100: #eef0f3;
-  --color-gray-200: #d5dae1;
-  --color-gray-300: #bbc3cf;
-  --color-gray-400: #8896ab;
-  --color-gray-500: #556987;
-  --color-gray-600: #4d5f7a;
-  --color-gray-700: #404f65;
-  --color-gray-800: #333f51;
-  --color-gray-900: #2a3342;
-  --color-Qariib: #ddeeff;
-
-  ----color-green-50: #f0fdf4;
-  ----color-green-100: #dcfce7;
-  ----color-green-200: #bbf7d0;
-  ----color-green-300: #86efac;
-  ----color-green-400: #4ade80;
-  ----color-green-500: #22c55e;
-  ----color-green-600: #16a34a;
-  ----color-green-700: #15803d;
-  ----color-green-800: #166534;
-  ----color-green-900: #166534;
-}
-
 @utility container {
   padding-left: 20px;
   padding-right: 20px;

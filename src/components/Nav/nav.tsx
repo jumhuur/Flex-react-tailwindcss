@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom";
 const Nav = () => {
+  // const [dark, setdark] = useState<boolean>(false);
   return (
-    <nav className="dark:bg-gray-500">
+    <nav className="dark:text-white">
       <div className="container h-[80px]">
         <div className="grid lg:grid-cols-[1fr_6fr_1.5fr] gap-3">
           <div className="flex justify-center items-center">
             <img src="/Images/Logo.png" />
           </div>
           <div>
-            <ul className="h-[80px] flex justify-center items-center space-x-4">
+            <ul className="h-[80px]  flex justify-center items-center space-x-4">
               <li className=" flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300 ">
                 <Link
-                  className="text-base text-gray-900 hover:text-gray-900 transition duration-300 capitalize"
+                  className="text-base text-gray-900 dark:text-white hover:text-gray-900 transition duration-300 capitalize"
                   to={"#"}
                 >
                   Product
@@ -19,7 +20,7 @@ const Nav = () => {
               </li>
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300">
                 <Link
-                  className="text-base text-gray-900 hover:text-gray-900 transition-colors duration-300 capitalize"
+                  className="text-base text-gray-900 dark:text-white hover:text-gray-900  transition-colors duration-300 capitalize"
                   to={"#"}
                 >
                   Features
@@ -27,7 +28,7 @@ const Nav = () => {
               </li>
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300 ">
                 <Link
-                  className="text-base text-gray-900 hover:text-gray-900 transition-colors duration-300 capitalize"
+                  className="text-base text-gray-900 dark:text-white hover:text-gray-900  transition-colors duration-300 capitalize"
                   to={"#"}
                 >
                   Pricing
@@ -35,7 +36,7 @@ const Nav = () => {
               </li>
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300 ">
                 <Link
-                  className="text-base text-gray-900 hover:text-gray-900 transition-colors duration-300 capitalize"
+                  className="text-base text-gray-900 dark:text-white hover:text-gray-900  transition-colors duration-300 capitalize"
                   to={"#"}
                 >
                   Resources
@@ -44,7 +45,7 @@ const Nav = () => {
 
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300 ">
                 <Link
-                  className="text-base text-gray-900 hover:text-gray-900 transition-colors duration-300 capitalize"
+                  className="text-base text-gray-900 dark:text-white hover:text-gray-900 dark:text-white transition-colors duration-300 capitalize"
                   to={"#"}
                 >
                   Mode
@@ -52,8 +53,8 @@ const Nav = () => {
               </li>
             </ul>
           </div>
-          <div className="flex justify-evenly items-center">
-            <button className="text-gray-500 text-base rounded p-2 capitalize cursor-pointer">
+          <div className="h-[80px] flex justify-evenly items-center">
+            <button className="dark:text-gray-200 dark:hover:bg-gray-900 hover:bg-gray-500 transition-all duration-300 text-gray-500 text-base rounded p-2 capitalize cursor-pointer">
               Login
             </button>
             <button className="bg-green-500 text-gray-50 text-base rounded p-2 cursor-pointer capitalize">
