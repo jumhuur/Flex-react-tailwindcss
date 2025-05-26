@@ -12,7 +12,7 @@ const Nav = () => {
             <ul className="h-[80px]  flex justify-center items-center space-x-4">
               <li className=" flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300 ">
                 <Link
-                  className="text-base text-gray-900 dark:text-white hover:text-gray-900 transition duration-300 capitalize"
+                  className="text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize"
                   to={"#"}
                 >
                   Product
@@ -20,7 +20,7 @@ const Nav = () => {
               </li>
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300">
                 <Link
-                  className="text-base text-gray-900 dark:text-white hover:text-gray-900  transition-colors duration-300 capitalize"
+                  className="text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50  transition-colors duration-300 capitalize"
                   to={"#"}
                 >
                   Features
@@ -28,7 +28,7 @@ const Nav = () => {
               </li>
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300 ">
                 <Link
-                  className="text-base text-gray-900 dark:text-white hover:text-gray-900  transition-colors duration-300 capitalize"
+                  className="text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50  transition-colors duration-300 capitalize"
                   to={"#"}
                 >
                   Pricing
@@ -36,7 +36,7 @@ const Nav = () => {
               </li>
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300 ">
                 <Link
-                  className="text-base text-gray-900 dark:text-white hover:text-gray-900  transition-colors duration-300 capitalize"
+                  className="text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50  transition-colors duration-300 capitalize"
                   to={"#"}
                 >
                   Resources
@@ -45,7 +45,7 @@ const Nav = () => {
 
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300 ">
                 <Link
-                  className="text-base text-gray-900 dark:text-white hover:text-gray-900 dark:text-white transition-colors duration-300 capitalize"
+                  className="text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 dark:text-white transition-colors duration-300 capitalize"
                   to={"#"}
                 >
                   Mode

@@ -8,7 +8,7 @@ const HeroSection = () => {
               <span className="dark:bg-gray-800 dark:shadow-4xl dark:text-gray-400 text-gray-50 text-center p-2 rounded bg-green-500">
                 HEADER
               </span>
-              <h2 className="dark:text-white text-6xl text-gray-950 fonBold mt-5 leading-18">
+              <h2 className=" text-6xl text-gray-950 fonBold mt-5 leading-18 dark:bg-gradient-to-r dark:from-indigo-500 dark:via-pink-400 to-gray-50  text-transparent bg-clip-text">
                 Lorem ipsum dolor sit amet.
               </h2>
               <p className="dark:text-gray-200 text-base text-gray-500 mt-4">
