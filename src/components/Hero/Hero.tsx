@@ -1,15 +1,17 @@
 const HeroSection = () => {
   return (
     <>
-      <div className="overflow-hidden">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 lg:grid-rows-1 mt-15 ml-5 gap-10">
-            <div>
-              <span className="dark:bg-gray-800 dark:shadow-4xl dark:text-gray-400 text-gray-50 text-center p-2 rounded bg-green-500">
+      <div className="">
+        <div className="container overflow-hidden">
+          <div className="grid grid-cols-2 lg:grid-rows-1 mt-15 ml-5 gap-1 ">
+            <div className="flex justify-start items-start flex-col">
+              <span className="dark:bg-gray-800 dark:shadow-4xl dark:text-gray-400 text-gray-50 text-center p-2 rounded bg-green-500 text-xs">
                 HEADER
               </span>
-              <h2 className=" text-6xl text-gray-950 fonBold mt-5 leading-18 dark:bg-gradient-to-r dark:from-indigo-500 dark:via-pink-400 to-gray-50  text-transparent bg-clip-text">
-                Lorem ipsum dolor sit amet.
+              <h2 className=" text-6xl text-gray-950 fonBold mt-5 leading-20 dark:bg-gradient-to-r dark:from-indigo-500 dark:via-indigo-400 to-gray-50  text-transparent bg-clip-text">
+                Lorem ipsum
+                <br />
+                dolor sit amet.
               </h2>
               <p className="dark:text-gray-200 text-base text-gray-500 mt-4">
                 We’re different. Flex is the only saas
@@ -28,7 +30,7 @@ const HeroSection = () => {
                 <p className="text-base text-gray-400 mt-5 mb-5">
                   Trusted by brands all around the world
                 </p>
-                <div className="grid grid-cols-4 grid-rows-1">
+                <div className="grid grid-cols-4 gap-3 grid-rows-1">
                   <img src="/Images/comp1.svg" />
                   <img src="/Images/comp2.svg" />
                   <img src="/Images/comp3.svg" />
@@ -36,14 +38,14 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex justify-center items-center translate-x-20 relative">
+            <div className="overflow-hidden w-full flex justify-center items-center  relative">
               <img
                 src="/Images/Hero1.png"
-                className="max-w-[800px] block z-10"
+                className="max-w-[800px] block z-10 translate-x-15"
               />
               <img
                 src="/Images/Parr.png"
-                className="block absolute z-0 w-60 he-60 -translate-x-55 -translate-y-45"
+                className="block absolute z-0 w-40 he-40 -translate-x-55 -translate-y-45"
               />
             </div>
           </div>
