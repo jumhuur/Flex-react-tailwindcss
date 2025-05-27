@@ -1,12 +1,17 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 const Nav = () => {
-  // const [dark, setdark] = useState<boolean>(false);
+  const [dark, setdark] = useState<boolean>(true);
+  const ChangeDarkstate = (): boolean => {
+    setdark(!dark);
+    return dark;
+  };
   return (
-    <nav className="h-[80px]">
+    <nav className="h-[80px]" onClick={ChangeDarkstate}>
       <div className="container">
         <div className="grid grid-cols-2 items-center justify-center lg:grid-cols-[1fr_6fr_1.5fr] gap-3">
           <div className="h-[80px] flex justify-start items-center">
-            <img src="/Images/Logo.png" />
+            <img src={dark ? "/Images/LogoDark.svg" : "/Images/Logo.png"} />
           </div>
           <div className="hidden lg:block">
             <ul className="h-[80px] flex justify-center items-center space-x-4">

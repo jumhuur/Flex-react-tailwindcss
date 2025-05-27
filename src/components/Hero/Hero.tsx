@@ -1,4 +1,11 @@
+import { useState } from "react";
+
 const HeroSection = () => {
+  const [dark, setdark] = useState<boolean>(true);
+  const ChangeDarkstate = (): boolean => {
+    setdark(!dark);
+    return dark;
+  };
   return (
     <>
       <div className="">
@@ -40,12 +47,13 @@ const HeroSection = () => {
             </div>
             <div className="overflow-hidden w-full flex justify-center items-center  relative">
               <img
-                src="/Images/Hero1.png"
+                src={dark ? "/Images/Hero_Dark.png" : "/Images/Hero1.png"}
                 className="max-w-[800px] block z-10 translate-x-15"
               />
               <img
+                onClick={ChangeDarkstate}
                 src="/Images/Parr.png"
-                className="block absolute z-0 w-40 he-40 -translate-x-55 -translate-y-45"
+                className="block absolute z-0 w-40 he-40 -translate-x-50 -translate-y-37"
               />
             </div>
           </div>
