@@ -7,7 +7,10 @@ const Nav = () => {
     return dark;
   };
   return (
-    <nav className="h-[80px]" onClick={ChangeDarkstate}>
+    <nav
+      className="h-[80px] sticky top-0 z-20 backdrop-blur-md"
+      onClick={ChangeDarkstate}
+    >
       <div className="container">
         <div className="grid grid-cols-2 items-center justify-center lg:grid-cols-[1fr_6fr_1.5fr] gap-3">
           <div className="h-[80px] flex justify-start items-center">

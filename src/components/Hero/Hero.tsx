@@ -1,14 +1,14 @@
 import { useState } from "react";
-
 const HeroSection = () => {
   const [dark, setdark] = useState<boolean>(true);
   const ChangeDarkstate = (): boolean => {
     setdark(!dark);
     return dark;
   };
+
   return (
     <>
-      <div className="">
+      <div>
         <div className="container overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-15 ml-5 gap-15 ">
             <div className="flex justify-start items-start flex-col">
