@@ -3,7 +3,7 @@ import Nav from "./components/Nav/nav";
 function App() {
   return (
     <>
-      <div className="dark:bg-gradient-to-br from-gray-900 via-gray-800 to-indigo-500">
+      <div className="dark:bg-gradient-to-bl from-gray-900 via-gray-800 to-indigo-500">
         <Nav />
         <HeroSection />
       </div>

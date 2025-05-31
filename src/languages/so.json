@@ -1,0 +1,18 @@
+{
+  "HomePage": {
+    "HeroTop": "SARE",
+    "Title": "Ku Maamulo Ganacsigaga Hab Sahlan",
+    "desc": "waxaan kaga duwanahay dhamaan waa hufnaan iyo hawl furnaan marwalba ah 24/7 aan kaa kala goayn",
+    "btn1": "Codso Hada",
+    "btn2": "Isdiiwaangeli"
+  },
+
+  "nav": {
+    "Home": "Bilaw",
+    "Product": "Alaab",
+    "Features": "Adeegyo",
+    "Pricing": "Qiimayn",
+    "Resources": "Ilo",
+    "Mode": "Qaab"
+  }
+}

@@ -1,17 +1,26 @@
 @import "tailwindcss";
 @font-face {
   font-family: Myfont;
-  src: url("/Fonts/Poppins-Regular.ttf");
+  src: url("/Fonts/AL-Mohanad.ttf");
 }
 
 @font-face {
   font-family: Boldfont;
-  src: url("/Fonts/Poppins-Bold.ttf");
+  src: url("/Fonts/AL-Mohanad-Extra-Bold.ttf");
 }
 
-/* * {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+button,
+a {
   font-family: Myfont;
-} */
+}
 
 @utility container {
   padding-left: 20px;
@@ -22,7 +31,7 @@
 }
 
 @utility fonBold {
-  font-family: Boldfont;
+  font-family: Boldfont !important;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
