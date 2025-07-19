@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Lang from "../../languages/ar.json";
+import Lang from "../../languages/en.json";
 const HeroSection = () => {
   const [dark, setdark] = useState<boolean>(true);
   const ChangeDarkstate = (): boolean => {
@@ -16,15 +16,11 @@ const HeroSection = () => {
               <span className="dark:bg-gray-800 dark:shadow-4xl dark:text-gray-400 text-gray-50 text-center p-2 rounded bg-green-500 text-xs">
                 {Lang.HomePage.HeroTop}
               </span>
-              <h2 className="fonBold text-6xl bg-gray-800 leading-15 md:leading-15 lg:leading-20 md:text-5xl lg:text-7xl text-gray-950 fonBold mt-5 dark:bg-gradient-to-r dark:from-indigo-500 dark:via-indigo-400 to-gray-50  text-transparent bg-clip-text">
-                {Lang.HomePage.Title.substring(0, 15)}
-                <br />
-                {Lang.HomePage.Title.substring(15)}
+              <h2 className="fonBold text-4xl bg-gray-800 leading-15 md:leading-15 lg:leading-20 md:text-5xl lg:text-7xl text-gray-950 fonBold mt-5 dark:bg-gradient-to-r dark:from-indigo-500 dark:via-indigo-400 to-gray-50  text-transparent bg-clip-text">
+                {Lang.HomePage.Title}
               </h2>
-              <p className="dark:text-gray-200 text-2xl text-gray-500 mt-4">
-                هذا النص هو مثال لنص يمكن استبداله في نفس المساحة.
-                <br />
-                هذا النص العربي هو مثال.
+              <p className="dark:text-gray-200 text-base text-gray-500 mt-4">
+                {Lang.HomePage.desc}
               </p>
               <div className="flex justify-start items-center flex-col md:flex-row gap-3.5 lg:flex-row  p-5 space-4">
                 <button className="bg-green-500 text-gray-50 p-3 mr-3 w-[200px] rounded cursor-pointer hover:bg-green-600  transition duration-300">
@@ -35,7 +31,7 @@ const HeroSection = () => {
                 </button>
               </div>
               <div>
-                <p className="text-2xl text-gray-400 mt-5 mb-5">
+                <p className="text-base text-gray-400 mt-5 mb-5">
                   {Lang.HomePage.desc}
                 </p>
                 <div className="grid grid-cols-4 gap-3 grid-rows-1">

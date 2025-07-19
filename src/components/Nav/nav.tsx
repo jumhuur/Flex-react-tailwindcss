@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Lang from "../../languages/ar.json";
+import Lang from "../../languages/en.json";
 const Nav = () => {
   const [dark, setdark] = useState<boolean>(true);
   const ChangeDarkstate = (): boolean => {
