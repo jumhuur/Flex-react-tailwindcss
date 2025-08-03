@@ -1,3 +1,4 @@
+import Getstart from "./components/CTA/Getstart";
 import HeroSection from "./components/Hero/Hero";
 import Nav from "./components/Nav/nav";
 function App() {
@@ -6,6 +7,7 @@ function App() {
       <div className="dark:bg-gradient-to-bl from-gray-900 via-gray-800 to-indigo-500">
         <Nav />
         <HeroSection />
+        <Getstart />
       </div>
     </>
   );
