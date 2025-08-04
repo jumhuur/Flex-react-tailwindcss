@@ -5,8 +5,8 @@ const Getstart = () => {
       <div className="container bg-gray-900 pt-15 pb-15">
         <div className="flex tems-center flex-col md:flex-row justify-center gap-10">
           <div className="w-full  md:w-1/2 flex justify-center items-center relative">
-            <img className="z-10" src="/Images/cta.png" loading="lazy" />
-            <img
+            <img className="z-10" src="/Images/cta.svg" loading="lazy" />
+            {/* <img
               src="/Images/Prt.png"
               loading="lazy"
               className="absolute  -top-3 -left-3 md:-top-2 md:-left-2 lg:top-0 lg:left-0 w-[40px] h-[40px] md:w-[70px] md:h-[70px]  lg:w-[129px] lg:h-[129px] z-20"
@@ -15,7 +15,7 @@ const Getstart = () => {
               src="/Images/Prt1.png"
               loading="lazy"
               className="absolute -right-3 lg:right-0 -bottom-3 lg:bottom-0 w-[40px] h-[40px] md:w-[70px] md:h-[70px]  lg:w-[129px] lg:h-[129px] z-0"
-            />
+            /> */}
           </div>
           <div className="w-full md:w-1/2 p-0 lg:p-10 ">
             <h2 className="text-indigo-500  text-2xl lg:text-5xl fonBold">

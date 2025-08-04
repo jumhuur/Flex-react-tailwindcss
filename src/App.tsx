@@ -1,4 +1,5 @@
 import Getstart from "./components/CTA/Getstart";
+import Features_web from "./components/Features/Features";
 import HeroSection from "./components/Hero/Hero";
 import Nav from "./components/Nav/nav";
 function App() {
@@ -8,6 +9,7 @@ function App() {
         <Nav />
         <HeroSection />
         <Getstart />
+        <Features_web />
       </div>
     </>
   );
