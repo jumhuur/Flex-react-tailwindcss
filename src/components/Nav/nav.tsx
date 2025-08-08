@@ -13,9 +13,9 @@ const Nav = () => {
       onClick={ChangeDarkstate}
     >
       <div className="container">
-        <div className="grid grid-cols-2 items-center justify-center lg:grid-cols-[1fr_6fr_1.5fr] gap-3">
+        <div className="grid grid-cols-2 items-center justify-center md:grid-cols-[1fr_6fr_2.5fr] lg:grid-cols-[1fr_6fr_2.50fr] gap-3">
           <div className="h-[80px] flex justify-start items-center">
-            <img src={dark ? "/Images/LogoDark.svg" : "/Images/Logo.png"} />
+            <img src={dark ? "/Images/Logo.svg" : "/Images/Logo.png"} />
           </div>
           <div className="hidden lg:block">
             <ul className="h-[80px] flex justify-center items-center space-x-4">
@@ -62,11 +62,11 @@ const Nav = () => {
               </li>
             </ul>
           </div>
-          <div className="h-[80px] hidden lg:flex justify-evenly items-center">
-            <button className="dark:text-gray-200 bg-gray-700 dark:hover:bg-gray-900 hover:bg-gray-500 transition-all duration-300 text-gray-500 text-base rounded p-2 capitalize cursor-pointer">
+          <div className="h-[80px] hidden lg:flex justify-evenly items-center gap-2">
+            <button className="w-full dark:text-gray-200 bg-gray-700 dark:hover:bg-gray-900 hover:bg-gray-500 transition-all duration-300 text-gray-500 text-base rounded p-2 capitalize cursor-pointer">
               {Lang.HomePage.btn1}
             </button>
-            <button className="bg-green-500 text-gray-50 text-base rounded p-2 cursor-pointer capitalize">
+            <button className="w-full bg-indigo-500 text-gray-50 text-base rounded p-2 cursor-pointer capitalize">
               {Lang.HomePage.btn2}
             </button>
           </div>

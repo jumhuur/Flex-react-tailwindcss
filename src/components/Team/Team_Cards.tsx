@@ -34,8 +34,11 @@ const Team_Cards = () => {
 
   return (
     <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-5 my-10 relative">
-      {teamMembers.map((team) => (
-        <div className="nth-[1]:overflow-hidden nth-[1]:col-span-2 nth-[1]:row-span-2 nth-[1]:h-[600px] first:bg-indigo-500 nth-[5]:overflow-hidden nth-[5]:col-span-2 nth-[5]:row-span-2 nth-[5]:h-[600px] nth-[4]:order-6 md:nth-[4]:order-4 nth-[5]:order-4 md:nth-[5]:order-5 nth-[6]:order-5    overflow-hidden h-[300px] relative ">
+      {teamMembers.map((team, index) => (
+        <div
+          key={index}
+          className="nth-[1]:overflow-hidden nth-[1]:col-span-2 nth-[1]:row-span-2 nth-[1]:h-[600px]  nth-[5]:overflow-hidden nth-[5]:col-span-2 nth-[5]:row-span-2 nth-[5]:h-[600px] nth-[4]:order-6 md:nth-[4]:order-4 nth-[5]:order-4 md:nth-[5]:order-5 nth-[6]:order-5    overflow-hidden h-[300px] relative "
+        >
           <div className=" absolute w-full h-[100px] z-10 bg-gradient-to-t from-indigo-900 via-indigo-900/50 to-gray-900/0 bottom-0 py-5 px-2">
             <h2 className="text-gray-100 text-base md:text-1xl lg:text-2xl font-semibold">
               {team.name}
@@ -45,7 +48,7 @@ const Team_Cards = () => {
             </p>
           </div>
           <img
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover grayscale-100  hover:rotate-4 hover:grayscale-0 hover:scale-115 transition-all duration-300"
             loading="lazy"
             src={`/Images/${team.url}`}
           />

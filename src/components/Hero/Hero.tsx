@@ -21,11 +21,11 @@ const HeroSection = () => {
               <p className="dark:text-gray-200 text-base text-gray-500 mt-4">
                 {Lang.HomePage.desc}
               </p>
-              <div className="flex justify-start items-center flex-col md:flex-row gap-3.5 lg:flex-row  p-5 space-4">
-                <button className="bg-indigo-500 text-gray-50 p-3 mr-3 w-[200px] rounded cursor-pointer hover:bg-green-600  transition duration-300">
+              <div className="w-full flex justify-start items-center flex-col md:flex-row gap-3.5 lg:flex-row  p-5 space-4">
+                <button className="w-full md:w-1/2 bg-indigo-500 text-gray-50 p-3 mr-3 rounded cursor-pointer hover:bg-indigo-600  transition duration-300">
                   {Lang.HomePage.btn1}
                 </button>
-                <button className="cursor-pointer shadow-2xl p-3 dark:bg-gray-900 dark:text-gray-200  hover:bg-green-600 transition duration-300 hover:text-gray-50 rounded">
+                <button className="w-full md:w-1/2 cursor-pointer shadow-2xl p-3 dark:bg-gray-700 dark:text-gray-200  hover:bg-indigo-600 transition duration-300 hover:text-gray-50 rounded">
                   {Lang.HomePage.btn2}
                 </button>
               </div>

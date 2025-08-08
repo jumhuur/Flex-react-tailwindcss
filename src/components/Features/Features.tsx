@@ -65,8 +65,11 @@ const Features_web = () => {
         </div>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <>
-            {features.map((feature) => (
-              <div className="bg-gray-800 rounded p-4 flex justify-center items-center flex-col gap-4 cursor-pointer hover:shadow-lg shadow-indigo-500/50 transition-all duration-600 ease-in-out">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-gray-800 rounded p-4 flex justify-center items-center flex-col gap-4 cursor-pointer hover:shadow-lg shadow-indigo-500/50 transition-all duration-600 ease-in-out"
+              >
                 <div className="p-3 bg-indigo-500 rounded flex justify-center items-center">
                   {feature.icon}
                 </div>
