@@ -12,7 +12,7 @@ const HeroSection = () => {
         <div className="container overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-15 mb-15 ml-5 gap-15 ">
             <div className="flex justify-start items-start flex-col">
-              <span className="dark:bg-gray-800 dark:shadow-4xl dark:text-gray-400 text-gray-50 text-center p-2 rounded bg-green-500 text-xs">
+              <span className="dark:bg-indigo-800 dark:shadow-4xl dark:text-gray-400 text-gray-50 text-center p-2 rounded bg-green-500 text-xs">
                 {Lang.HomePage.HeroTop}
               </span>
               <h2 className="fontBold text-4xl bg-gray-800 leading-15 md:leading-15 lg:leading-20 md:text-5xl lg:text-7xl fonBold mt-5 dark:bg-gradient-to-r dark:from-indigo-500 dark:via-indigo-400 to-gray-50  text-transparent bg-clip-text">
@@ -22,7 +22,7 @@ const HeroSection = () => {
                 {Lang.HomePage.desc}
               </p>
               <div className="flex justify-start items-center flex-col md:flex-row gap-3.5 lg:flex-row  p-5 space-4">
-                <button className="bg-green-500 text-gray-50 p-3 mr-3 w-[200px] rounded cursor-pointer hover:bg-green-600  transition duration-300">
+                <button className="bg-indigo-500 text-gray-50 p-3 mr-3 w-[200px] rounded cursor-pointer hover:bg-green-600  transition duration-300">
                   {Lang.HomePage.btn1}
                 </button>
                 <button className="cursor-pointer shadow-2xl p-3 dark:bg-gray-900 dark:text-gray-200  hover:bg-green-600 transition duration-300 hover:text-gray-50 rounded">

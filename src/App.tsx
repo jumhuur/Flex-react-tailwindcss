@@ -2,6 +2,7 @@ import Getstart from "./components/CTA/Getstart";
 import Features_web from "./components/Features/Features";
 import HeroSection from "./components/Hero/Hero";
 import Nav from "./components/Nav/nav";
+import Team from "./components/Team/Team";
 function App() {
   return (
     <>
@@ -10,6 +11,7 @@ function App() {
         <HeroSection />
         <Getstart />
         <Features_web />
+        <Team />
       </div>
     </>
   );

@@ -47,39 +47,41 @@ const Features_web = () => {
   ];
 
   return (
-    <div className="container bg-gray-900 p-5 md:p-8 lg:p-10">
-      <div className="flex justify-center items-center flex-col p-5">
-        <span className="bg-indigo-500 text-white rounded p-1 my-5 text-base">
-          Features
-        </span>
-        <h2 className="text-indigo-500 text-2xl md:text-2xl lg:text-3xl fonBold my-5">
-          Gain more insight into how people use your
-        </h2>
-        <p className="text-white text-base">
-          With our integrated CRM, project management, collaboration and
-          invoicing capabilities,
-          <br /> you can manage every aspect of your business in one secure
-          platform.
-        </p>
-      </div>
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <>
-          {features.map((feature) => (
-            <div className="bg-gray-800 rounded p-4 flex justify-center items-center flex-col gap-4 cursor-pointer hover:shadow-lg shadow-indigo-500/50 transition-all duration-600 ease-in-out">
-              <div className="p-3 bg-indigo-500 rounded flex justify-center items-center">
-                {feature.icon}
+    <div className=" bg-gray-900">
+      <div className="container py-5 md:py-8 lg:py-10">
+        <div className="flex justify-center items-center flex-col p-5">
+          <span className="bg-indigo-500 text-white rounded p-1 my-5 text-base">
+            Features
+          </span>
+          <h2 className="text-indigo-500 text-2xl md:text-2xl lg:text-4xl fonBold my-5">
+            Gain more insight into how people use your
+          </h2>
+          <p className="text-white text-base">
+            With our integrated CRM, project management, collaboration and
+            invoicing capabilities,
+            <br /> you can manage every aspect of your business in one secure
+            platform.
+          </p>
+        </div>
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <>
+            {features.map((feature) => (
+              <div className="bg-gray-800 rounded p-4 flex justify-center items-center flex-col gap-4 cursor-pointer hover:shadow-lg shadow-indigo-500/50 transition-all duration-600 ease-in-out">
+                <div className="p-3 bg-indigo-500 rounded flex justify-center items-center">
+                  {feature.icon}
+                </div>
+                <div className="flex justfy-center items-center flex-col">
+                  <h2 className="text-indigo-400 font-bold text-1xl capitalize">
+                    {feature.title}
+                  </h2>
+                  <p className="text-center text-gray-300 text-x capitalize">
+                    {feature.description}{" "}
+                  </p>
+                </div>
               </div>
-              <div className="flex justfy-center items-center flex-col">
-                <h2 className="text-indigo-400 font-bold text-1xl">
-                  {feature.title}
-                </h2>
-                <p className="text-center text-gray-300 text-x">
-                  {feature.description}{" "}
-                </p>
-              </div>
-            </div>
-          ))}
-        </>
+            ))}
+          </>
+        </div>
       </div>
     </div>
   );
