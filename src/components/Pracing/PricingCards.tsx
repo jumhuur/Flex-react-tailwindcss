@@ -64,7 +64,7 @@ const P_Cards = () => {
         {pricingPlans.map((card, index) => (
           <div
             key={index}
-            className="bg-gray-800 p-5 rounded flex justify-center items-start flex-col border-1 border-gray-800 hover:border-1 hover:border-indigo-500 transition-all duration-300  nth-[2]:shadow-indigo-500/20 nth-[2]:-translate-y-10  nth-[2]:shadow-xl"
+            className="bg-gray-800 nth-[2]:bg-gray-950 p-5 rounded flex justify-center items-start flex-col border-1 border-gray-800 hover:border-1 hover:border-indigo-500 transition-all duration-300   lg:nth-[2]:-translate-y-10"
           >
             <div className="w-full p-4 flex justify-between items-start place-content-between flex-row">
               <span className="text-white text-base lg:text-xl">
@@ -102,7 +102,7 @@ const P_Cards = () => {
               </button>
             </div>
             <div className="">
-              <ul className="w-full flex justify-center items-start flex-col">
+              <ul className="w-full flex justify-center items-start flex-col m-2">
                 {card.features.map((adeeg, index) => (
                   <li
                     key={index}
