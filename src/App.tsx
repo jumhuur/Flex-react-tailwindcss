@@ -1,4 +1,5 @@
 import Getstart from "./components/CTA/Getstart";
+import Faq from "./components/Faq/Faq";
 import Features_web from "./components/Features/Features";
 import HeroSection from "./components/Hero/Hero";
 import Nav from "./components/Nav/nav";
@@ -14,6 +15,7 @@ function App() {
         <Features_web />
         <Team />
         <Pricing_cards />
+        <Faq />
       </div>
     </>
   );
