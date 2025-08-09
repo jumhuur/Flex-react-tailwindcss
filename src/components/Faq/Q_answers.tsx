@@ -58,8 +58,8 @@ const Q_Answers = () => {
           <div
             className={
               active == faq.id
-                ? "w-full opacity-100 h-full overflow-hidden -translate-y-0  transition-all duration-400 "
-                : "opacity-0  hidden -translate-y-2"
+                ? "w-full opacity-100 overflow-hidden -translate-y-0  transition-all duration-400 "
+                : "opacity-0 h-[0px] -translate-y-2"
             }
           >
             <p
