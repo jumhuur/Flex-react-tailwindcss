@@ -1,0 +1,133 @@
+{
+  "header": {
+    "title": "一家小企业的好坏取决于它使用的工具",
+    "subtitle": "是什么让 Flex 清晰且简单？",
+    "register_button": "注册",
+    "login_button": "登录",
+    "mintext": "我们的独特之处在于透明度和全天候可靠支持 — 我们永远不会与你断开联系"
+  },
+  "lang": {
+    "en": "English",
+    "ar": "العربية",
+    "so": "Soomaali",
+    "zh": "中文",
+    "hi": "हिन्दी"
+  },
+  "nav": {
+    "Home": "主页",
+    "Features": "功能",
+    "Pricing": "价格",
+    "Our Team": "我们的团队",
+    "Careers": "职业",
+    "Language": "语言"
+  },
+  "join_section": {
+    "title": "加入超过6000家使用 Flex 的成长型公司",
+    "description": [
+      "Mauris pellentesque commodo libero nec",
+      "Suspendisse molestie tristique",
+      "Present varius justo vel justo pulvinar"
+    ],
+    "buttons": {
+      "learn_more": "了解更多",
+      "get_started": "开始使用"
+    }
+  },
+  "features_section": {
+    "title": "深入了解用户如何使用您的产品",
+    "description": "利用 Flex 的功能分析项目、协作和规划。",
+    "features": [
+      {
+        "title": "项目分析",
+        "description": "利用 Flex 的功能分析项目、协作和规划。"
+      },
+      {
+        "title": "协作",
+        "description": "利用 Flex 的功能分析项目、协作和规划。"
+      },
+      {
+        "title": "规划",
+        "description": "利用 Flex 的功能分析项目、协作和规划。"
+      }
+    ]
+  },
+  "pricing_section": {
+    "title": "适合您公司的灵活定价方案",
+    "description": "选择适合您业务需求的方案",
+    "plans": [
+      {
+        "name": "小型",
+        "price": "$10 / 月",
+        "description": "最多10位用户的基本功能",
+        "features": ["项目管理", "协作", "5GB 云存储", "客户支持"],
+        "button": "开始使用"
+      },
+      {
+        "name": "中型",
+        "price": "$99 / 月",
+        "description": "最多20位用户的高级功能",
+        "features": ["项目管理", "协作", "50GB 云存储", "客户支持"],
+        "button": "开始使用"
+      },
+      {
+        "name": "大型",
+        "price": "$799 / 月",
+        "description": "最多50位用户的高级功能",
+        "features": ["项目管理", "协作", "200GB 云存储", "客户支持"],
+        "button": "开始使用"
+      }
+    ]
+  },
+  "team_section": {
+    "title": "认识我们的团队",
+    "description": "我们的专业团队能够在所有数字渠道上管理您的业务。",
+    "members": [
+      {
+        "name": "Ivan Matthews",
+        "position": "项目经理"
+      },
+      {
+        "name": "Macaulay Herring",
+        "position": "市场经理"
+      },
+      {
+        "name": "Ellen Benitez",
+        "position": "运营经理"
+      },
+      {
+        "name": "Rosemary Hernandez",
+        "position": "人力资源经理"
+      },
+      {
+        "name": "Alia Levine",
+        "position": "销售经理"
+      }
+    ]
+  },
+  "join_team_section": {
+    "title": "加入我们的团队",
+    "description": "我们一直在寻找有才华的人加入我们的团队。",
+    "positions": [
+      {
+        "title": "项目经理",
+        "description": "我们正在寻找经验丰富的项目经理。"
+      },
+      {
+        "title": "市场经理",
+        "description": "我们正在寻找经验丰富的市场经理。"
+      },
+      {
+        "title": "运营经理",
+        "description": "我们正在寻找经验丰富的运营经理。"
+      },
+      {
+        "title": "人力资源经理",
+        "description": "我们正在寻找经验丰富的人力资源经理。"
+      },
+      {
+        "title": "销售经理",
+        "description": "我们正在寻找经验丰富的销售经理。"
+      }
+    ]
+  }
+}

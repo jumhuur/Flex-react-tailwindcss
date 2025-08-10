@@ -1,10 +1,11 @@
-import Lang from "../../languages/en.json";
+import { useTranslation } from "react-i18next";
 const HeroSection = () => {
   const dark = true;
   // const ChangeDarkstate = (): boolean => {
   //   setdark(!dark);
   //   return dark;
   // };
+  const { t } = useTranslation();
 
   return (
     <>
@@ -13,25 +14,25 @@ const HeroSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-15 mb-15 ml-5 gap-15 ">
             <div className="flex justify-start items-start flex-col">
               <span className="dark:bg-indigo-800 dark:shadow-4xl dark:text-gray-400 text-gray-50 text-center p-2 rounded bg-green-500 text-xs">
-                {Lang.HomePage.HeroTop}
+                {/* {t("header.title")} */}
               </span>
-              <h2 className="fontBold text-4xl bg-gray-800 leading-15 md:leading-15 lg:leading-20 md:text-5xl lg:text-7xl fonBold mt-5 dark:bg-gradient-to-r dark:from-indigo-500 dark:via-indigo-400 to-gray-50  text-transparent bg-clip-text">
-                {Lang.HomePage.Title}
+              <h2 className="fontBold text-2xl bg-gray-800 leading-15 md:leading-15 lg:leading-20 md:text-3xl lg:text-6xl fonBold mt-5 dark:bg-gradient-to-r dark:from-indigo-500 dark:via-indigo-400 to-gray-50  text-transparent bg-clip-text">
+                {t("header.title")}
               </h2>
               <p className="dark:text-gray-200 text-base text-gray-500 mt-4">
-                {Lang.HomePage.desc}
+                {t("header.subtitle")}
               </p>
               <div className="w-full flex justify-start items-center flex-col md:flex-row gap-3.5 lg:flex-row  p-5 space-4">
                 <button className="w-full md:w-1/2 bg-indigo-500 text-gray-50 p-3 mr-3 rounded cursor-pointer hover:bg-indigo-600  transition duration-300">
-                  {Lang.HomePage.btn1}
+                  {t("header.register_button")}
                 </button>
                 <button className="w-full md:w-1/2 cursor-pointer shadow-2xl p-3 dark:bg-gray-700 dark:text-gray-200  hover:bg-indigo-600 transition duration-300 hover:text-gray-50 rounded">
-                  {Lang.HomePage.btn2}
+                  {t("header.login_button")}
                 </button>
               </div>
               <div>
                 <p className="text-base text-gray-400 mt-5 mb-5">
-                  {Lang.HomePage.desc}
+                  {t("header.mintext")}
                 </p>
                 <div className="grid grid-cols-4 gap-3 grid-rows-1">
                   <img src="/Images/comp1.svg" />

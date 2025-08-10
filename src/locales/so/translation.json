@@ -1,0 +1,150 @@
+{
+  "header": {
+    "title": "Ganacsi yar waxa koriya agab tayo le.",
+    "subtitle": "Maxaa Flex ka dhigaya mid cad oo sahlan?",
+    "register_button": "Is diiwaangeli",
+    "login_button": "Gal",
+    "mintext": "Ganacsi yar wuxuu la egyahay kaliya tayada agabkiisa."
+  },
+  "lang": {
+    "en": "English",
+    "ar": "العربية",
+    "so": "Soomaali",
+    "zh": "中文",
+    "hi": "हिन्दी"
+  },
+
+  "nav": {
+    "Home": "Bogga Hore",
+    "Features": "Astaamaha",
+    "Pricing": "Qiimaha",
+    "Our Team": "Kooxdayada",
+    "Careers": "Shaqooyinka",
+    "Language": "Luuqad"
+  },
+
+  "join_section": {
+    "title": "Ku biir in ka badan 6000 shirkadood oo koraya Flex",
+    "description": [
+      "Mauris pellentesque commodo libero nec",
+      "Suspendisse molestie tristique",
+      "Present varius justo vel justo pulvinar"
+    ],
+    "buttons": {
+      "learn_more": "Wax badan baro",
+      "get_started": "Bilow hadda"
+    }
+  },
+  "features_section": {
+    "title": "Hel aragti dheeraad ah sida dadku u isticmaalaan alaabtaada",
+    "description": "Isticmaal awoodaha Flex si aad u falanqeyso mashruucyada, iskaashi, iyo qorsheyn.",
+    "features": [
+      {
+        "title": "Falanqeynta mashruucyada",
+        "description": "Isticmaal awoodaha Flex si aad u falanqeyso mashruucyada, iskaashi, iyo qorsheyn."
+      },
+      {
+        "title": "Iskaashi",
+        "description": "Isticmaal awoodaha Flex si aad u falanqeyso mashruucyada, iskaashi, iyo qorsheyn."
+      },
+      {
+        "title": "Qorsheyn",
+        "description": "Isticmaal awoodaha Flex si aad u falanqeyso mashruucyada, iskaashi, iyo qorsheyn."
+      }
+    ]
+  },
+  "pricing_section": {
+    "title": "Qorshe qiimeyn dabacsan oo ku habboon shirkaddaada",
+    "description": "Dooro qorshaha ku habboon baahidaada ganacsi",
+    "plans": [
+      {
+        "name": "Yar",
+        "price": "$10 / bishii",
+        "description": "Astaamo aasaasi ah ilaa 10 isticmaale",
+        "features": [
+          "Maareynta mashruucyada",
+          "Iskaashi",
+          "Kaydinta daruuriga 5GB",
+          "Taageero macaamiil"
+        ],
+        "button": "Bilow hadda"
+      },
+      {
+        "name": "Dhexdhexaad",
+        "price": "$99 / bishii",
+        "description": "Astaamo horumarsan ilaa 20 isticmaale",
+        "features": [
+          "Maareynta mashruucyada",
+          "Iskaashi",
+          "Kaydinta daruuriga 50GB",
+          "Taageero macaamiil"
+        ],
+        "button": "Bilow hadda"
+      },
+      {
+        "name": "Weyn",
+        "price": "$799 / bishii",
+        "description": "Astaamo horumarsan ilaa 50 isticmaale",
+        "features": [
+          "Maareynta mashruucyada",
+          "Iskaashi",
+          "Kaydinta daruuriga 200GB",
+          "Taageero macaamiil"
+        ],
+        "button": "Bilow hadda"
+      }
+    ]
+  },
+  "team_section": {
+    "title": "La kulan kooxda",
+    "description": "Kooxdayada xirfadlayaasha ah waxay awood u leeyihiin inay maareeyaan ganacsigaaga dhammaan kanaalada dijitaalka ah.",
+    "members": [
+      {
+        "name": "Ivan Matthews",
+        "position": "Maareeyaha Mashruuca"
+      },
+      {
+        "name": "Macaulay Herring",
+        "position": "Maareeyaha Suuqgeynta"
+      },
+      {
+        "name": "Ellen Benitez",
+        "position": "Maareeyaha Hawlaha"
+      },
+      {
+        "name": "Rosemary Hernandez",
+        "position": "Maareeyaha HR"
+      },
+      {
+        "name": "Alia Levine",
+        "position": "Maareeyaha Iibka"
+      }
+    ]
+  },
+  "join_team_section": {
+    "title": "Ku biir kooxda",
+    "description": "Had iyo jeer waxaan raadineynaa dad karti leh si ay ugu biiraan kooxda.",
+    "positions": [
+      {
+        "title": "Maareeyaha Mashruuca",
+        "description": "Waxaan raadineynaa maareeye mashruuc khibrad leh."
+      },
+      {
+        "title": "Maareeyaha Suuqgeynta",
+        "description": "Waxaan raadineynaa maareeye suuqgeyn khibrad leh."
+      },
+      {
+        "title": "Maareeyaha Hawlaha",
+        "description": "Waxaan raadineynaa maareeye hawlaha khibrad leh."
+      },
+      {
+        "title": "Maareeyaha HR",
+        "description": "Waxaan raadineynaa maareeye HR khibrad leh."
+      },
+      {
+        "title": "Maareeyaha Iibka",
+        "description": "Waxaan raadineynaa maareeye iibka khibrad leh."
+      }
+    ]
+  }
+}
