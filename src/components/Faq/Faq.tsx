@@ -1,5 +1,4 @@
 import Q_Answers from "./Q_answers";
-
 const Faq = () => {
   return (
     <div className="bg-gray-900">
@@ -7,7 +6,7 @@ const Faq = () => {
         <div className="flex items-center justify-center flex-col md:flex-row  w-full gap-x-4 gap-y-4">
           <div className="w-full md:w-1/2 flex justify-center items-start flex-col p-5">
             <span className="bg-indigo-500 text-white rounded p-1 my-5 text-base uppercase font-medium">
-              PRICING
+              FAQ
             </span>
             <h2 className="text-indigo-500 text-2xl md:text-3xl lg:text-5xl fonBold my-5">
               Frequently Asked Questions

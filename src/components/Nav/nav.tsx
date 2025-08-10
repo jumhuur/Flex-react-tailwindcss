@@ -19,15 +19,16 @@ const Nav = () => {
           </div>
           <div className="hidden lg:block">
             <ul className="h-[80px] flex justify-center items-center space-x-4">
-              <li className=" flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300 ">
+              <li className=" flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
                   className="text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize"
                   to={"#"}
                 >
-                  {Lang.nav.Product}
+                  {/* {Lang.nav.Product} */}
+                  Home
                 </Link>
               </li>
-              <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300">
+              <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300">
                 <Link
                   className="text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50  transition-colors duration-300 capitalize"
                   to={"#"}
@@ -35,7 +36,7 @@ const Nav = () => {
                   {Lang.nav.Features}
                 </Link>
               </li>
-              <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300 ">
+              <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
                   className="text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50  transition-colors duration-300 capitalize"
                   to={"#"}
@@ -43,21 +44,23 @@ const Nav = () => {
                   {Lang.nav.Pricing}
                 </Link>
               </li>
-              <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300 ">
+              <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
                   className="text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50  transition-colors duration-300 capitalize"
                   to={"#"}
                 >
-                  {Lang.nav.Resources}
+                  {/* {Lang.nav.Resources} */}
+                  Our Team
                 </Link>
               </li>
 
-              <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-green-500 transition duration-300 ">
+              <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
                   className="text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition-colors duration-300 capitalize"
                   to={"#"}
                 >
-                  {Lang.nav.Mode}
+                  {/* {Lang.nav.Mode} */}
+                  Careers
                 </Link>
               </li>
             </ul>
