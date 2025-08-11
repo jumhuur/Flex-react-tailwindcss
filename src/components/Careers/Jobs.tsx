@@ -1,7 +1,7 @@
 import { CircleArrowRightIcon, CircleArrowLeftIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { LangCode } from "../../helpers/taypes";
 const Jobs = () => {
-  type LangCode = "en" | "so" | "ar" | "hi" | "zh" | "am";
   interface Jobs {
     id: number;
     title: string;

@@ -1,25 +1,25 @@
 import { useTranslation } from "react-i18next";
 const HeroSection = () => {
-  const dark = true;
   // const ChangeDarkstate = (): boolean => {
   //   setdark(!dark);
   //   return dark;
   // };
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const Lang = i18n.language;
 
   return (
     <>
       <div>
         <div className="container overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-15 mb-15 ml-5 gap-15 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-6 mb-15 gap-6 ">
             <div className="flex justify-start items-start flex-col">
               <span className="dark:bg-indigo-500 dark:shadow-4xl dark:text-gray-50 text-gray-50 text-center p-2 rounded bg-green-500 text-xs md:text-lg">
                 {t("header.welcome")}
               </span>
-              <h2 className="fontBold text-2xl bg-gray-800 leading-15 md:leading-15 lg:leading-20 md:text-3xl lg:text-6xl fonBold mt-5 dark:bg-gradient-to-r dark:from-indigo-500 dark:via-indigo-400 to-gray-50  text-transparent bg-clip-text">
+              <h2 className="fontBold text-2xl bg-gray-800 leading-15 md:leading-15 lg:leading-20 md:text-3xl lg:text-5xl fonBold mt-5 dark:bg-gradient-to-r dark:from-indigo-500 dark:via-indigo-400 to-gray-50  text-transparent bg-clip-text">
                 {t("header.title")}
               </h2>
-              <p className="dark:text-gray-200 text-base text-gray-500 mt-4">
+              <p className="dark:text-gray-200 text-lg font-medium text-gray-100 mt-4">
                 {t("header.subtitle")}
               </p>
               <div className="w-full flex justify-start items-center flex-col md:flex-row gap-3.5 lg:flex-row  p-5 space-4">
@@ -31,7 +31,7 @@ const HeroSection = () => {
                 </button>
               </div>
               <div>
-                <p className="text-base text-gray-400 mt-5 mb-5">
+                <p className="text-lg/loose text-gray-100 mt-5 mb-5 font-medium">
                   {t("header.mintext")}
                 </p>
                 <div className="grid grid-cols-4 gap-3 grid-rows-1">
@@ -61,8 +61,12 @@ const HeroSection = () => {
             <div className="overflow-hidden w-full flex justify-center items-center  relative">
               <img
                 alt="flex_image"
-                src={dark ? "/Images/Hero_Dark.png" : "/Images/Hero1.png"}
-                className="max-w-[365px] md:max-w-[565px] lg:max-w-[800px] block z-10  translate-x-0 md:translate-x-15 lg:translate-x-15"
+                src={Lang === "ar" ? "/Images/10.png" : "/Images/Hero_Dark.png"}
+                className={
+                  Lang === "ar"
+                    ? "max-w-[365px] md:max-w-[565px] lg:max-w-[800px] block z-10  translate-x-0 md:-translate-x-15 lg:-translate-x-5"
+                    : "max-w-[365px] md:max-w-[565px] lg:max-w-[800px] block z-10  translate-x-0 md:translate-x-15 lg:translate-x-15"
+                }
               />
               <img
                 loading="lazy"
