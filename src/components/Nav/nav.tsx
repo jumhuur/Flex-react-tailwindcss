@@ -2,6 +2,7 @@ import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
   const [dark, setdark] = useState<boolean>(true);
   const [langactive, setlangactive] = useState<boolean>(false);
@@ -80,85 +81,93 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                 >
                   {t("nav.Language")} <ChevronDown size={12} />
                 </Link>
-                {langactive && (
-                  <div className="rounded z-20 visible opacity-100 translate-y-0  transition-all duration-500 ease-in-out bg-gray-950 p-4 flex justify-center items-center absolute top-[35px] -right-4">
-                    <ul className="w-full">
-                      <li
-                        onClick={() => changeLanguage("en")}
-                        className="flex justify-start  items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
-                      >
-                        {/* <img
+                <AnimatePresence>
+                  {langactive && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 50 }}
+                      transition={{ duration: 0.5 }}
+                      className="rounded z-20 visible opacity-100 translate-y-0  transition-all duration-500 ease-in-out bg-gray-950 p-4 flex justify-center items-center absolute top-[35px] -right-4"
+                    >
+                      <ul className="w-full">
+                        <li
+                          onClick={() => changeLanguage("en")}
+                          className="flex justify-start  items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                        >
+                          {/* <img
                           className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
                           src={`/Images/en.jpg`}
                           loading="lazy"
                           alt="flag_image"
                         />{" "} */}
-                        {t("lang.en")}
-                      </li>
-                      <li
-                        onClick={() => changeLanguage("ar")}
-                        className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
-                      >
-                        {/* <img
+                          {t("lang.en")}
+                        </li>
+                        <li
+                          onClick={() => changeLanguage("ar")}
+                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                        >
+                          {/* <img
                           className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
                           src={`/Images/ar.jpg`}
                           loading="lazy"
                           alt="flag_image"
                         />{" "} */}
-                        {t("lang.ar")}
-                      </li>
-                      <li
-                        onClick={() => changeLanguage("so")}
-                        className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
-                      >
-                        {/* <img
+                          {t("lang.ar")}
+                        </li>
+                        <li
+                          onClick={() => changeLanguage("so")}
+                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                        >
+                          {/* <img
                           className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
                           src={`/Images/so.png`}
                           loading="lazy"
                           alt="flag_image"
                         />{" "} */}
-                        {t("lang.so")}
-                      </li>
-                      <li
-                        onClick={() => changeLanguage("am")}
-                        className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
-                      >
-                        {/* <img
+                          {t("lang.so")}
+                        </li>
+                        <li
+                          onClick={() => changeLanguage("am")}
+                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                        >
+                          {/* <img
                           className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
                           src={`/Images/am.jpg`}
                           loading="lazy"
                           alt="flag_image"
                         />{" "} */}
-                        {t("lang.am")}
-                      </li>
+                          {t("lang.am")}
+                        </li>
 
-                      <li
-                        onClick={() => changeLanguage("zh")}
-                        className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
-                      >
-                        {/* <img
+                        <li
+                          onClick={() => changeLanguage("zh")}
+                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                        >
+                          {/* <img
                           className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
                           src={`/Images/zh.jpg`}
                           loading="lazy"
                           alt="flag_image"
                         />{" "} */}
-                        {t("lang.zh")}
-                      </li>
-                      <li
-                        onClick={() => changeLanguage("hi")}
-                        className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
-                      >
-                        {/* <img
+                          {t("lang.zh")}
+                        </li>
+                        <li
+                          onClick={() => changeLanguage("hi")}
+                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                        >
+                          {/* <img
                           className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
                           src={`/Images/hi.jpg`}
                           loading="lazy"
                           alt="flag_image"
                         />{" "} */}
-                        {t("lang.hi")}
-                      </li>
-                    </ul>
-                  </div>
-                )}
+                          {t("lang.hi")}
+                        </li>
+                      </ul>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </li>
 
               {/* <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">

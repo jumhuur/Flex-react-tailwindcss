@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 const HeroSection = () => {
   // const ChangeDarkstate = (): boolean => {
   //   setdark(!dark);
@@ -6,12 +7,16 @@ const HeroSection = () => {
   // };
   const { t, i18n } = useTranslation();
   const Lang = i18n.language;
-
   return (
     <>
       <div>
         <div className="container overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-6 mb-15 gap-6 ">
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-6 mb-15 gap-6 "
+          >
             <div className="flex justify-start items-start flex-col">
               <span className="dark:bg-indigo-500 dark:shadow-4xl dark:text-gray-50 text-gray-50 text-center p-2 rounded bg-green-500 text-xs md:text-lg">
                 {t("header.welcome")}
@@ -76,7 +81,7 @@ const HeroSection = () => {
                 className="block absolute z-0 w-40 he-40 -translate-x-50 -translate-y-37"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
