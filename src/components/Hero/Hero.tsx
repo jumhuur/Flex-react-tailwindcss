@@ -13,8 +13,8 @@ const HeroSection = () => {
         <div className="container overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-15 mb-15 ml-5 gap-15 ">
             <div className="flex justify-start items-start flex-col">
-              <span className="dark:bg-indigo-800 dark:shadow-4xl dark:text-gray-400 text-gray-50 text-center p-2 rounded bg-green-500 text-xs">
-                {/* {t("header.title")} */}
+              <span className="dark:bg-indigo-500 dark:shadow-4xl dark:text-gray-50 text-gray-50 text-center p-2 rounded bg-green-500 text-xs md:text-lg">
+                {t("header.welcome")}
               </span>
               <h2 className="fontBold text-2xl bg-gray-800 leading-15 md:leading-15 lg:leading-20 md:text-3xl lg:text-6xl fonBold mt-5 dark:bg-gradient-to-r dark:from-indigo-500 dark:via-indigo-400 to-gray-50  text-transparent bg-clip-text">
                 {t("header.title")}
@@ -35,19 +35,38 @@ const HeroSection = () => {
                   {t("header.mintext")}
                 </p>
                 <div className="grid grid-cols-4 gap-3 grid-rows-1">
-                  <img src="/Images/comp1.svg" />
-                  <img src="/Images/comp2.svg" />
-                  <img src="/Images/comp3.svg" />
-                  <img src="/Images/comp4.svg" />
+                  <img
+                    alt="flex_image"
+                    src="/Images/comp1.svg"
+                    loading="lazy"
+                  />
+                  <img
+                    alt="flex_image"
+                    src="/Images/comp2.svg"
+                    loading="lazy"
+                  />
+                  <img
+                    alt="flex_image"
+                    src="/Images/comp3.svg"
+                    loading="lazy"
+                  />
+                  <img
+                    alt="flex_image"
+                    src="/Images/comp4.svg"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
             <div className="overflow-hidden w-full flex justify-center items-center  relative">
               <img
+                alt="flex_image"
                 src={dark ? "/Images/Hero_Dark.png" : "/Images/Hero1.png"}
                 className="max-w-[365px] md:max-w-[565px] lg:max-w-[800px] block z-10  translate-x-0 md:translate-x-15 lg:translate-x-15"
               />
               <img
+                loading="lazy"
+                alt="flex_image"
                 // onClick={ChangeDarkstate}
                 src="/Images/Parr.png"
                 className="block absolute z-0 w-40 he-40 -translate-x-50 -translate-y-37"

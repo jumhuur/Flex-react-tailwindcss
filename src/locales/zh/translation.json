@@ -1,5 +1,6 @@
 {
   "header": {
+    "welcome": "欢迎",
     "title": "一家小企业的好坏取决于它使用的工具",
     "subtitle": "是什么让 Flex 清晰且简单？",
     "register_button": "注册",
@@ -11,7 +12,8 @@
     "ar": "العربية",
     "so": "Soomaali",
     "zh": "中文",
-    "hi": "हिन्दी"
+    "hi": "हिन्दी",
+    "am": "አማርኛ"
   },
   "nav": {
     "Home": "主页",
@@ -23,11 +25,12 @@
   },
   "join_section": {
     "title": "加入超过6000家使用 Flex 的成长型公司",
-    "description": [
-      "Mauris pellentesque commodo libero nec",
-      "Suspendisse molestie tristique",
-      "Present varius justo vel justo pulvinar"
-    ],
+    "description": {
+      "01": "毛里斯自由的舒适控制",
+      "02": "避免干扰性压力",
+      "03": "呈现均衡的多样性"
+    },
+
     "buttons": {
       "learn_more": "了解更多",
       "get_started": "开始使用"
@@ -81,53 +84,24 @@
   "team_section": {
     "title": "认识我们的团队",
     "description": "我们的专业团队能够在所有数字渠道上管理您的业务。",
-    "members": [
-      {
-        "name": "Ivan Matthews",
-        "position": "项目经理"
-      },
-      {
-        "name": "Macaulay Herring",
-        "position": "市场经理"
-      },
-      {
-        "name": "Ellen Benitez",
-        "position": "运营经理"
-      },
-      {
-        "name": "Rosemary Hernandez",
-        "position": "人力资源经理"
-      },
-      {
-        "name": "Alia Levine",
-        "position": "销售经理"
-      }
-    ]
+    "buttons": {
+      "learn_more": "我们正在招聘",
+      "get_started": "我们的文化"
+    }
   },
   "join_team_section": {
+    "tag": "职位空缺",
     "title": "加入我们的团队",
     "description": "我们一直在寻找有才华的人加入我们的团队。",
-    "positions": [
-      {
-        "title": "项目经理",
-        "description": "我们正在寻找经验丰富的项目经理。"
-      },
-      {
-        "title": "市场经理",
-        "description": "我们正在寻找经验丰富的市场经理。"
-      },
-      {
-        "title": "运营经理",
-        "description": "我们正在寻找经验丰富的运营经理。"
-      },
-      {
-        "title": "人力资源经理",
-        "description": "我们正在寻找经验丰富的人力资源经理。"
-      },
-      {
-        "title": "销售经理",
-        "description": "我们正在寻找经验丰富的销售经理。"
-      }
-    ]
+    "btn": "查看职位"
+  },
+  "faq_section": {
+    "tag": "常见问题",
+    "title": "常见问题解答",
+    "desc": "Flex 是唯一的 SaaS 商业平台，可让您在一个平台上无缝管理业务，覆盖所有数字渠道。",
+    "buttons": {
+      "ask_us": "问我们",
+      "contact_us": "联系我们"
+    }
   }
 }

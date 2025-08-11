@@ -1,37 +1,44 @@
 import { CircleCheckBig } from "lucide-react";
+import { useTranslation } from "react-i18next";
 const Getstart = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="bg-gray-900">
         <div className="container  py-5 md:py-8 lg:py-10">
           <div className="flex tems-center flex-col md:flex-row justify-center gap-10">
             <div className="w-full  md:w-1/2 flex justify-center items-center relative">
-              <img className="z-10" src="/Images/cta.svg" loading="lazy" />
+              <img
+                alt="Image_flex"
+                className="z-10"
+                src="/Images/cta.svg"
+                loading="lazy"
+              />
             </div>
             <div className="w-full md:w-1/2 p-0 lg:p-10 ">
               <h2 className="text-indigo-500  text-2xl lg:text-5xl fonBold">
-                Join 6,000+ startups growing with Flex
+                {t("join_section.title")}
               </h2>
               <ul className="w-full text-white">
                 <li className="m-3 lg:m-5 flex justify-start items-center gap-2 text-1xl lg:text-2xl">
                   <CircleCheckBig size={18} className="text-indigo-500" />{" "}
-                  Mauris pellentesque congue libero nec
+                  {t("join_section.description.01")}
                 </li>
                 <li className="m-3 lg:m-5 flex justify-start items-center gap-2 text-1xl lg:text-2xl">
                   <CircleCheckBig size={18} className="text-indigo-500" />{" "}
-                  Suspendisse mollis tincidunt
+                  {t("join_section.description.02")}
                 </li>
                 <li className="m-3 lg:m-5 flex justify-start items-center gap-2 text-1xl lg:text-2xl">
                   <CircleCheckBig size={18} className="text-indigo-500" />{" "}
-                  Praesent varius justo vel justo pulvinar{" "}
+                  {t("join_section.description.03")}
                 </li>
               </ul>
               <div className="w-full p-10 flex justify-center items-center flex-col sm:flex-row md:flex-row gap-5">
                 <button className="w-full md:w-1/2 cursor-pointer bg-gray-700 p-3 rounded text-white transition-all duration-200 hover:bg-indigo-500">
-                  Learn More
+                  {t("join_section.buttons.learn_more")}
                 </button>
                 <button className="w-full md:w-1/2 cursor-pointer bg-indigo-500 p-3 rounded text-white">
-                  Get Started
+                  {t("join_section.buttons.get_started")}
                 </button>
               </div>
             </div>

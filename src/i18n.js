@@ -6,6 +6,7 @@ import arTranslation from "./locales/ar/translation.json";
 import zhTranslation from "./locales/zh/translation.json";
 import soTranslation from "./locales/so/translation.json";
 import hiTranslation from "./locales/hi/translation.json";
+import amTranslation from "./locales/am/translation.json";
 
 i18n
   .use(LanguageDetector) // ✅ Step 1: Ku dar plugin-ka
@@ -17,6 +18,7 @@ i18n
       zh: { translation: zhTranslation },
       so: { translation: soTranslation },
       hi: { translation: hiTranslation },
+      am: { translation: amTranslation },
     },
     fallbackLng: "en",
     interpolation: {

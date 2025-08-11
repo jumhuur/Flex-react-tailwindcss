@@ -24,7 +24,10 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
       <div className="container">
         <div className="grid grid-cols-2 items-center justify-center md:grid-cols-[1fr_6fr_2.5fr] lg:grid-cols-[1fr_6fr_2.50fr] gap-3">
           <div className="h-[80px] flex justify-start items-center">
-            <img src={dark ? "/Images/Logo.svg" : "/Images/Logo.svg"} />
+            <img
+              alt="logo"
+              src={dark ? "/Images/Logo.svg" : "/Images/Logo.svg"}
+            />
           </div>
           <div className="hidden lg:block">
             <ul className="h-[80px] flex justify-center items-center space-x-4">
@@ -82,32 +85,75 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                     <ul className="w-full">
                       <li
                         onClick={() => changeLanguage("en")}
-                        className="rounded my-2 text-lg p-1 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                        className="flex justify-start  items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
                       >
+                        {/* <img
+                          className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
+                          src={`/Images/en.jpg`}
+                          loading="lazy"
+                          alt="flag_image"
+                        />{" "} */}
                         {t("lang.en")}
                       </li>
                       <li
                         onClick={() => changeLanguage("ar")}
-                        className="rounded my-2 text-lg p-1 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                        className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
                       >
+                        {/* <img
+                          className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
+                          src={`/Images/ar.jpg`}
+                          loading="lazy"
+                          alt="flag_image"
+                        />{" "} */}
                         {t("lang.ar")}
                       </li>
                       <li
                         onClick={() => changeLanguage("so")}
-                        className="rounded my-2 text-lg p-1 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                        className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
                       >
+                        {/* <img
+                          className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
+                          src={`/Images/so.png`}
+                          loading="lazy"
+                          alt="flag_image"
+                        />{" "} */}
                         {t("lang.so")}
                       </li>
                       <li
-                        onClick={() => changeLanguage("zh")}
-                        className="rounded my-2 text-lg p-1 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                        onClick={() => changeLanguage("am")}
+                        className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
                       >
+                        {/* <img
+                          className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
+                          src={`/Images/am.jpg`}
+                          loading="lazy"
+                          alt="flag_image"
+                        />{" "} */}
+                        {t("lang.am")}
+                      </li>
+
+                      <li
+                        onClick={() => changeLanguage("zh")}
+                        className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                      >
+                        {/* <img
+                          className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
+                          src={`/Images/zh.jpg`}
+                          loading="lazy"
+                          alt="flag_image"
+                        />{" "} */}
                         {t("lang.zh")}
                       </li>
                       <li
                         onClick={() => changeLanguage("hi")}
-                        className="rounded my-2 text-lg p-1 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                        className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
                       >
+                        {/* <img
+                          className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
+                          src={`/Images/hi.jpg`}
+                          loading="lazy"
+                          alt="flag_image"
+                        />{" "} */}
                         {t("lang.hi")}
                       </li>
                     </ul>

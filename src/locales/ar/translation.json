@@ -1,5 +1,6 @@
 {
   "header": {
+    "welcome": "أهلا بك",
     "title": "الشركة الصغيرة لا تكون أفضل من الأدوات التي تستخدمها",
     "subtitle": "ما الذي يجعل Flex واضحًا وبسيطًا؟",
     "register_button": "تسجيل",
@@ -11,7 +12,8 @@
     "ar": "العربية",
     "so": "Soomaali",
     "zh": "中文",
-    "hi": "हिन्दी"
+    "hi": "हिन्दी",
+    "am": "አማርኛ"
   },
   "nav": {
     "Home": "الرئيسية",
@@ -23,11 +25,12 @@
   },
   "join_section": {
     "title": "انضم إلى أكثر من 6000 شركة تنمو باستخدام Flex",
-    "description": [
-      "Mauris pellentesque commodo libero nec",
-      "Suspendisse molestie tristique",
-      "Present varius justo vel justo pulvinar"
-    ],
+    "description": {
+      "01": "موريس بيلينتيسكي كومودو ليبيرو نيك",
+      "02": "سوسبينديس موليزي تريستيك",
+      "03": "بريزنت فارياس جوستو فيل جوستو بولفينار"
+    },
+
     "buttons": {
       "learn_more": "اعرف المزيد",
       "get_started": "ابدأ الآن"
@@ -96,53 +99,24 @@
   "team_section": {
     "title": "تعرف على الفريق",
     "description": "فريقنا من المحترفين مجهز لإدارة عملك عبر جميع القنوات الرقمية.",
-    "members": [
-      {
-        "name": "Ivan Matthews",
-        "position": "مدير المشروع"
-      },
-      {
-        "name": "Macaulay Herring",
-        "position": "مدير التسويق"
-      },
-      {
-        "name": "Ellen Benitez",
-        "position": "مدير العمليات"
-      },
-      {
-        "name": "Rosemary Hernandez",
-        "position": "مدير الموارد البشرية"
-      },
-      {
-        "name": "Alia Levine",
-        "position": "مدير المبيعات"
-      }
-    ]
+    "buttons": {
+      "learn_more": "نحن نوظف",
+      "get_started": "ثقافتنا"
+    }
   },
   "join_team_section": {
+    "tag": "وظائف شاغرة",
     "title": "انضم إلى الفريق",
     "description": "نحن دائمًا نبحث عن أفراد موهوبين للانضمام إلى فريقنا.",
-    "positions": [
-      {
-        "title": "مدير المشروع",
-        "description": "نبحث عن مدير مشروع ذو خبرة."
-      },
-      {
-        "title": "مدير التسويق",
-        "description": "نبحث عن مدير تسويق ذو خبرة."
-      },
-      {
-        "title": "مدير العمليات",
-        "description": "نبحث عن مدير عمليات ذو خبرة."
-      },
-      {
-        "title": "مدير الموارد البشرية",
-        "description": "نبحث عن مدير موارد بشرية ذو خبرة."
-      },
-      {
-        "title": "مدير المبيعات",
-        "description": "نبحث عن مدير مبيعات ذو خبرة."
-      }
-    ]
+    "btn": "عرض الوظيفة"
+  },
+  "faq_section": {
+    "tag": "الأسئلة الشائعة",
+    "title": "الأسئلة المتكررة",
+    "desc": "Flex هي منصة الأعمال الوحيدة من نوع SaaS التي تتيح لك إدارة عملك من خلال منصة واحدة بسلاسة عبر جميع القنوات الرقمية.",
+    "buttons": {
+      "ask_us": "اسألنا",
+      "contact_us": "اتصل بنا"
+    }
   }
 }

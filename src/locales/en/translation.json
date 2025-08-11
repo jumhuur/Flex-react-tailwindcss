@@ -1,6 +1,7 @@
 {
   "header": {
-    "title": "A small business is only as good as its tools.",
+    "welcome": "Welcome",
+    "title": "small business is only as good as its tools.",
     "subtitle": "What makes Flex clear and simple?",
     "register_button": "Register",
     "login_button": "Login",
@@ -11,7 +12,8 @@
     "ar": "العربية",
     "so": "Soomaali",
     "zh": "中文",
-    "hi": "हिन्दी"
+    "hi": "हिन्दी",
+    "am": "አማርኛ"
   },
   "nav": {
     "Home": "Home",
@@ -23,11 +25,11 @@
   },
   "join_section": {
     "title": "Join over 6000 growing companies using Flex",
-    "description": [
-      "Mauris pellentesque commodo libero nec",
-      "Suspendisse molestie tristique",
-      "Present varius justo vel justo pulvinar"
-    ],
+    "description": {
+      "01": "Mauris pellentesque commodo libero nec",
+      "02": "Suspendisse molestie tristique",
+      "03": "Present varius justo vel justo pulvinar"
+    },
     "buttons": {
       "learn_more": "Learn More",
       "get_started": "Get Started"
@@ -35,19 +37,19 @@
   },
   "features_section": {
     "title": "Gain deeper insight into how people use your product",
-    "description": "Use Flex’s capabilities to analyze projects, collaborate, and plan.",
+    "description": "Use Flexs capabilities to analyze projects, collaborate, \n and plan.",
     "features": [
       {
         "title": "Project Analysis",
-        "description": "Use Flex’s capabilities to analyze projects, collaborate, and plan."
+        "description": "Use Flexs capabilities to analyze projects, collaborate, and plan."
       },
       {
         "title": "Collaboration",
-        "description": "Use Flex’s capabilities to analyze projects, collaborate, and plan."
+        "description": "Use Flexs capabilities to analyze projects, collaborate, and plan."
       },
       {
         "title": "Planning",
-        "description": "Use Flex’s capabilities to analyze projects, collaborate, and plan."
+        "description": "Use Flexs capabilities to analyze projects, collaborate, and plan."
       }
     ]
   },
@@ -96,53 +98,24 @@
   "team_section": {
     "title": "Meet the team",
     "description": "Our team of professionals is equipped to manage your business across all digital channels.",
-    "members": [
-      {
-        "name": "Ivan Matthews",
-        "position": "Project Manager"
-      },
-      {
-        "name": "Macaulay Herring",
-        "position": "Marketing Manager"
-      },
-      {
-        "name": "Ellen Benitez",
-        "position": "Operations Manager"
-      },
-      {
-        "name": "Rosemary Hernandez",
-        "position": "HR Manager"
-      },
-      {
-        "name": "Alia Levine",
-        "position": "Sales Manager"
-      }
-    ]
+    "buttons": {
+      "learn_more": "Learn More",
+      "get_started": "Get Started"
+    }
   },
   "join_team_section": {
-    "title": "Join the team",
-    "description": "We’re always looking for talented individuals to join our team.",
-    "positions": [
-      {
-        "title": "Project Manager",
-        "description": "We’re looking for an experienced project manager."
-      },
-      {
-        "title": "Marketing Manager",
-        "description": "We’re looking for an experienced marketing manager."
-      },
-      {
-        "title": "Operations Manager",
-        "description": "We’re looking for an experienced operations manager."
-      },
-      {
-        "title": "HR Manager",
-        "description": "We’re looking for an experienced HR manager."
-      },
-      {
-        "title": "Sales Manager",
-        "description": "We’re looking for an experienced sales manager."
-      }
-    ]
+    "tag": "Open Positions",
+    "title": "Join Our team",
+    "description": "Were always looking for talented individuals to join our team.",
+    "btn": "View Job"
+  },
+  "faq_section": {
+    "tag": "FAQ",
+    "title": "Frequently Asked Questions",
+    "desc": "Flex is the only SaaS business platform that lets you run your business on one platform, seamlessly across all digital channels.",
+    "buttons": {
+      "ask_us": "Ask Us",
+      "contact_us": "Contact Us"
+    }
   }
 }

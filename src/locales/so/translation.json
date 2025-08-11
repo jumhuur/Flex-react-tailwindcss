@@ -1,5 +1,6 @@
 {
   "header": {
+    "welcome": "Soo Dhawoow",
     "title": "Ganacsi yar waxa koriya agab tayo le.",
     "subtitle": "Maxaa Flex ka dhigaya mid cad oo sahlan?",
     "register_button": "Is diiwaangeli",
@@ -11,7 +12,8 @@
     "ar": "العربية",
     "so": "Soomaali",
     "zh": "中文",
-    "hi": "हिन्दी"
+    "hi": "हिन्दी",
+    "am": "አማርኛ"
   },
 
   "nav": {
@@ -25,11 +27,12 @@
 
   "join_section": {
     "title": "Ku biir in ka badan 6000 shirkadood oo koraya Flex",
-    "description": [
-      "Mauris pellentesque commodo libero nec",
-      "Suspendisse molestie tristique",
-      "Present varius justo vel justo pulvinar"
-    ],
+    "description": {
+      "01": "Mauris xakamaynta la xiriirta waa xor",
+      "02": "Ka fogow dhibaatada iyo cadaadiska",
+      "03": "Soo bandhig kala duwanaansho si siman loo faafiyo"
+    },
+
     "buttons": {
       "learn_more": "Wax badan baro",
       "get_started": "Bilow hadda"
@@ -98,53 +101,24 @@
   "team_section": {
     "title": "La kulan kooxda",
     "description": "Kooxdayada xirfadlayaasha ah waxay awood u leeyihiin inay maareeyaan ganacsigaaga dhammaan kanaalada dijitaalka ah.",
-    "members": [
-      {
-        "name": "Ivan Matthews",
-        "position": "Maareeyaha Mashruuca"
-      },
-      {
-        "name": "Macaulay Herring",
-        "position": "Maareeyaha Suuqgeynta"
-      },
-      {
-        "name": "Ellen Benitez",
-        "position": "Maareeyaha Hawlaha"
-      },
-      {
-        "name": "Rosemary Hernandez",
-        "position": "Maareeyaha HR"
-      },
-      {
-        "name": "Alia Levine",
-        "position": "Maareeyaha Iibka"
-      }
-    ]
+    "buttons": {
+      "learn_more": "shaqooyin-ka",
+      "get_started": "Dhaqankeena"
+    }
   },
   "join_team_section": {
-    "title": "Ku biir kooxda",
+    "tag": "Shaqooyin Bannaan",
+    "title": "Ka Mid noqo Koodayada",
     "description": "Had iyo jeer waxaan raadineynaa dad karti leh si ay ugu biiraan kooxda.",
-    "positions": [
-      {
-        "title": "Maareeyaha Mashruuca",
-        "description": "Waxaan raadineynaa maareeye mashruuc khibrad leh."
-      },
-      {
-        "title": "Maareeyaha Suuqgeynta",
-        "description": "Waxaan raadineynaa maareeye suuqgeyn khibrad leh."
-      },
-      {
-        "title": "Maareeyaha Hawlaha",
-        "description": "Waxaan raadineynaa maareeye hawlaha khibrad leh."
-      },
-      {
-        "title": "Maareeyaha HR",
-        "description": "Waxaan raadineynaa maareeye HR khibrad leh."
-      },
-      {
-        "title": "Maareeyaha Iibka",
-        "description": "Waxaan raadineynaa maareeye iibka khibrad leh."
-      }
-    ]
+    "btn": "Eeg"
+  },
+  "faq_section": {
+    "tag": "Su'aalaha",
+    "title": "Su'aalaha Inta Badan La Is Weydiiyo",
+    "desc": "Flex waa madal ganacsi oo SaaS ah oo keliya oo kuu oggolaanaysa inaad ganacsigaaga ku maamusho hal madal, si isku dhafan dhammaan kanaalada dhijitaalka ah.",
+    "buttons": {
+      "ask_us": "Nagu Waydii",
+      "contact_us": "Nala Soo Xiriir"
+    }
   }
 }
