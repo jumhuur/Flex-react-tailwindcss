@@ -34,7 +34,7 @@ A fast, responsive landing page built with **React**, **Vite**, **TypeScript**, 
 
 ## 📜 License
 
-This project is licensed under the MIT License - You can read here [LICENSE](""https://github.com/jumhuur/Flex-react-tailwindcss/blob/main/LICENSE)
+This project is licensed under the MIT License - You can read here [LICENSE](https://github.com/jumhuur/Flex-react-tailwindcss/blob/main/LICENSE)
 
 ## 🚀 Quick start
 
