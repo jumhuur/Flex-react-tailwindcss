@@ -7,7 +7,6 @@ A fast, responsive landing page built with **React**, **Vite**, **TypeScript**, 
 - English (en)
 - Somali (so)
 - Arabic (ar)
-- French (fr)
 - Hindi (hi)
 - ahmari (am)
 - Chinese (zh)
