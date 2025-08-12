@@ -2,6 +2,7 @@ import { CircleArrowDown, CircleArrowUp } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { LangCode } from "../../helpers/taypes";
+import { motion, AnimatePresence } from "framer-motion";
 const Q_Answers = () => {
   const [active, setactive] = useState<number>(1);
   interface Faq {
@@ -218,23 +219,29 @@ const Q_Answers = () => {
               )}
             </span>
           </h2>
-          <div
-            className={
-              active == faq.id
-                ? "w-full opacity-100 overflow-hidden -translate-y-0  transition-all duration-400 "
-                : "opacity-0 h-[0px] -translate-y-2"
-            }
-          >
-            <p
+          <AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 50 }}
+              transition={{ duration: 0.5 }}
               className={
                 active == faq.id
-                  ? "max-sm:w-full w-98 text-[18px] text-gray-300 p-2 break-all"
-                  : "flex-none"
+                  ? "w-full block overflow-hidden  transition-all duration-400 "
+                  : "hidden "
               }
             >
-              {faq.answer}
-            </p>
-          </div>
+              <p
+                className={
+                  active == faq.id
+                    ? "max-sm:w-full w-98 text-[18px] text-gray-300 p-2 break-all"
+                    : "flex-none"
+                }
+              >
+                {faq.answer}
+              </p>
+            </motion.div>
+          </AnimatePresence>
         </div>
       ))}
     </div>

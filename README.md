@@ -1,55 +1,69 @@
-# React + TypeScript + Vite
+# Multilingual Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast, responsive landing page built with **React**, **Vite**, **TypeScript**, and **Tailwind CSS**, supporting **6 languages** out of the box. Designed for performance, accessibility, and easy localization.
 
-Currently, two official plugins are available:
+## 🌍 Supported languages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- English (en)
+- Somali (so)
+- Arabic (ar)
+- French (fr)
+- Hindi (hi)
+- ahmari (am)
+- Chinese (zh)
 
-## Expanding the ESLint configuration
+> Add more languages easily via the `src/i18n` folder (see Localization section).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Tech stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- React (with hooks & functional components)
+- Vite (dev server + build)
+- TypeScript (strict mode recommended)
+- Tailwind CSS (utility-first styling)
+- i18n (example: `react-i18next` or `next-intl`-style approach — pluggable)
+- Optional: PostCSS, ESLint, Prettier
+
+## ✨ Features
+
+- Multi-language content switching (language selector)
+- SEO-friendly meta & localized titles/descriptions
+- Mobile-first responsive design
+- Accessible components (ARIA where needed)
+- Fast builds with Vite + production optimizations
+- Easy-to-edit content (JSON translation files)
+
+## 🚀 Quick start
+
+1. **Clone**
+
+```bash
+git clone https://github.com/jumhuur/Flex-react-tailwindcss.git
+cd <repo-name>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+''
+npm install
+''
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## Run (dev)
+
 ```
-"# Flex-react-tailwindcss" 
+npm run dev
+```
+
+## Build
+
+```
+npm run build
+```
+
+## Preview production build
+
+```
+npm run preview
+
+```
+
+**thanks** fom Jumhuur

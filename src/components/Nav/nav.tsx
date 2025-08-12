@@ -88,12 +88,12 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 50 }}
                       transition={{ duration: 0.5 }}
-                      className="rounded z-20 visible opacity-100 translate-y-0  transition-all duration-500 ease-in-out bg-gray-950 p-4 flex justify-center items-center absolute top-[35px] -right-4"
+                      className="rounded z-20 visible opacity-100 translate-y-0  transition-all duration-500 ease-in-out bg-gray-700 p-4 flex justify-center items-center absolute top-[35px] -right-8"
                     >
                       <ul className="w-full">
                         <li
                           onClick={() => changeLanguage("en")}
-                          className="flex justify-start  items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                          className="flex justify-start  items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-50 cursor-pointer hover:bg-gray-800  transition-all duration-300 ease-in-out"
                         >
                           {/* <img
                           className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
@@ -105,7 +105,7 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                         </li>
                         <li
                           onClick={() => changeLanguage("ar")}
-                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-50 cursor-pointer hover:bg-gray-800  transition-all duration-300 ease-in-out"
                         >
                           {/* <img
                           className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
@@ -117,7 +117,7 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                         </li>
                         <li
                           onClick={() => changeLanguage("so")}
-                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-50 cursor-pointer hover:bg-gray-800  transition-all duration-300 ease-in-out"
                         >
                           {/* <img
                           className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
@@ -129,7 +129,7 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                         </li>
                         <li
                           onClick={() => changeLanguage("am")}
-                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-50 cursor-pointer hover:bg-gray-800  transition-all duration-300 ease-in-out"
                         >
                           {/* <img
                           className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
@@ -142,7 +142,7 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
 
                         <li
                           onClick={() => changeLanguage("zh")}
-                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 text-gray-50 cursor-pointer hover:bg-gray-800  transition-all duration-300 ease-in-out"
                         >
                           {/* <img
                           className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
@@ -154,7 +154,7 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                         </li>
                         <li
                           onClick={() => changeLanguage("hi")}
-                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-100 cursor-pointer hover:bg-indigo-500  transition-all duration-300 ease-in-out"
+                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-50 cursor-pointer hover:bg-gray-800  transition-all duration-300 ease-in-out"
                         >
                           {/* <img
                           className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
