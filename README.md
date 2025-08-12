@@ -32,6 +32,10 @@ A fast, responsive landing page built with **React**, **Vite**, **TypeScript**, 
 - Fast builds with Vite + production optimizations
 - Easy-to-edit content (JSON translation files)
 
+## 📜 License
+
+This project is licensed under the MIT License - You can read here [LICENSE](""https://github.com/jumhuur/Flex-react-tailwindcss/blob/main/LICENSE)
+
 ## 🚀 Quick start
 
 1. **Clone**
