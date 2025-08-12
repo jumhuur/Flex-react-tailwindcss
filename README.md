@@ -41,29 +41,27 @@ git clone https://github.com/jumhuur/Flex-react-tailwindcss.git
 cd <repo-name>
 ```
 
-## install
+2. **install**
 
-''
+```
 npm install
-''
+```
 
-## Run (dev)
+3. **Run (dev)**
 
 ```
 npm run dev
 ```
 
-## Build
+4 **Build**
 
 ```
 npm run build
 ```
 
-## Preview production build
+5. **Preview production build**
 
 ```
 npm run preview
 
 ```
-
-**thanks** fom Jumhuur
