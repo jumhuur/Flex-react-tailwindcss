@@ -68,3 +68,19 @@ npm run build
 npm run preview
 
 ```
+
+## Images
+
+Below are some screenshots of the landing page
+
+**arbic**
+![ar](/public/Images/Screen_shoots/ar.png)
+
+**soomali**
+![so](/public/Images/Screen_shoots/so.png)
+
+**chines**
+![ar](/public/Images/Screen_shoots/zh.png)
+
+**thank you**
+i am jumhuur
