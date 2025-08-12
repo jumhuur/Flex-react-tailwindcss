@@ -38,7 +38,7 @@ A fast, responsive landing page built with **React**, **Vite**, **TypeScript**, 
 
 ```bash
 git clone https://github.com/jumhuur/Flex-react-tailwindcss.git
-cd <repo-name>
+cd Flex-react-tailwindcss
 ```
 
 2. **install**
