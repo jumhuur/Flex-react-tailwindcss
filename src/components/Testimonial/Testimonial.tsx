@@ -370,7 +370,7 @@ export default function Testimonial() {
   const { t, i18n } = useTranslation();
   const Lang = i18n.language;
   const nextSlide = (num: number) => {
-    setid((prev) => num % testimonials[Lang as LangCode].length);
+    setid(() => num % testimonials[Lang as LangCode].length);
   };
 
   const AutonextSlide = () => {
