@@ -117,5 +117,10 @@
       "ask_us": "Ask Us",
       "contact_us": "Contact Us"
     }
+  },
+  "test": {
+    "Tag": "testimonials",
+    "Title": " What Our Clients Say",
+    "desc": "Real stories from real people—across cultures and industries."
   }
 }

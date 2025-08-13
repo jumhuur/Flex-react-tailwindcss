@@ -73,15 +73,15 @@ npm run preview
 
 Below are some screenshots of the landing page
 
-**arbic**
+1-**arbic**
 
 ![ar](/public/Images/Screen_shoots/ar.png)
 
-**soomali**
+2-**soomali**
 
 ![so](/public/Images/Screen_shoots/so.png)
 
-**chines**
+3-**chines**
 
 ![ar](/public/Images/Screen_shoots/zh.png)
 

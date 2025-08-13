@@ -8,6 +8,7 @@ import Nav from "./components/Nav/nav";
 import Pricing_cards from "./components/Pracing/Pricing";
 import Team from "./components/Team/Team";
 import { useTranslation } from "react-i18next";
+import MainTestimonial from "./components/Testimonial/Testimonialmain";
 function App() {
   const { i18n } = useTranslation();
   const changeLanguage = (lng: string) => {
@@ -30,6 +31,7 @@ function App() {
         <Team />
         <Careers />
         <Faq />
+        <MainTestimonial />
       </div>
     </>
   );
