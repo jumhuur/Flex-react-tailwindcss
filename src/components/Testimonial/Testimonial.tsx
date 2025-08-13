@@ -380,7 +380,7 @@ export default function Testimonial() {
     const interval = setInterval(() => {
       AutonextSlide();
       return interval;
-    }, 5000);
+    }, 10000);
   }, []);
 
   // const prevSlide = () => {
@@ -400,18 +400,17 @@ export default function Testimonial() {
             </h2>
             <p className="text-white text-base W-96">{t("test.desc")}</p>
           </div>
-          <div className="w-full flex flex-col justify-center items-center">
-            {testimonials[Lang as LangCode].map((testimonial, index) => (
-              <AnimatePresence>
+          <AnimatePresence mode="wait">
+            {testimonials[Lang as LangCode]
+              .filter((_, index) => index === id) // kaliya kan hadda muuqda
+              .map((testimonial) => (
                 <motion.div
-                  initial={{ opacity: 0, y: -10 }}
+                  key={testimonial.id} // key muhiim ah si exit uu u shaqeeyo
+                  initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
+                  exit={{ opacity: 0, y: 10 }}
                   transition={{ duration: 0.5 }}
-                  key={testimonial.id}
-                  className={
-                    index === id ? "block max-sm:w-full md:w-96" : "hidden"
-                  }
+                  className="block max-sm:w-full md:w-96"
                 >
                   <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
@@ -431,35 +430,18 @@ export default function Testimonial() {
                       {testimonial.position}
                     </p>
                   </motion.div>
+
                   <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2, duration: 0.6 }}
-                    className={
-                      "w-full max-sm:max-w-3xl text-2xl md:text-2xl font-medium mb-1 leading-snug"
-                    }
+                    className="w-full max-sm:max-w-3xl text-2xl md:text-2xl font-medium mb-1 leading-snug"
                   >
                     {testimonial.message}
                   </motion.p>
                 </motion.div>
-              </AnimatePresence>
-            ))}
-
-            {/* Dots Navigation */}
-            <div className="flex gap-2 mt-6">
-              {testimonials[Lang as LangCode].map((test, index) => (
-                <span
-                  onClick={() => nextSlide(index)}
-                  key={test.id}
-                  className={
-                    index === id
-                      ? "w-2.5 h-2.5 rounded-full bg-indigo-500 hover:bg-indigo-400 hover:w-3 hover:h-3 cursor-pointer transition-all duration-300"
-                      : "w-2.5 h-2.5 rounded-full bg-gray-500 hover:bg-indigo-400 hover:w-3 hover:h-3 cursor-pointer transition-all duration-300"
-                  }
-                ></span>
               ))}
-            </div>
-          </div>
+          </AnimatePresence>
         </div>
       </div>
     </section>
