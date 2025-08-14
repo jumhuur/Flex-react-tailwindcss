@@ -369,9 +369,9 @@ export default function Testimonial() {
 
   const { t, i18n } = useTranslation();
   const Lang = i18n.language;
-  // const nextSlide = (num: number) => {
-  //   setid(() => num % testimonials[Lang as LangCode].length);
-  // };
+  const nextSlide = (num: number) => {
+    setid(() => num % testimonials[Lang as LangCode].length);
+  };
 
   console.log(6 % 6);
 
@@ -383,7 +383,7 @@ export default function Testimonial() {
   useEffect(() => {
     const interval = setInterval(() => {
       AutonextSlide();
-    }, 3000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, []);
@@ -447,6 +447,20 @@ export default function Testimonial() {
                 </motion.div>
               ))}
           </AnimatePresence>
+          {/* Dots Navigation */}
+          <div className="flex gap-2 mt-6">
+            {testimonials[Lang as LangCode].map((test, index) => (
+              <span
+                onClick={() => nextSlide(index)}
+                key={test.id}
+                className={
+                  index === id
+                    ? "w-2.5 h-2.5 rounded-full bg-indigo-500 hover:bg-indigo-400 hover:w-3 hover:h-3 cursor-pointer transition-all duration-300"
+                    : "w-2.5 h-2.5 rounded-full bg-gray-500 hover:bg-indigo-400 hover:w-3 hover:h-3 cursor-pointer transition-all duration-300"
+                }
+              ></span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
