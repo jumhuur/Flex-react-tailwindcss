@@ -369,18 +369,23 @@ export default function Testimonial() {
 
   const { t, i18n } = useTranslation();
   const Lang = i18n.language;
-  const nextSlide = (num: number) => {
-    setid(() => num % testimonials[Lang as LangCode].length);
-  };
+  // const nextSlide = (num: number) => {
+  //   setid(() => num % testimonials[Lang as LangCode].length);
+  // };
+
+  console.log(6 % 6);
 
   const AutonextSlide = () => {
-    setid((prev) => (prev + 1) % testimonials[Lang as LangCode].length);
+    setid((prev) => (prev += 1) % testimonials[Lang as LangCode].length);
+    // console.log(testimonials[Lang as LangCode]);
+    // console.log("count", id);
   };
   useEffect(() => {
     const interval = setInterval(() => {
       AutonextSlide();
-      return interval;
-    }, 10000);
+    }, 3000);
+
+    return () => clearInterval(interval);
   }, []);
 
   // const prevSlide = () => {
@@ -406,7 +411,7 @@ export default function Testimonial() {
               .map((testimonial) => (
                 <motion.div
                   key={testimonial.id} // key muhiim ah si exit uu u shaqeeyo
-                  initial={{ opacity: 0, y: 10 }}
+                  initial={{ opacity: 0, y: 0 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
                   transition={{ duration: 0.5 }}
