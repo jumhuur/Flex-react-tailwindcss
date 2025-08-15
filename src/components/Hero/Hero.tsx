@@ -21,7 +21,12 @@ const HeroSection = () => {
               <span className="dark:bg-indigo-500 dark:shadow-4xl dark:text-gray-50 text-gray-50 text-center p-2 rounded bg-green-500 text-xs md:text-lg">
                 {t("header.welcome")}
               </span>
-              <h2 className="fontBold text-2xl bg-gray-800 leading-15 md:leading-15 lg:leading-20 md:text-3xl lg:text-5xl fonBold mt-5 dark:bg-gradient-to-r dark:from-indigo-500 dark:via-indigo-400 to-gray-50  text-transparent bg-clip-text">
+              <h2
+                className={`
+                  ${Lang === "ar" ? "arfont" : "fontBold"}
+                  text-2xl bg-gray-800 leading-15 md:leading-15 lg:leading-20 md:text-3xl lg:text-5xl mt-5 dark:bg-gradient-to-r dark:from-indigo-500 dark:via-indigo-400 to-gray-50  text-transparent bg-clip-text
+                  `}
+              >
                 {t("header.title")}
               </h2>
               <p className="dark:text-gray-200 text-lg font-medium text-gray-100 mt-4">

@@ -16,7 +16,8 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
     return langactive;
   };
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const Lang = i18n.language;
   return (
     <nav
       className="h-[80px] sticky top-0 z-20 backdrop-blur-md"
@@ -34,7 +35,9 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
             <ul className="h-[80px] flex justify-center items-center space-x-4">
               <li className=" flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
-                  className="text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize"
+                  className={`${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
                   to={"#"}
                 >
                   {t("nav.Home")}
@@ -42,7 +45,9 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
               </li>
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300">
                 <Link
-                  className="text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50  transition-colors duration-300 capitalize"
+                  className={`${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
                   to={"#"}
                 >
                   {t("nav.Features")}
@@ -50,7 +55,9 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
               </li>
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
-                  className="text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50  transition-colors duration-300 capitalize"
+                  className={`${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
                   to={"#"}
                 >
                   {t("nav.Pricing")}
@@ -58,7 +65,9 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
               </li>
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
-                  className="text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50  transition-colors duration-300 capitalize"
+                  className={`${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
                   to={"#"}
                 >
                   {t("nav.Our Team")}
@@ -67,7 +76,9 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
 
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
-                  className="text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition-colors duration-300 capitalize"
+                  className={`${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
                   to={"#"}
                 >
                   {t("nav.Careers")}
@@ -76,7 +87,9 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
               <li className="relative flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
                   onClick={() => Langactive_handale()}
-                  className="flex justify-center items-center flex-row text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition-colors duration-300 capitalize"
+                  className={`${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  } flex justify-center items-center flex-row text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
                   to={"#"}
                 >
                   {t("nav.Language")} <ChevronDown size={12} />
@@ -105,7 +118,7 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                         </li>
                         <li
                           onClick={() => changeLanguage("ar")}
-                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-50 cursor-pointer hover:bg-gray-800  transition-all duration-300 ease-in-out"
+                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-50 cursor-pointer hover:bg-gray-800  transition-all duration-300 ease-in-out arfont"
                         >
                           {/* <img
                           className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"

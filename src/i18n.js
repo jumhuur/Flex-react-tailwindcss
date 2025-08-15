@@ -9,8 +9,8 @@ import hiTranslation from "./locales/hi/translation.json";
 import amTranslation from "./locales/am/translation.json";
 
 i18n
-  .use(LanguageDetector) // ✅ Step 1: Ku dar plugin-ka
-  .use(initReactI18next) // ✅ Step 2: Ku dar React support
+  .use(LanguageDetector) // ka war haynta kolba luuqada website-ka
+  .use(initReactI18next) //  react support
   .init({
     resources: {
       en: { translation: enTranslation },
@@ -25,8 +25,8 @@ i18n
       escapeValue: false,
     },
     detection: {
-      order: ["localStorage", "navigator"], // ✅ Marka hore localStorage, kadib browser language
-      caches: ["localStorage"], // ✅ Kaydi luuqadda
+      order: ["localStorage", "navigator"], // localStorage, kadib browser language
+      caches: ["localStorage"], //  Kaydi luuqadda
     },
   });
 
