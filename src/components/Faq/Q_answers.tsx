@@ -228,7 +228,7 @@ const Q_Answers = () => {
               className={
                 active == faq.id
                   ? "w-full block overflow-hidden  transition-all duration-400 "
-                  : "hidden "
+                  : "hidden"
               }
             >
               <p
