@@ -240,13 +240,25 @@ const Features_web = () => {
     <div className=" bg-gray-900">
       <div className="container py-5 md:py-8 lg:py-10">
         <div className="flex justify-center items-center flex-col p-5">
-          <span className="bg-indigo-500 text-white rounded p-1 my-5 text-base">
+          <span
+            className={`${
+              LangCode === "ar" ? "arfont" : "fontBold"
+            } bg-indigo-500 text-white rounded p-1 my-5 text-base`}
+          >
             {t("nav.Features")}
           </span>
-          <h2 className="text-indigo-500 text-2xl md:text-2xl lg:text-3xl fonBold my-5">
+          <h2
+            className={`${
+              LangCode === "ar" ? "arfont" : "fontBold"
+            } text-indigo-500 text-2xl md:text-2xl lg:text-3xl my-5`}
+          >
             {t("features_section.title")}
           </h2>
-          <p className="text-white text-base">
+          <p
+            className={`${
+              LangCode === "ar" ? "arfont" : "fontBold"
+            } text-white text-base`}
+          >
             {t("features_section.description")}
           </p>
         </div>
@@ -261,10 +273,18 @@ const Features_web = () => {
                   {feature.icon}
                 </div>
                 <div className="flex justfy-center items-center flex-col">
-                  <h2 className="text-indigo-400 font-bold text-1xl capitalize">
+                  <h2
+                    className={`${
+                      LangCode === "ar" ? "arfont" : "fontBold"
+                    } text-indigo-400 text-1xl capitalize`}
+                  >
                     {feature.title}
                   </h2>
-                  <p className="text-center text-gray-300 text-x capitalize">
+                  <p
+                    className={`${
+                      LangCode === "ar" ? "arfont" : "fontBold"
+                    } text-center text-gray-300 text-x capitalize`}
+                  >
                     {feature.description}{" "}
                   </p>
                 </div>

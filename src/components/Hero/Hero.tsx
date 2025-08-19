@@ -29,19 +29,35 @@ const HeroSection = () => {
               >
                 {t("header.title")}
               </h2>
-              <p className="dark:text-gray-200 text-lg font-medium text-gray-100 mt-4">
+              <p
+                className={`${
+                  Lang === "ar" ? "arfont" : "fontBold"
+                } dark:text-gray-200 text-lg font-medium text-gray-100 mt-4`}
+              >
                 {t("header.subtitle")}
               </p>
               <div className="w-full flex justify-start items-center flex-col md:flex-row gap-3.5 lg:flex-row  p-5 space-4">
-                <button className="w-full md:w-1/2 bg-indigo-500 text-gray-50 p-3 mr-3 rounded cursor-pointer hover:bg-indigo-600  transition duration-300">
+                <button
+                  className={`${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  } w-full md:w-1/2 bg-indigo-500 text-gray-50 p-3 mr-3 rounded cursor-pointer hover:bg-indigo-600  transition duration-300`}
+                >
                   {t("header.register_button")}
                 </button>
-                <button className="w-full md:w-1/2 cursor-pointer shadow-2xl p-3 dark:bg-gray-700 dark:text-gray-200  hover:bg-indigo-600 transition duration-300 hover:text-gray-50 rounded">
+                <button
+                  className={`${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  } w-full md:w-1/2 cursor-pointer shadow-2xl p-3 dark:bg-gray-700 dark:text-gray-200  hover:bg-indigo-600 transition duration-300 hover:text-gray-50 rounded`}
+                >
                   {t("header.login_button")}
                 </button>
               </div>
               <div>
-                <p className="text-lg/loose text-gray-100 mt-5 mb-5 font-medium">
+                <p
+                  className={`${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  } text-lg/loose text-gray-100 mt-5 mb-5 font-medium`}
+                >
                   {t("header.mintext")}
                 </p>
                 <div className="grid grid-cols-4 gap-3 grid-rows-1">

@@ -204,10 +204,18 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
             </ul>
           </div>
           <div className="h-[80px] hidden lg:flex justify-evenly items-center gap-2">
-            <button className="w-full dark:text-gray-200 bg-gray-700 dark:hover:bg-gray-900 hover:bg-gray-500 transition-all duration-300 text-gray-500 text-base rounded p-2 capitalize cursor-pointer">
+            <button
+              className={`${
+                Lang === "ar" ? "arfont" : "fontBold"
+              } w-full dark:text-gray-200 bg-gray-700 dark:hover:bg-gray-600 hover:bg-gray-500 transition-all duration-300 text-gray-500 text-base rounded p-2 capitalize cursor-pointer`}
+            >
               {t("header.register_button")}
             </button>
-            <button className="w-full bg-indigo-500 text-gray-50 text-base rounded p-2 cursor-pointer capitalize">
+            <button
+              className={`${
+                Lang === "ar" ? "arfont" : "fontBold"
+              } w-full bg-indigo-500 hover:bg-indigo-600 text-gray-50 text-base rounded p-2 cursor-pointer capitalize transition-all duration-300`}
+            >
               {t("header.login_button")}
             </button>
           </div>

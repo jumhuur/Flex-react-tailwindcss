@@ -1,7 +1,8 @@
 import { CircleCheckBig } from "lucide-react";
 import { useTranslation } from "react-i18next";
 const Getstart = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const Lang: string = i18n.language;
   return (
     <>
       <div className="bg-gray-900">
@@ -16,28 +17,52 @@ const Getstart = () => {
               />
             </div>
             <div className="w-full md:w-1/2 p-0 lg:p-10 ">
-              <h2 className="text-indigo-500  text-2xl lg:text-5xl fonBold">
+              <h2
+                className={`${
+                  Lang === "ar" ? "arfont" : "fontBold"
+                } text-indigo-500  text-2xl lg:text-5xl`}
+              >
                 {t("join_section.title")}
               </h2>
               <ul className="w-full text-white">
-                <li className="m-3 lg:m-5 flex justify-start items-center gap-2 text-1xl lg:text-2xl">
+                <li
+                  className={`${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  } m-3 lg:m-5 flex justify-start items-center gap-2 text-1xl lg:text-2xl`}
+                >
                   <CircleCheckBig size={18} className="text-indigo-500" />{" "}
                   {t("join_section.description.01")}
                 </li>
-                <li className="m-3 lg:m-5 flex justify-start items-center gap-2 text-1xl lg:text-2xl">
+                <li
+                  className={`${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  } m-3 lg:m-5 flex justify-start items-center gap-2 text-1xl lg:text-2xl`}
+                >
                   <CircleCheckBig size={18} className="text-indigo-500" />{" "}
                   {t("join_section.description.02")}
                 </li>
-                <li className="m-3 lg:m-5 flex justify-start items-center gap-2 text-1xl lg:text-2xl">
+                <li
+                  className={`${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  } m-3 lg:m-5 flex justify-start items-center gap-2 text-1xl lg:text-2xl`}
+                >
                   <CircleCheckBig size={18} className="text-indigo-500" />{" "}
                   {t("join_section.description.03")}
                 </li>
               </ul>
               <div className="w-full p-10 flex justify-center items-center flex-col sm:flex-row md:flex-row gap-5">
-                <button className="w-full md:w-1/2 cursor-pointer bg-gray-700 p-3 rounded text-white transition-all duration-200 hover:bg-indigo-500">
+                <button
+                  className={`${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  } w-full md:w-1/2 cursor-pointer bg-gray-700 p-3 rounded text-white transition-all duration-200 hover:bg-indigo-500`}
+                >
                   {t("join_section.buttons.learn_more")}
                 </button>
-                <button className="w-full md:w-1/2 cursor-pointer bg-indigo-500 p-3 rounded text-white">
+                <button
+                  className={`${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  } w-full md:w-1/2 cursor-pointer bg-indigo-500 p-3 rounded text-white`}
+                >
                   {t("join_section.buttons.get_started")}
                 </button>
               </div>
