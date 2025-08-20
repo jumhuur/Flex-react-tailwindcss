@@ -302,18 +302,32 @@ const Jobs = () => {
           className="bg-gray-800 rounded  p-2 md:p-4 flex justify-center items-center"
         >
           <div className="w-2/3">
-            <h2 className="font-bold text-base md:text-1xl text-indigo-500 capitalize m-1">
+            <h2
+              className={`${
+                Lang === "ar" ? "arfont" : "fontBold"
+              } text-base md:text-1xl text-indigo-500 capitalize m-1`}
+            >
               {Job.title}
             </h2>
-            <p className="text-gray-50 text-lg capitalize">{Job.desc}</p>
+            <p
+              className={`${
+                Lang === "ar" ? "arfont" : "fontBold"
+              } text-gray-50 text-lg capitalize`}
+            >
+              {Job.desc}
+            </p>
           </div>
           <div className="flex justify-center items-start w-1/3 h-full">
-            <button className=" flex justify-center items-center text-[14px] bg-transparent text-gray-100 font-medium capitalize rounded p-2 gap-1 cursor-pointer hover:bg-indigo-700 hover:text-gray-50 transition-all duration-300">
+            <button
+              className={`${
+                Lang === "ar" ? "arfont" : "fontBold"
+              } flex justify-center items-center text-[10px] bg-indigo-500 text-gray-100 font-medium capitalize rounded p-2 gap-1 cursor-pointer hover:bg-indigo-700 hover:text-gray-50 transition-all duration-300`}
+            >
               {t("join_team_section.btn")}{" "}
               {Lang == "ar" ? (
-                <CircleArrowLeftIcon className="text-indigo-500 hover:text-gray-50" />
+                <CircleArrowLeftIcon className="text-gray-50 hover:text-gray-100" />
               ) : (
-                <CircleArrowRightIcon className="text-indigo-500  hover:text-gray-50" />
+                <CircleArrowRightIcon className="text-gray-50  hover:text-gray-100" />
               )}
             </button>
           </div>

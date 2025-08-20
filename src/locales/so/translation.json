@@ -125,5 +125,10 @@
     "Tag": "faallooyin",
     "Title": "Faalada Macaamiisha",
     "desc": "Sheekooyin dhab ah oo ka yimid dad dhab hab dhaqan ahaan iyo aqoon ahaan kala duwan."
+  },
+  "Footer": {
+    "placeholder": "Geli Email-kaaga",
+    "btn": "Is Diiwaangeli",
+    "at": "© 2024 Flex. Xuquuqda oo dhan way xifdisan tahay."
   }
 }

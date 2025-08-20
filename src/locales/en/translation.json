@@ -122,5 +122,10 @@
     "Tag": "testimonials",
     "Title": " What Our Clients Say",
     "desc": "Real stories from real people—across cultures and industries."
+  },
+  "Footer": {
+    "placeholder": "Enter Your Email",
+    "btn": "Subscribe",
+    "at": "© 2024 Flex. All rights reserved."
   }
 }

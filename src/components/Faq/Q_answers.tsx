@@ -208,7 +208,9 @@ const Q_Answers = () => {
         >
           <h2
             onClick={() => setactive(faq.id)}
-            className="dark:bg-gradient-to-r dark:from-indigo-500 dark:via-indigo-400 to-gray-50 text-transparent bg-clip-text m-1 nw-full text-xl flex justify-between items-start gap-5 md:text-[1.2rem] cursor-pointer py-4 font-bold"
+            className={`${
+              Lang === "ar" ? "arfont" : "font-medium"
+            } dark:bg-gradient-to-r dark:from-indigo-500 dark:via-indigo-400 to-gray-50 text-transparent bg-clip-text m-1 nw-full text-xl flex justify-between items-start gap-5 md:text-[1.2rem] cursor-pointer py-4 `}
           >
             {faq.question}{" "}
             <span>
@@ -234,8 +236,10 @@ const Q_Answers = () => {
               <p
                 className={
                   active == faq.id
-                    ? "max-sm:w-full w-98 text-[18px] text-gray-300 p-2 break-all"
-                    : "flex-none"
+                    ? `${
+                        Lang === "ar" ? "arfont" : "font-medium"
+                      } max-sm:w-full w-98 text-[18px] text-gray-300 p-2 break-all`
+                    : `flex-none`
                 }
               >
                 {faq.answer}
