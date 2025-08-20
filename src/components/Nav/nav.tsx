@@ -73,7 +73,6 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                   {t("nav.Our Team")}
                 </Link>
               </li>
-
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
                   className={`${

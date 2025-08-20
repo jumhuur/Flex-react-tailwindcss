@@ -397,10 +397,18 @@ export default function Testimonial() {
       <div className="container py-5 md:py-8 lg:py-10">
         <div className="flex items-center justify-center flex-col md:flex-col  w-full gap-x-4 gap-y-4">
           <div className="w-full flex justify-center items-center flex-col p-5">
-            <span className="bg-indigo-500 text-white rounded p-1 my-5 text-base uppercase font-medium">
+            <span
+              className={`${
+                Lang === "ar" ? "arfont" : "font-medium"
+              } bg-indigo-500 text-white rounded p-1 my-5 text-base uppercase font-medium`}
+            >
               {t("test.Tag")}
             </span>
-            <h2 className="W-96 text-indigo-500 text-2xl md:text-3xl lg:text-5xl fonBold my-5">
+            <h2
+              className={`${
+                Lang === "ar" ? "arfont" : "font-medium"
+              } W-96 text-indigo-500 text-2xl md:text-3xl lg:text-5xl my-5`}
+            >
               {t("test.Title")}
             </h2>
             <p className="text-white text-base W-96">{t("test.desc")}</p>
@@ -428,10 +436,18 @@ export default function Testimonial() {
                       alt={testimonial.name}
                       className="w-16 h-16 rounded-full object-cover mb-4"
                     />
-                    <h3 className="font-semibold text-lg">
+                    <h3
+                      className={`${
+                        Lang === "ar" ? "arfont" : "font-semibold"
+                      } text-lg`}
+                    >
                       {testimonial.name}
                     </h3>
-                    <p className="text-gray-400 text-sm">
+                    <p
+                      className={`${
+                        Lang === "ar" ? "arfont" : ""
+                      } text-gray-400 text-sm`}
+                    >
                       {testimonial.position}
                     </p>
                   </motion.div>
@@ -440,7 +456,9 @@ export default function Testimonial() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2, duration: 0.6 }}
-                    className="w-full max-sm:max-w-3xl text-2xl md:text-2xl font-medium mb-1 leading-snug"
+                    className={`${
+                      Lang === "ar" ? "arfont" : "font-medium"
+                    } w-full max-sm:max-w-3xl text-2xl md:text-2xl font-medium mb-1 leading-snug`}
                   >
                     {testimonial.message}
                   </motion.p>

@@ -216,7 +216,11 @@ const Team_Cards = () => {
             <h2 className="text-gray-100 text-base md:text-1xl lg:text-2xl font-semibold">
               {team.name}
             </h2>
-            <p className="text-base md:text-xxl text-green-500">
+            <p
+              className={`${
+                Lang === "ar" ? "arfont" : "fontBold"
+              } text-base md:text-xxl text-green-500`}
+            >
               {team.position}
             </p>
           </div>

@@ -18,7 +18,11 @@ const HeroSection = () => {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-6 mb-15 gap-6 "
           >
             <div className="flex justify-start items-start flex-col">
-              <span className="dark:bg-indigo-500 dark:shadow-4xl dark:text-gray-50 text-gray-50 text-center p-2 rounded bg-green-500 text-xs md:text-lg">
+              <span
+                className={`${
+                  Lang === "ar" ? "arfont" : "fontBold"
+                } dark:bg-indigo-500 dark:shadow-4xl dark:text-gray-50 text-gray-50 text-center p-2 rounded bg-green-500 text-xs md:text-lg`}
+              >
                 {t("header.welcome")}
               </span>
               <h2

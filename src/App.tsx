@@ -9,11 +9,15 @@ import Pricing_cards from "./components/Pracing/Pricing";
 import Team from "./components/Team/Team";
 import { useTranslation } from "react-i18next";
 import MainTestimonial from "./components/Testimonial/Testimonialmain";
+import { Footer } from "./components/Footer/Footer";
 function App() {
   const { i18n } = useTranslation();
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   };
+
+  // const Title: HTMLTitleElement = document.querySelector("title");
+  // Title?.textContent = `${t("header.title")}`;
 
   useEffect(() => {
     const currentLang = i18n.language;
@@ -32,6 +36,7 @@ function App() {
         <Careers />
         <Faq />
         <MainTestimonial />
+        <Footer />
       </div>
     </>
   );
