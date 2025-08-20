@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-
 export function Footer() {
   const { t, i18n } = useTranslation();
   const Lang = i18n.language;
@@ -94,14 +93,26 @@ export function Footer() {
             </div>
             <div>
               <ul className="flex justify-center items-center flex-row gap-4">
-                <li className={`text-gray-400 text-base cursor-pointer`}>
-                  Terms
+                <li
+                  className={`text-gray-400 text-base cursor-pointer ${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  }`}
+                >
+                  {t("FootNav.Terms")}
                 </li>
-                <li className={`text-gray-400 text-base cursor-pointer`}>
-                  Privacy
+                <li
+                  className={`text-gray-400 text-base cursor-pointer ${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  }`}
+                >
+                  {t("FootNav.Privacy")}
                 </li>
-                <li className={`text-gray-400 text-base cursor-pointer`}>
-                  Cookies
+                <li
+                  className={`text-gray-400 text-base cursor-pointer ${
+                    Lang === "ar" ? "arfont" : "fontBold"
+                  }`}
+                >
+                  {t("FootNav.Cookies")}
                 </li>
               </ul>
             </div>

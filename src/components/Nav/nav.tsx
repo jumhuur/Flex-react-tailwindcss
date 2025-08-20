@@ -4,13 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
-  const [dark, setdark] = useState<boolean>(true);
   const [langactive, setlangactive] = useState<boolean>(false);
-  const ChangeDarkstate = (): boolean => {
-    setdark(!dark);
-    return dark;
-  };
-
   const Langactive_handale = (): boolean => {
     setlangactive(!langactive);
     return langactive;
@@ -19,17 +13,13 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
   const { t, i18n } = useTranslation();
   const Lang = i18n.language;
   return (
-    <nav
-      className="h-[80px] sticky top-0 z-20 backdrop-blur-md"
-      onClick={ChangeDarkstate}
-    >
+    <nav className="h-[80px] sticky top-0 z-20 backdrop-blur-md">
       <div className="container">
         <div className="grid grid-cols-2 items-center justify-center md:grid-cols-[1fr_6fr_2.5fr] lg:grid-cols-[1fr_6fr_2.50fr] gap-3">
           <div className="h-[80px] flex justify-start items-center">
-            <img
-              alt="logo"
-              src={dark ? "/Images/Logo.svg" : "/Images/Logo.svg"}
-            />
+            <Link to={"/"}>
+              <img alt="logo" src={"/Images/Logo.svg"} />
+            </Link>
           </div>
           <div className="hidden lg:block">
             <ul className="h-[80px] flex justify-center items-center space-x-4">
@@ -38,7 +28,7 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                   className={`${
                     Lang === "ar" ? "arfont" : "fontBold"
                   } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                  to={"#"}
+                  to={"/"}
                 >
                   {t("nav.Home")}
                 </Link>
@@ -68,7 +58,7 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                   className={`${
                     Lang === "ar" ? "arfont" : "fontBold"
                   } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                  to={"#"}
+                  to={"/team"}
                 >
                   {t("nav.Our Team")}
                 </Link>

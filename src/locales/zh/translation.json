@@ -113,5 +113,10 @@
     "placeholder": "输入您的邮箱",
     "btn": "订阅",
     "at": "© 2024 Flex。版权所有。"
+  },
+  "FootNav": {
+    "Terms": "条款",
+    "Privacy": "隐私",
+    "Cookies": "Cookies"
   }
 }

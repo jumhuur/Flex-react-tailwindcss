@@ -127,5 +127,10 @@
     "placeholder": "Enter Your Email",
     "btn": "Subscribe",
     "at": "© 2024 Flex. All rights reserved."
+  },
+  "FootNav": {
+    "Terms": "Terms",
+    "Privacy": "Privacy",
+    "Cookies": "Cookies"
   }
 }
