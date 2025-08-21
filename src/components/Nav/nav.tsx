@@ -38,7 +38,7 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                   className={`${
                     Lang === "ar" ? "arfont" : "fontBold"
                   } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                  to={"#"}
+                  to={"/features"}
                 >
                   {t("nav.Features")}
                 </Link>
@@ -48,7 +48,7 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                   className={`${
                     Lang === "ar" ? "arfont" : "fontBold"
                   } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                  to={"#"}
+                  to={"/pricing"}
                 >
                   {t("nav.Pricing")}
                 </Link>
@@ -68,7 +68,7 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                   className={`${
                     Lang === "ar" ? "arfont" : "fontBold"
                   } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                  to={"#"}
+                  to={"/jobs"}
                 >
                   {t("nav.Careers")}
                 </Link>
