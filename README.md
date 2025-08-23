@@ -19,7 +19,7 @@ A fast, responsive landing page built with **React**, **Vite**, **TypeScript**, 
 - Vite (dev server + build)
 - TypeScript (strict mode recommended)
 - Tailwind CSS (utility-first styling)
-- i18n (example: `react-i18next` or `next-intl`-style approach — pluggable)
+- i18n (example: `react-i18next`-style approach — pluggable)
 - Optional: PostCSS, ESLint, Prettier
 
 ## ✨ Features
@@ -85,5 +85,4 @@ Below are some screenshots of the landing page
 
 ![ar](/public/Images/Screen_shoots/zh.png)
 
-**thank you**
-i am jumhuur
+### **Thank You**
