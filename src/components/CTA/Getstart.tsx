@@ -1,11 +1,20 @@
 import { CircleCheckBig } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Getstart = () => {
   const { t, i18n } = useTranslation();
   const Lang: string = i18n.language;
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
-      <div className="bg-gray-900">
+      <div className="bg-gray-900" data-aos="fade-up">
         <div className="container  py-5 md:py-8 lg:py-10">
           <div className="flex tems-center flex-col md:flex-row justify-center gap-10">
             <div className="w-full  md:w-1/2 flex justify-center items-center relative">

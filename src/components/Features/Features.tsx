@@ -6,9 +6,11 @@ import {
   Component,
   Settings,
 } from "lucide-react";
-import { JSX } from "react";
+import { JSX, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { LangCode } from "../../helpers/taypes";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Features_web = () => {
   interface Feature {
     title: string;
@@ -235,7 +237,12 @@ const Features_web = () => {
   };
   const { t, i18n } = useTranslation();
   const LangCode = i18n.language;
-
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      delay: 150,
+    });
+  }, []);
   return (
     <div className=" bg-gray-900">
       <div className="container py-5 md:py-8 lg:py-10">
@@ -267,6 +274,8 @@ const Features_web = () => {
             {features[LangCode as LangCode]?.map((feature, index) => (
               <div
                 key={index}
+                data-aos="fade-up"
+                data-aos-delay={`100`}
                 className="bg-gray-800 rounded p-4 flex justify-center items-center flex-col gap-4 cursor-pointer hover:shadow-lg shadow-indigo-500/50 transition-all duration-600 ease-in-out"
               >
                 <div className="p-3 bg-indigo-500 rounded flex justify-center items-center">
