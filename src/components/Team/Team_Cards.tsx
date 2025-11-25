@@ -207,7 +207,7 @@ const Team_Cards = () => {
 
   return (
     <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-5 my-10 relative">
-      {teamMembers[Lang as LangCode].map((team, index) => (
+      {teamMembers[Lang as LangCode]?.map((team, index) => (
         <div
           key={index}
           className="nth-[1]:overflow-hidden nth-[1]:col-span-2 nth-[1]:row-span-2 nth-[1]:h-[600px]  nth-[5]:overflow-hidden nth-[5]:col-span-2 nth-[5]:row-span-2 nth-[5]:h-[600px] nth-[4]:order-6 md:nth-[4]:order-4 nth-[5]:order-4 md:nth-[5]:order-5 nth-[6]:order-5    overflow-hidden h-[300px] relative "

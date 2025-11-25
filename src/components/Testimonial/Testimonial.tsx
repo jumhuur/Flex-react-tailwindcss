@@ -373,10 +373,8 @@ export default function Testimonial() {
     setid(() => num % testimonials[Lang as LangCode].length);
   };
 
-  console.log(6 % 6);
-
   const AutonextSlide = () => {
-    setid((prev) => (prev += 1) % testimonials[Lang as LangCode].length);
+    setid((prev) => (prev += 1) % testimonials[Lang as LangCode]?.length);
     // console.log(testimonials[Lang as LangCode]);
     // console.log("count", id);
   };
@@ -415,7 +413,7 @@ export default function Testimonial() {
           </div>
           <AnimatePresence mode="wait">
             {testimonials[Lang as LangCode]
-              .filter((_, index) => index === id) // kaliya kan hadda muuqda
+              ?.filter((_, index) => index === id) // kaliya kan hadda muuqda
               .map((testimonial) => (
                 <motion.div
                   key={testimonial.id} // key muhiim ah si exit uu u shaqeeyo
@@ -467,7 +465,7 @@ export default function Testimonial() {
           </AnimatePresence>
           {/* Dots Navigation */}
           <div className="flex gap-2 mt-6">
-            {testimonials[Lang as LangCode].map((test, index) => (
+            {testimonials[Lang as LangCode]?.map((test, index) => (
               <span
                 onClick={() => nextSlide(index)}
                 key={test.id}

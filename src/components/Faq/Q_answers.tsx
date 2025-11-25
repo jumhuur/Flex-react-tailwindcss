@@ -201,7 +201,7 @@ const Q_Answers = () => {
 
   return (
     <div className="w-full">
-      {faqs[Lang as LangCode].map((faq) => (
+      {faqs[Lang as LangCode]?.map((faq) => (
         <div
           key={faq.id}
           className="w-full flex justify-start items-start flex-col"

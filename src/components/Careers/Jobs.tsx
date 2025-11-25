@@ -296,7 +296,7 @@ const Jobs = () => {
   const Lang = i18n.language;
   return (
     <div className="grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  p-2 md:p-6 lg:p-6 gap-6">
-      {jobs[Lang as LangCode].map((Job) => (
+      {jobs[Lang as LangCode]?.map((Job) => (
         <div
           key={Job.id}
           className="bg-gray-800 rounded  p-2 md:p-4 flex justify-center items-center"
