@@ -10,9 +10,9 @@ const Team_Cards = () => {
   const teamMembers: Record<LangCode, Members[]> = {
     so: [
       {
-        name: "Macauley Herring",
+        name: "Eng Jumhuur",
         position: "Maamulaha Guud & Aasaasaha",
-        url: "Frame1.jpg",
+        url: "Frame1.png",
       },
       {
         name: "Ivan Mathews",
@@ -25,7 +25,7 @@ const Team_Cards = () => {
         url: "Frame3.jpg",
       },
       {
-        name: "Macauley Herring",
+        name: "Eng Jumhuur",
         position: "Guusha Macaamiisha",
         url: "Frame4.jpg",
       },
@@ -42,9 +42,9 @@ const Team_Cards = () => {
     ],
     en: [
       {
-        name: "Macauley Herring",
+        name: "Eng Jumhuur",
         position: "CEO & Founder",
-        url: "Frame1.jpg",
+        url: "Frame1.png",
       },
       {
         name: "Ivan Mathews",
@@ -57,7 +57,7 @@ const Team_Cards = () => {
         url: "Frame3.jpg",
       },
       {
-        name: "Macauley Herring",
+        name: "Eng Jumhuur",
         position: "Customer Success",
         url: "Frame4.jpg",
       },
@@ -74,9 +74,9 @@ const Team_Cards = () => {
     ],
     ar: [
       {
-        name: "Macauley Herring",
+        name: "Eng Jumhuur",
         position: "الرئيس التنفيذي والمؤسس",
-        url: "Frame1.jpg",
+        url: "Frame1.png",
       },
       {
         name: "Ivan Mathews",
@@ -89,7 +89,7 @@ const Team_Cards = () => {
         url: "Frame3.jpg",
       },
       {
-        name: "Macauley Herring",
+        name: "Eng Jumhuur",
         position: "نجاح العملاء",
         url: "Frame4.jpg",
       },
@@ -106,9 +106,9 @@ const Team_Cards = () => {
     ],
     am: [
       {
-        name: "Macauley Herring",
+        name: "Eng Jumhuur",
         position: "ዋና ስራ አስኪያጅ እና መሠረተኛ",
-        url: "Frame1.jpg",
+        url: "Frame1.png",
       },
       {
         name: "Ivan Mathews",
@@ -121,7 +121,7 @@ const Team_Cards = () => {
         url: "Frame3.jpg",
       },
       {
-        name: "Macauley Herring",
+        name: "Eng Jumhuur",
         position: "የደንበኛ ስኬት ባለሙያ",
         url: "Frame4.jpg",
       },
@@ -138,9 +138,9 @@ const Team_Cards = () => {
     ],
     zh: [
       {
-        name: "Macauley Herring",
+        name: "Eng Jumhuur",
         position: "首席执行官兼创始人",
-        url: "Frame1.jpg",
+        url: "Frame1.png",
       },
       {
         name: "Ivan Mathews",
@@ -153,7 +153,7 @@ const Team_Cards = () => {
         url: "Frame3.jpg",
       },
       {
-        name: "Macauley Herring",
+        name: "Eng Jumhuur",
         position: "客户成功经理",
         url: "Frame4.jpg",
       },
@@ -170,9 +170,9 @@ const Team_Cards = () => {
     ],
     hi: [
       {
-        name: "Macauley Herring",
+        name: "Eng Jumhuur",
         position: "सीईओ और संस्थापक",
-        url: "Frame1.jpg",
+        url: "Frame1.png",
       },
       {
         name: "Ivan Mathews",
@@ -185,7 +185,7 @@ const Team_Cards = () => {
         url: "Frame3.jpg",
       },
       {
-        name: "Macauley Herring",
+        name: "Eng Jumhuur",
         position: "ग्राहक सफलता",
         url: "Frame4.jpg",
       },
@@ -236,21 +236,21 @@ const Team_Cards = () => {
       {/* <div className="overflow-hidden col-span-2 row-span-2 h-[600px] relative">
         <div className="absolute w-full h-1/5 z-10 bg-gradient-to-t from-gray-900/90 via-gray-700/70 to-gray-900/2 bottom-0 p-2">
           <h2 className="text-green-500 text-base md:text-1xl lg:text-2xl fonBold">
-            Macauley Herring
+            Eng Jumhuur
           </h2>
           <p className="text-base md:text-xxl text-gray-200">CEO & Founder</p>
         </div>
         <img
           className="h-full w-full object-cover z-0"
           loading="lazy"
-          src="/Images/Frame1.jpg"
+          src="/Images/Frame1.png"
         />
       </div> */}
 
       {/* <div className="overflow-hidden h-[300px] relative">
         <div className="absolute w-full h-1/5 z-10 bg-gradient-to-t from-gray-900/90 via-gray-700/70 to-gray-900/2 bottom-0 p-2">
           <h2 className="text-green-500 text-base md:text-1xl lg:text-2xl fonBold">
-            Macauley Herring
+            Eng Jumhuur
           </h2>
           <p className="text-base md:text-xxl text-gray-200">CEO & Founder</p>
         </div>
@@ -263,7 +263,7 @@ const Team_Cards = () => {
       <div className="overflow-hidden h-[300px] relative">
         <div className="absolute w-full h-1/5 z-10 bg-gradient-to-t from-gray-900/90 via-gray-700/70 to-gray-900/2 bottom-0 p-2">
           <h2 className="text-green-500 text-base md:text-1xl lg:text-2xl fonBold">
-            Macauley Herring
+            Eng Jumhuur
           </h2>
           <p className="text-base md:text-xxl text-gray-200">CEO & Founder</p>
         </div>
@@ -276,7 +276,7 @@ const Team_Cards = () => {
       <div className="overflow-hidden col-span-2 row-span-2 h-[600px] relative">
         <div className="absolute w-full h-1/5 z-10 bg-gradient-to-t from-gray-900/90 via-gray-700/70 to-gray-900/2 bottom-0 p-2">
           <h2 className="text-green-500 text-base md:text-1xl lg:text-2xl fonBold">
-            Macauley Herring
+            Eng Jumhuur
           </h2>
           <p className="text-base md:text-xxl text-gray-200">CEO & Founder</p>
         </div>
@@ -289,7 +289,7 @@ const Team_Cards = () => {
       <div className="overflow-hidden h-[300px] relative">
         <div className="absolute w-full h-1/5 z-10 bg-gradient-to-t from-gray-900/90 via-gray-700/70 to-gray-900/2 bottom-0 p-2">
           <h2 className="text-green-500 text-base md:text-1xl lg:text-2xl fonBold">
-            Macauley Herring
+            Eng Jumhuur
           </h2>
           <p className="text-base md:text-xxl text-gray-200">CEO & Founder</p>
         </div>

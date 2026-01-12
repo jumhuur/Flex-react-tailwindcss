@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 export function Footer() {
   const { t, i18n } = useTranslation();
   const Lang = i18n.language;
+  const Full_Year = String(new Date().getFullYear());
+
   return (
     <>
       <div className="bg-gray-800">
@@ -88,7 +90,7 @@ export function Footer() {
                   Lang === "ar" ? "arfont" : "fontBold"
                 }`}
               >
-                {t("Footer.at")}
+                © {Full_Year} {t("Footer.at")}
               </p>
             </div>
             <div>

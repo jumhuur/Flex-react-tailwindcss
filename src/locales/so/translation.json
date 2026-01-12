@@ -1,11 +1,11 @@
 {
   "header": {
-    "welcome": "Soo Dhawoow",
-    "title": "Ganacsi yar waxa koriya agab tayo le.",
-    "subtitle": "Maxaa Flex ka dhigaya mid cad oo sahlan?",
-    "register_button": "Is diiwaangeli",
-    "login_button": "Gal",
-    "mintext": "Ganacsi yar wuxuu la egyahay kaliya tayada agabkiisa."
+    "welcome": "Ku soo dhawoow",
+    "title": "Awoodda shirkaddaadu waxay ka bilaabataa nidaamka & Qalabka",
+    "subtitle": "Maxaa ka dhigaya Flex mid cad oo sahlan?",
+    "register_button": "Isdiiwaangeli",
+    "login_button": "Tijaabi System",
+    "mintext": "Shirkadaha guuleysta laguma qiimeeyo cabbirkooda, balse nidaamyada ay ku shaqeeyaan."
   },
   "lang": {
     "en": "English",
@@ -15,125 +15,70 @@
     "hi": "हिन्दी",
     "am": "አማርኛ"
   },
-
   "nav": {
     "Home": "Bogga Hore",
     "Features": "Astaamaha",
     "Pricing": "Qiimaha",
     "Our Team": "Kooxdayada",
-    "Careers": "Shaqooyinka",
+    "Careers": "Shaqooyin",
     "Language": "Luuqad"
   },
-
   "join_section": {
-    "title": "Ku biir in ka badan 6000 shirkadood oo koraya Flex",
+    "title": "Ku biir shirkado badan oo ku koraya Flex",
     "description": {
-      "01": "Mauris xakamaynta la xiriirta waa xor",
-      "02": "Ka fogow dhibaatada iyo cadaadiska",
-      "03": "Soo bandhig kala duwanaansho si siman loo faafiyo"
+      "01": "Nidaam casri ah oo awood leh",
+      "02": "Ammaan sare oo lagu kalsoonaan karo",
+      "03": "Isticmaal fudud oo sahlan"
     },
-
     "buttons": {
-      "learn_more": "Wax badan baro",
-      "get_started": "Bilow hadda"
+      "learn_more": "Wax Badan Ogow",
+      "get_started": "Bilow Hadda"
     }
   },
   "features_section": {
-    "title": "Hel aragti dheeraad ah sida dadku u isticmaalaan alaabtaada",
-    "description": "Isticmaal awoodaha Flex si aad u falanqeyso mashruucyada, iskaashi, iyo qorsheyn.",
-    "features": [
-      {
-        "title": "Falanqeynta mashruucyada",
-        "description": "Isticmaal awoodaha Flex si aad u falanqeyso mashruucyada, iskaashi, iyo qorsheyn."
-      },
-      {
-        "title": "Iskaashi",
-        "description": "Isticmaal awoodaha Flex si aad u falanqeyso mashruucyada, iskaashi, iyo qorsheyn."
-      },
-      {
-        "title": "Qorsheyn",
-        "description": "Isticmaal awoodaha Flex si aad u falanqeyso mashruucyada, iskaashi, iyo qorsheyn."
-      }
-    ]
+    "title": "Aragti cad oo kaa caawinaysa maaraynta ganacsigaaga",
+    "description": "Adeegso Flex si aad ula socoto una qorshayso hawlahaaga."
   },
   "pricing_section": {
-    "title": "Qorsheyaal Ku Haboon shirkaddaada",
-    "description": "Dooro qorshaha ku habboon baahidaada ganacsi",
-    "plans": [
-      {
-        "name": "Yar",
-        "price": "$10 / bishii",
-        "description": "Astaamo aasaasi ah ilaa 10 isticmaale",
-        "features": [
-          "Maareynta mashruucyada",
-          "Iskaashi",
-          "Kaydinta daruuriga 5GB",
-          "Taageero macaamiil"
-        ],
-        "button": "Bilow hadda"
-      },
-      {
-        "name": "Dhexdhexaad",
-        "price": "$99 / bishii",
-        "description": "Astaamo horumarsan ilaa 20 isticmaale",
-        "features": [
-          "Maareynta mashruucyada",
-          "Iskaashi",
-          "Kaydinta daruuriga 50GB",
-          "Taageero macaamiil"
-        ],
-        "button": "Bilow hadda"
-      },
-      {
-        "name": "Weyn",
-        "price": "$799 / bishii",
-        "description": "Astaamo horumarsan ilaa 50 isticmaale",
-        "features": [
-          "Maareynta mashruucyada",
-          "Iskaashi",
-          "Kaydinta daruuriga 200GB",
-          "Taageero macaamiil"
-        ],
-        "button": "Bilow hadda"
-      }
-    ]
+    "title": "Qiimeyn dabacsan oo ku habboon shirkaddaada",
+    "description": "Dooro qorshaha kugu habboon"
   },
   "team_section": {
-    "title": "La kulan kooxda",
-    "description": "Kooxdayada xirfadlayaasha ah waxay awood u leeyihiin inay maareeyaan ganacsigaaga dhammaan kanaalada dijitaalka ah.",
+    "title": "La kulan Kooxda",
+    "description": "Koox xirfad leh oo kuu diyaarsan taageerada ganacsigaaga.",
     "buttons": {
-      "learn_more": "shaqooyin-ka",
+      "learn_more": "Shaqooyin Bannaan",
       "get_started": "Dhaqankeena"
     }
   },
   "join_team_section": {
     "tag": "Shaqooyin Bannaan",
-    "title": "Ka Mid noqo Koodayada",
-    "description": "Had iyo jeer waxaan raadineynaa dad karti leh si ay ugu biiraan kooxda.",
-    "btn": "Eeg"
+    "title": "Ku Biir Kooxda",
+    "description": "Waxaan mar walba raadinaynaa dad hibbo leh.",
+    "btn": "Eeg Shaqada"
   },
   "faq_section": {
-    "tag": "Su'aalaha",
-    "title": "Su'aalaha Inta Badan La Is Weydiiyo",
-    "desc": "Flex waa madal ganacsi oo SaaS ah oo keliya oo kuu oggolaanaysa inaad ganacsigaaga ku maamusho hal madal, si isku dhafan dhammaan kanaalada dhijitaalka ah.",
+    "tag": "Su’aalaha Badan",
+    "title": "Su’aalaha Inta Badan La Isweydiiyo",
+    "desc": "Flex waa nidaam SaaS ah oo kuu oggolaanaya inaad ganacsigaaga ka maamusho hal meel.",
     "buttons": {
-      "ask_us": "Nagu Waydii",
+      "ask_us": "Na Weydii",
       "contact_us": "Nala Soo Xiriir"
     }
   },
   "test": {
-    "Tag": "faallooyin",
-    "Title": "Faalada Macaamiisha",
-    "desc": "Sheekooyin dhab ah oo ka yimid dad dhab hab dhaqan ahaan iyo aqoon ahaan kala duwan."
+    "Tag": "Aragtida Macaamiisha",
+    "Title": "Waxa ay Yiraahdaan Macaamiisheena",
+    "desc": "Sheekooyin dhab ah oo ka imanaya dad dhab ah."
   },
   "Footer": {
-    "placeholder": "Geli Email-kaaga",
-    "btn": "Is Diiwaangeli",
-    "at": "© 2024 Flex. Xuquuqda oo dhan way xifdisan tahay."
+    "placeholder": "Geli iimaylkaaga",
+    "btn": "Isdiiwaangeli",
+    "at": "Flex. Xuquuqda oo dhan way xafidan tahay."
   },
   "FootNav": {
     "Terms": "Shuruudaha",
     "Privacy": "Asturnaanta",
-    "Cookies": "Kukiyada"
+    "Cookies": "Cookies"
   }
 }

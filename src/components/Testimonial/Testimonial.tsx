@@ -79,13 +79,13 @@ export default function Testimonial() {
     so: [
       {
         id: 1,
-        name: "Macauley Herring",
-        position: "Maamulaha Guud & Aasaasaha",
+        name: "mawliiid maxamad",
+        position: "Maamulaha Guud brothers car decoration",
         title: "Isku xirka fudud",
         message:
-          "Flex waxay naga caawisay inaan mideyno howlaha ganacsiga oo aan si degdeg ah u kobcino.",
+          "nidaamkan waa nidaam xisaabeed oo isku dhamays tiran waxaanan hada adeegsanayay mudoo 4 bilood runtii isticmaalkiisa iyo hab xisaabeed-kiisaba wuu fudud yahay.",
         rate: 5,
-        image: "/Images/Frame1.jpg",
+        image: "/Images/mawliid.jpg",
       },
       {
         id: 2,
@@ -141,12 +141,13 @@ export default function Testimonial() {
     ar: [
       {
         id: 1,
-        name: "Macauley Herring",
-        position: "المدير التنفيذي والمؤسس",
-        title: "منصة متكاملة",
-        message: "ساعدتنا Flex في توحيد عملياتنا والنمو بشكل أسرع مما توقعنا.",
+        name: "موليد محمد",
+        position: "المدير العام – Brothers Car Decoration",
+        title: "تكامل سهل وفعّال",
+        message:
+          "هذا النظام المحاسبي متكامل بشكل كامل، وقد استخدمته لمدة أربعة أشهر. بصراحة، يتميز بسهولة الاستخدام وبساطة النظام المحاسبي مما ساعدني على تنظيم عملي بشكل أفضل.",
         rate: 5,
-        image: "/Images/Frame1.jpg",
+        image: "/Images/mawlid.jpg",
       },
       {
         id: 2,
@@ -455,7 +456,7 @@ export default function Testimonial() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2, duration: 0.6 }}
                     className={`${
-                      Lang === "ar" ? "arfont" : "font-medium"
+                      Lang === "ar" ? "arfont" : "font-normal"
                     } w-full max-sm:max-w-3xl text-2xl md:text-2xl font-medium mb-1 leading-snug`}
                   >
                     {testimonial.message}

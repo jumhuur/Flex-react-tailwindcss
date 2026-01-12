@@ -1,11 +1,11 @@
 {
   "header": {
     "welcome": "欢迎",
-    "title": "一家小企业的好坏取决于它使用的工具",
-    "subtitle": "是什么让 Flex 清晰且简单？",
+    "title": "企业的力量始于系统——智能工具让小型企业也能脱颖而出。",
+    "subtitle": "是什么让 Flex 清晰又简单？",
     "register_button": "注册",
-    "login_button": "登录",
-    "mintext": "我们的独特之处在于透明度和全天候可靠支持 — 我们永远不会与你断开联系"
+    "login_button": "试用系统",
+    "mintext": "成功的企业不取决于规模，而取决于其所依赖的高效管理系统。"
   },
   "lang": {
     "en": "English",
@@ -16,107 +16,69 @@
     "am": "አማርኛ"
   },
   "nav": {
-    "Home": "主页",
+    "Home": "首页",
     "Features": "功能",
     "Pricing": "价格",
-    "Our Team": "我们的团队",
-    "Careers": "职业",
+    "Our Team": "团队",
+    "Careers": "招聘",
     "Language": "语言"
   },
   "join_section": {
-    "title": "加入超过6000家使用 Flex 的成长型公司",
+    "title": "加入正在使用 Flex 成长的企业",
     "description": {
-      "01": "毛里斯自由的舒适控制",
-      "02": "避免干扰性压力",
-      "03": "呈现均衡的多样性"
+      "01": "现代而强大的系统",
+      "02": "高度安全，值得信赖",
+      "03": "简单直观的使用体验"
     },
-
     "buttons": {
       "learn_more": "了解更多",
-      "get_started": "开始使用"
+      "get_started": "立即开始"
     }
   },
   "features_section": {
-    "title": "深入了解用户如何使用您的产品",
-    "description": "利用 Flex 的功能分析项目、协作和规划。",
-    "features": [
-      {
-        "title": "项目分析",
-        "description": "利用 Flex 的功能分析项目、协作和规划。"
-      },
-      {
-        "title": "协作",
-        "description": "利用 Flex 的功能分析项目、协作和规划。"
-      },
-      {
-        "title": "规划",
-        "description": "利用 Flex 的功能分析项目、协作和规划。"
-      }
-    ]
+    "title": "更清晰的洞察，帮助您高效管理业务与团队",
+    "description": "使用 Flex 的强大功能，轻松分析、规划和管理您的业务。"
   },
   "pricing_section": {
-    "title": "适合您公司的灵活定价方案",
-    "description": "选择适合您业务需求的方案",
-    "plans": [
-      {
-        "name": "小型",
-        "price": "$10 / 月",
-        "description": "最多10位用户的基本功能",
-        "features": ["项目管理", "协作", "5GB 云存储", "客户支持"],
-        "button": "开始使用"
-      },
-      {
-        "name": "中型",
-        "price": "$99 / 月",
-        "description": "最多20位用户的高级功能",
-        "features": ["项目管理", "协作", "50GB 云存储", "客户支持"],
-        "button": "开始使用"
-      },
-      {
-        "name": "大型",
-        "price": "$799 / 月",
-        "description": "最多50位用户的高级功能",
-        "features": ["项目管理", "协作", "200GB 云存储", "客户支持"],
-        "button": "开始使用"
-      }
-    ]
+    "title": "灵活的定价方案，满足不同企业需求",
+    "description": "选择最适合您业务的方案"
   },
   "team_section": {
     "title": "认识我们的团队",
-    "description": "我们的专业团队能够在所有数字渠道上管理您的业务。",
+    "description": "一支专业团队，随时支持您的数字化业务管理。",
     "buttons": {
-      "learn_more": "我们正在招聘",
+      "learn_more": "加入我们",
       "get_started": "我们的文化"
     }
   },
   "join_team_section": {
-    "tag": "职位空缺",
+    "tag": "招聘中",
     "title": "加入我们的团队",
-    "description": "我们一直在寻找有才华的人加入我们的团队。",
+    "description": "我们始终欢迎有才华的人才加入。",
     "btn": "查看职位"
   },
   "faq_section": {
     "tag": "常见问题",
     "title": "常见问题解答",
-    "desc": "Flex 是唯一的 SaaS 商业平台，可让您在一个平台上无缝管理业务，覆盖所有数字渠道。",
+    "desc": "Flex 是一站式 SaaS 商业平台，让您通过一个系统轻松管理全部业务。",
     "buttons": {
-      "ask_us": "问我们",
+      "ask_us": "咨询我们",
       "contact_us": "联系我们"
     }
   },
   "test": {
     "Tag": "客户评价",
     "Title": "客户怎么说",
-    "desc": "来自真实人物的真实故事——跨越文化与行业。"
+    "desc": "来自不同行业和文化的真实客户故事。"
   },
   "Footer": {
-    "placeholder": "输入您的邮箱",
+    "placeholder": "请输入您的邮箱",
     "btn": "订阅",
-    "at": "© 2024 Flex。版权所有。"
+    "at": "© 2024 Flex. 保留所有权利。"
   },
   "FootNav": {
     "Terms": "条款",
     "Privacy": "隐私",
-    "Cookies": "Cookies"
+    "Cookies": "Cookie"
   }
 }

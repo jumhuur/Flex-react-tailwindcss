@@ -14,183 +14,192 @@ const Q_Answers = () => {
     ar: [
       {
         id: 1,
-        question: "كم من الوقت يستغرق شحن طلبي؟",
+        question: "ما هي خطط الأسعار المتوفرة في النظام؟",
         answer:
-          "عادةً ما يتم شحن الطلبات خلال يوم إلى يومين عمل بعد تقديم الطلب.",
+          "يوفّر النظام ثلاث خطط مرنة: صغيرة، متوسطة، وكبيرة، تختلف حسب عدد المنتجات وعدد عمليات البيع اليومية، لتناسب جميع أحجام الأعمال.",
       },
       {
         id: 2,
-        question: "ما طرق الدفع التي تقبلونها؟",
-        answer: "أي طريقة دفع تناسبك على سبيل المثال: نقبل MasterCard وVisa.",
+        question: "هل يمكنني الترقية أو تغيير الخطة لاحقًا؟",
+        answer:
+          "نعم، يمكنك الترقية أو تغيير خطتك في أي وقت بكل سهولة دون فقدان أي بيانات.",
       },
       {
         id: 3,
-        question: "ما خيارات الشحن المتاحة لديكم؟",
+        question: "ماذا تشمل خدمات النظام الأساسية؟",
         answer:
-          "عادةً ما يتم شحن الطلبات خلال يوم إلى يومين عمل بعد تقديم الطلب.",
+          "يشمل النظام متابعة المبيعات اليومية، الإغلاق المحاسبي اليومي والشهري، إدارة المخزون، الديون، والمصروفات من خلال لوحة تحكم واحدة.",
       },
       {
         id: 4,
-        question: "كيف يمكنني تعديل طلب موجود؟",
-        answer: "أي طريقة دفع تناسبك على سبيل المثال: نقبل MasterCard وVisa.",
+        question: "هل النظام آمن ويتم حفظ البيانات بشكل منتظم؟",
+        answer:
+          "بالتأكيد، يوفر النظام حماية عالية مع مراقبة مستمرة للأمان ونسخ احتياطي منتظم لجميع البيانات.",
       },
       {
         id: 5,
-        question: "متى سيصل طلبي؟",
+        question: "هل يتوفر دعم فني للمستخدمين؟",
         answer:
-          "عادةً ما يتم شحن الطلبات خلال يوم إلى يومين عمل بعد تقديم الطلب.",
+          "نعم، جميع الخطط تشمل دعمًا فنيًا مستمرًا لمساعدتك في أي وقت وضمان استمرارية عملك.",
       },
     ],
+
     en: [
       {
         id: 1,
-        question: "How long does it take to ship my order?",
+        question: "What pricing plans are available?",
         answer:
-          "Orders are usually shipped within 1–2 business days after placing the order.",
+          "The system offers three flexible plans: Small, Medium, and Large, based on the number of products and daily sales volume, suitable for all business sizes.",
       },
       {
         id: 2,
-        question: "What payment methods do you accept?",
+        question: "Can I upgrade or change my plan later?",
         answer:
-          "Any method of payments acceptable by you For example: We accept MasterCard, Visa.",
+          "Yes, you can upgrade or change your plan at any time easily without losing any data.",
       },
       {
         id: 3,
-        question: "What shipping options do you have?",
+        question: "What core services does the system include?",
         answer:
-          "Orders are usually shipped within 1–2 business days after placing the order.",
+          "The system includes daily sales tracking, daily and monthly accounting closure, inventory management, debts, and expenses through a single dashboard.",
       },
       {
         id: 4,
-        question: "How do I make changes to an existing order?",
+        question:
+          "Is the system secure and are data backups handled regularly?",
         answer:
-          "Any method of payments acceptable by you For example: We accept MasterCard, Visa.",
+          "Absolutely. The system provides high-level security with continuous monitoring and regular data backups.",
       },
       {
         id: 5,
-        question: "When will my order arrive?",
+        question: "Is technical support available?",
         answer:
-          "Orders are usually shipped within 1–2 business days after placing the order.",
+          "Yes, all plans include continuous technical support to assist you anytime and ensure business continuity.",
       },
     ],
+
     so: [
       {
         id: 1,
-        question: "Intee ayay qaadanaysaa in la raro dalabkayga?",
+        question: "Waa maxay qorshayaasha qiimeynta ee nidaamka?",
         answer:
-          "Dalabyada badankood waa la diraa 1–2 maalmood oo shaqo gudahood marka la dalbado.",
+          "Nidaamku wuxuu bixiyaa saddex qorshe oo dabacsan: Yar, Dhexdhexaad, iyo Weyn, kuwaas oo ku saleysan tirada alaabta iyo iibka maalinlaha ah.",
       },
       {
         id: 2,
-        question: "Habkee lacag bixineed ayaad aqbashaan?",
+        question:
+          "Ma beddeli karaa ama ma kor u qaadi karaa qorshaha mar dambe?",
         answer:
-          "Wax kasta oo hab lacag bixin ah oo adiga kugu habboon Tusaale ahaan: Waxaan aqbalnaa MasterCard, Visa.",
+          "Haa, waad beddeli ama kor u qaadi kartaa qorshahaaga wakhti kasta adigoon lumin wax xog ah.",
       },
       {
         id: 3,
-        question: "Waa maxay xulashooyinka rarida ee aad haysaan?",
+        question: "Maxay yihiin adeegyada aasaasiga ah ee nidaamka?",
         answer:
-          "Dalabyada badankood waa la diraa 1–2 maalmood oo shaqo gudahood marka la dalbado.",
+          "Nidaamku wuxuu ka kooban yahay la socodka iibka maalinlaha ah, xisaab-xidh maalinle iyo bille, maamulka alaabada, daymaha, iyo kharashaadka hal dashboard.",
       },
       {
         id: 4,
-        question: "Sideen wax uga beddelaa dalab hore?",
+        question:
+          "Nidaamku ma ammaan baa, xogtana si joogto ah ma loo kaydiyaa?",
         answer:
-          "Wax kasta oo hab lacag bixin ah oo adiga kugu habboon Tusaale ahaan: Waxaan aqbalnaa MasterCard, Visa.",
+          "Haa, nidaamku wuxuu leeyahay ammaan sare, kormeer joogto ah, iyo kaydin xog oo joogto ah.",
       },
       {
         id: 5,
-        question: "Goorma ayay dalabkaygu imanayaa?",
+        question: "Ma jiraa taageero farsamo?",
         answer:
-          "Dalabyada badankood waa la diraa 1–2 maalmood oo shaqo gudahood marka la dalbado.",
+          "Haa, dhammaan qorshayaasha waxaa ku jira taageero farsamo oo joogto ah si laguu caawiyo wakhti kasta.",
       },
     ],
+
     am: [
       {
         id: 1,
-        question: "ትዕዛዜን ለመጓጓዝ ምን ያህል ጊዜ ይወስዳል?",
-        answer: "ትዕዛዞች ከትዕዛዝ መስጠት በኋላ በ1–2 የንግድ ቀናት ውስጥ በተለምዶ ይላካሉ።",
+        question: "ስርዓቱ የሚያቀርባቸው የዋጋ እቅዶች ምንድን ናቸው?",
+        answer: "ስርዓቱ ትንሽ፣ መካከለኛ እና ትልቅ የሆኑ ሶስት ተለዋዋጭ የዋጋ እቅዶችን ያቀርባል።",
       },
       {
         id: 2,
-        question: "ምን ዓይነት የክፍያ ዘዴዎችን ትቀበላላችሁ?",
-        answer:
-          "እርስዎ የምትቀበሉትን የክፍያ ዘዴ ማንኛውንም እንቀበላለን። ለምሳሌ፡ MasterCard፣ Visa እንቀበላለን።",
+        question: "በኋላ እቅዴን መቀየር ወይም ማሻሻል እችላለሁ?",
+        answer: "አዎን፣ በማንኛውም ጊዜ እቅድዎን ማሻሻል ወይም መቀየር ትችላለህ ያለ ማንኛውም የውሂብ ጉዳት።",
       },
       {
         id: 3,
-        question: "ምን ዓይነት የመጓጓዣ አማራጮች አሉት?",
-        answer: "ትዕዛዞች ከትዕዛዝ መስጠት በኋላ በ1–2 የንግድ ቀናት ውስጥ በተለምዶ ይላካሉ።",
+        question: "ዋና የስርዓቱ አገልግሎቶች ምን ያካትታሉ?",
+        answer: "ዕለታዊ ሽያጭ ክትትል፣ ዕለታዊና ወርሃዊ የሂሳብ መዝጊያ፣ የእቃ፣ የእዳ እና የወጪ አስተዳደር።",
       },
       {
         id: 4,
-        question: "በነበረ ትዕዛዝ ላይ ለመቀየር እንዴት ማድረግ እችላለሁ?",
-        answer:
-          "እርስዎ የምትቀበሉትን የክፍያ ዘዴ ማንኛውንም እንቀበላለን። ለምሳሌ፡ MasterCard፣ Visa እንቀበላለን።",
+        question: "ስርዓቱ ደህንነቱ የተጠበቀ ነው?",
+        answer: "እርግጠኛ ነው፣ ከፍተኛ ደህንነት፣ ቀጣይ ክትትል እና መደበኛ የውሂብ መጠባበቂያ ይሰጣል።",
       },
       {
         id: 5,
-        question: "ትዕዛዜ መቼ ይደርሳል?",
-        answer: "ትዕዛዞች ከትዕዛዝ መስጠት በኋላ በ1–2 የንግድ ቀናት ውስጥ በተለምዶ ይላካሉ።",
+        question: "የቴክኒክ ድጋፍ አለ?",
+        answer: "አዎን፣ ሁሉም እቅዶች ቀጣይ የቴክኒክ ድጋፍ ያካትታሉ።",
       },
     ],
+
     hi: [
       {
         id: 1,
-        question: "मेरे ऑर्डर को शिप करने में कितना समय लगेगा?",
+        question: "सिस्टम में कौन-कौन से मूल्य प्लान उपलब्ध हैं?",
         answer:
-          "ऑर्डर आमतौर पर ऑर्डर देने के 1–2 कार्य दिवसों के भीतर भेज दिए जाते हैं।",
+          "सिस्टम तीन लचीले प्लान प्रदान करता है: छोटा, मध्यम और बड़ा, जो उत्पादों और दैनिक बिक्री पर आधारित हैं।",
       },
       {
         id: 2,
-        question: "आप कौन-कौन से भुगतान विकल्प स्वीकार करते हैं?",
+        question: "क्या मैं बाद में अपना प्लान बदल या अपग्रेड कर सकता हूँ?",
         answer:
-          "आपके लिए सुविधाजनक कोई भी भुगतान विधि उदाहरण: हम MasterCard और Visa स्वीकार करते हैं।",
+          "हाँ, आप किसी भी समय बिना डेटा खोए अपना प्लान आसानी से बदल या अपग्रेड कर सकते हैं।",
       },
       {
         id: 3,
-        question: "आपके पास कौन-कौन से शिपिंग विकल्प हैं?",
+        question: "सिस्टम की मुख्य सेवाओं में क्या शामिल है?",
         answer:
-          "ऑर्डर आमतौर पर ऑर्डर देने के 1–2 कार्य दिवसों के भीतर भेज दिए जाते हैं।",
+          "दैनिक बिक्री ट्रैकिंग, दैनिक व मासिक लेखा समापन, स्टॉक, ऋण और खर्च प्रबंधन।",
       },
       {
         id: 4,
-        question: "मैं मौजूदा ऑर्डर में बदलाव कैसे करूं?",
+        question: "क्या सिस्टम सुरक्षित है और डेटा बैकअप होता है?",
         answer:
-          "आपके लिए सुविधाजनक कोई भी भुगतान विधि उदाहरण: हम MasterCard और Visa स्वीकार करते हैं।",
+          "हाँ, सिस्टम उच्च सुरक्षा, निरंतर निगरानी और नियमित डेटा बैकअप प्रदान करता है।",
       },
       {
         id: 5,
-        question: "मेरा ऑर्डर कब आएगा?",
-        answer:
-          "ऑर्डर आमतौर पर ऑर्डर देने के 1–2 कार्य दिवसों के भीतर भेज दिए जाते हैं।",
+        question: "क्या तकनीकी सहायता उपलब्ध है?",
+        answer: "हाँ, सभी प्लान में निरंतर तकनीकी सहायता शामिल है।",
       },
     ],
+
     zh: [
       {
         id: 1,
-        question: "我的订单多久可以发货？",
-        answer: "订单通常在下单后 1–2 个工作日内发货。",
+        question: "系统提供哪些定价方案？",
+        answer:
+          "系统提供小型、中型和大型三种灵活方案，基于产品数量和每日销售量。",
       },
       {
         id: 2,
-        question: "你们接受哪些付款方式？",
-        answer: "任何您方便的付款方式 例如：我们接受 MasterCard 和 Visa。",
+        question: "之后可以升级或更改方案吗？",
+        answer: "可以，您可以随时升级或更改方案，且不会丢失任何数据。",
       },
       {
         id: 3,
-        question: "你们有哪些运输选项？",
-        answer: "订单通常在下单后 1–2 个工作日内发货。",
+        question: "系统包含哪些核心功能？",
+        answer:
+          "系统包括每日销售跟踪、每日和月度财务结算、库存、债务和费用管理。",
       },
       {
         id: 4,
-        question: "如何修改已下的订单？",
-        answer: "任何您方便的付款方式 例如：我们接受 MasterCard 和 Visa。",
+        question: "系统是否安全？数据会定期备份吗？",
+        answer: "当然，系统提供高等级安全防护、持续监控以及定期数据备份。",
       },
       {
         id: 5,
-        question: "我的订单什么时候到达？",
-        answer: "订单通常在下单后 1–2 个工作日内发货。",
+        question: "是否提供技术支持？",
+        answer: "是的，所有方案均包含持续的技术支持服务。",
       },
     ],
   };

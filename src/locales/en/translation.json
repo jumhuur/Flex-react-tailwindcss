@@ -1,11 +1,11 @@
 {
   "header": {
     "welcome": "Welcome",
-    "title": "small business is only as good as its tools.",
+    "title": "Your company’s strength starts with your system & smart tools",
     "subtitle": "What makes Flex clear and simple?",
-    "register_button": "Register",
-    "login_button": "Login",
-    "mintext": "What sets us apart is transparency and 24/7 reliable support — we never disconnect from you"
+    "register_button": "Sign Up",
+    "login_button": "Try the System",
+    "mintext": "Successful companies are not defined by size, but by the systems they rely on to manage their business."
   },
   "lang": {
     "en": "English",
@@ -24,11 +24,11 @@
     "Language": "Language"
   },
   "join_section": {
-    "title": "Join over 6000 growing companies using Flex",
+    "title": "Join hundreds of companies growing with Flex",
     "description": {
-      "01": "Mauris pellentesque commodo libero nec",
-      "02": "Suspendisse molestie tristique",
-      "03": "Present varius justo vel justo pulvinar"
+      "01": "Modern and powerful system",
+      "02": "High security and full trust",
+      "03": "Simple and intuitive experience"
     },
     "buttons": {
       "learn_more": "Learn More",
@@ -36,97 +36,45 @@
     }
   },
   "features_section": {
-    "title": "Gain deeper insight into how people use your product",
-    "description": "Use Flexs capabilities to analyze projects, collaborate, \n and plan.",
-    "features": [
-      {
-        "title": "Project Analysis",
-        "description": "Use Flexs capabilities to analyze projects, collaborate, and plan."
-      },
-      {
-        "title": "Collaboration",
-        "description": "Use Flexs capabilities to analyze projects, collaborate, and plan."
-      },
-      {
-        "title": "Planning",
-        "description": "Use Flexs capabilities to analyze projects, collaborate, and plan."
-      }
-    ]
+    "title": "Clearer insights to manage your business and team efficiently",
+    "description": "Use Flex capabilities to analyze, manage, and plan your operations."
   },
   "pricing_section": {
-    "title": "Flexible pricing plans tailored to your company",
-    "description": "Choose the plan that fits your business needs",
-    "plans": [
-      {
-        "name": "Small",
-        "price": "$10 / month",
-        "description": "Basic features for up to 10 users",
-        "features": [
-          "Project management",
-          "Collaboration",
-          "5GB cloud storage",
-          "Customer support"
-        ],
-        "button": "Get Started"
-      },
-      {
-        "name": "Medium",
-        "price": "$99 / month",
-        "description": "Advanced features for up to 20 users",
-        "features": [
-          "Project management",
-          "Collaboration",
-          "50GB cloud storage",
-          "Customer support"
-        ],
-        "button": "Get Started"
-      },
-      {
-        "name": "Large",
-        "price": "$799 / month",
-        "description": "Advanced features for up to 50 users",
-        "features": [
-          "Project management",
-          "Collaboration",
-          "200GB cloud storage",
-          "Customer support"
-        ],
-        "button": "Get Started"
-      }
-    ]
+    "title": "Flexible pricing plans that fit your business",
+    "description": "Choose the plan that matches your needs"
   },
   "team_section": {
-    "title": "Meet the team",
-    "description": "Our team of professionals is equipped to manage your business across all digital channels.",
+    "title": "Meet the Team",
+    "description": "A professional team ready to support and manage your business digitally.",
     "buttons": {
-      "learn_more": "Learn More",
-      "get_started": "Get Started"
+      "learn_more": "We’re Hiring",
+      "get_started": "Our Culture"
     }
   },
   "join_team_section": {
     "tag": "Open Positions",
-    "title": "Join Our team",
-    "description": "Were always looking for talented individuals to join our team.",
-    "btn": "View Job"
+    "title": "Join Our Team",
+    "description": "We’re always looking for talented people to grow with us.",
+    "btn": "View Position"
   },
   "faq_section": {
     "tag": "FAQ",
     "title": "Frequently Asked Questions",
-    "desc": "Flex is the only SaaS business platform that lets you run your business on one platform, seamlessly across all digital channels.",
+    "desc": "Flex is an all-in-one SaaS platform that lets you manage your business smoothly from one place.",
     "buttons": {
       "ask_us": "Ask Us",
       "contact_us": "Contact Us"
     }
   },
   "test": {
-    "Tag": "testimonials",
-    "Title": " What Our Clients Say",
-    "desc": "Real stories from real people—across cultures and industries."
+    "Tag": "Testimonials",
+    "Title": "What Our Clients Say",
+    "desc": "Real stories from real people — across industries and cultures."
   },
   "Footer": {
-    "placeholder": "Enter Your Email",
+    "placeholder": "Enter your email address",
     "btn": "Subscribe",
-    "at": "© 2024 Flex. All rights reserved."
+    "at": "Flex. All rights reserved."
   },
   "FootNav": {
     "Terms": "Terms",

@@ -21,7 +21,7 @@ const HeroSection = () => {
               <span
                 className={`${
                   Lang === "ar" ? "arfont" : "fontBold"
-                } dark:bg-indigo-500 dark:shadow-4xl dark:text-gray-50 text-gray-50 text-center p-2 rounded bg-green-500 text-xs md:text-lg`}
+                } dark:bg-indigo-500 dark:shadow-2xl dark:text-gray-50 text-gray-50 text-center p-2 rounded bg-green-500 text-xs md:text-lg`}
               >
                 {t("header.welcome")}
               </span>

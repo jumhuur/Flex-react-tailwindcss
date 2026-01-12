@@ -1,10 +1,10 @@
 import {
-  Mail,
-  TrendingUp,
-  Users,
-  PencilLine,
-  Component,
-  Settings,
+  ShoppingCart,
+  CalendarCheck,
+  BarChart3,
+  Boxes,
+  Wallet,
+  CreditCard,
 } from "lucide-react";
 import { JSX, useEffect } from "react";
 import { useTranslation } from "react-i18next";
@@ -20,218 +20,194 @@ const Features_web = () => {
   const features: Record<LangCode, Feature[]> = {
     en: [
       {
-        title: "Measure your performance",
-        description:
-          "Stay connected with your team and make quick decisions wherever you are.",
-        icon: <Mail size={14} className="text-white" />,
+        title: "Daily Sales Tracking",
+        description: "Clear daily reports to support fast decisions.",
+        icon: <ShoppingCart size={14} className="text-white" />,
       },
       {
-        title: "Custom analytics",
-        description:
-          "Get a complete sales dashboard in the cloud. See activity, revenue and social metrics all in one place.",
-        icon: <TrendingUp size={14} className="text-white" />,
+        title: "Daily Accounting Closure",
+        description: "Accurate daily closing for full transparency.",
+        icon: <CalendarCheck size={14} className="text-white" />,
       },
       {
-        title: "Team Management",
-        description:
-          "Our calendar lets you know what is happening with customer and projects so you",
-        icon: <Users size={14} className="text-white" />,
+        title: "Monthly Accounting Reports",
+        description: "Professional reports with clear insights.",
+        icon: <BarChart3 size={14} className="text-white" />,
       },
       {
-        title: "Build your website",
-        description:
-          "A tool that lets you build a dream website even if you know nothing about web design or programming.",
-        icon: <PencilLine size={14} className="text-white" />,
+        title: "Inventory Management",
+        description: "Track stock quantity and value easily.",
+        icon: <Boxes size={14} className="text-white" />,
       },
       {
-        title: "Connect multiple apps",
-        description:
-          "The first business platform to bring together all of your products from one place.",
-        icon: <Component size={14} className="text-white" />,
+        title: "Debt & Receivables Management",
+        description: "Organize dues and improve cash flow.",
+        icon: <Wallet size={14} className="text-white" />,
       },
       {
-        title: "Easy setup",
-        description:
-          "End to End Business Platform, Sales Management, Marketing Automation, Help Desk",
-        icon: <Settings size={14} className="text-white" />,
+        title: "Expense Management",
+        description: "Monitor expenses anytime with full control.",
+        icon: <CreditCard size={14} className="text-white" />,
       },
     ],
     so: [
       {
-        title: "Cabir waxqabadkaaga",
-        description:
-          "La xiriir kooxdaada oo gaadh go'aan degdeg ah meel kasta oo aad joogto.",
-        icon: <Mail size={14} className="text-white" />,
+        title: "La socodka Iibka Maalinlaha ah",
+        description: "Warbixin maalinle ah oo go’aan degdeg ah kaa caawinaya.",
+        icon: <ShoppingCart size={14} className="text-white" />,
       },
       {
-        title: "Falanqayn la habeeyey",
-        description:
-          "Hel dashboard dhamaystiran oo iib ah oo ku jira daruurta. Arag hawlaha, dakhliga iyo cabbirrada bulshada hal meel.",
-        icon: <TrendingUp size={14} className="text-white" />,
+        title: "Xisaab-xidh Maalinle",
+        description: "Xisaab sax ah oo daahfurnaan keena.",
+        icon: <CalendarCheck size={14} className="text-white" />,
       },
       {
-        title: "Maareynta Kooxda",
-        description:
-          "Kalandarkayagu wuxuu kuu sheegaa waxa ka socda macaamiisha iyo mashruucyada.",
-        icon: <Users size={14} className="text-white" />,
+        title: "Xisaab-xidh Bille ah",
+        description: "Warbixin bille ah oo muujinaysa xaaladda maaliyadeed.",
+        icon: <BarChart3 size={14} className="text-white" />,
       },
       {
-        title: "Dhiso boggaaga",
-        description:
-          "Qalab kuu oggolaanaya inaad dhisto website-ka riyadaada xitaa haddii aadan aqoon u lahayn naqshadeynta ama barnaamijyada.",
-        icon: <PencilLine size={14} className="text-white" />,
+        title: "Maamulka Alaabada",
+        description: "La socod tiro iyo qiime si khasaaro loo yareeyo.",
+        icon: <Boxes size={14} className="text-white" />,
       },
       {
-        title: "Ku xidh barnaamijyo badan",
-        description:
-          "Madal ganacsi oo kuu oggolaanaysa inaad hal meel ka maamusho dhammaan alaabtaada.",
-        icon: <Component size={14} className="text-white" />,
+        title: "Maamulka Daymaha",
+        description: "Nidaamin daymaha iyo lacagaha lagaa rabo.",
+        icon: <Wallet size={14} className="text-white" />,
       },
       {
-        title: "Dejin fudud",
-        description:
-          "Madal ganacsi dhamaystiran, Maareynta Iibka, Suuq-geyn otomaatig ah, Miiska Caawinta",
-        icon: <Settings size={14} className="text-white" />,
+        title: "Maamulka Kharashaadka",
+        description: "La soco kharashaadka wakhti kasta.",
+        icon: <CreditCard size={14} className="text-white" />,
       },
     ],
     ar: [
       {
-        title: "قم بقياس أدائك",
-        description: "ابقَ على اتصال بفريقك واتخذ قرارات سريعة أينما كنت.",
-        icon: <Mail size={14} className="text-white" />,
+        title: "متابعة المبيعات اليومية",
+        description: "تقارير يومية واضحة تساعدك على اتخاذ قرارات سريعة.",
+        icon: <ShoppingCart size={14} className="text-white" />,
       },
       {
-        title: "تحليلات مخصصة",
-        description:
-          "احصل على لوحة مبيعات كاملة في السحابة. شاهد النشاط والإيرادات والمقاييس الاجتماعية في مكان واحد.",
-        icon: <TrendingUp size={14} className="text-white" />,
+        title: "الإغلاق المحاسبي اليومي",
+        description: "إقفال دقيق للحسابات يضمن الشفافية والتنظيم المالي.",
+        icon: <CalendarCheck size={14} className="text-white" />,
       },
       {
-        title: "إدارة الفريق",
-        description: "يتيح لك تقويمنا معرفة ما يحدث مع العملاء والمشاريع.",
-        icon: <Users size={14} className="text-white" />,
+        title: "الإغلاق المحاسبي الشهري",
+        description: "تقارير شهرية احترافية توضح الأداء المالي بسهولة.",
+        icon: <BarChart3 size={14} className="text-white" />,
       },
       {
-        title: "أنشئ موقعك الإلكتروني",
-        description:
-          "أداة تتيح لك إنشاء موقع أحلامك حتى لو لم تكن تعرف شيئًا عن تصميم الويب أو البرمجة.",
-        icon: <PencilLine size={14} className="text-white" />,
+        title: "إدارة المخزون",
+        description: "متابعة الكميات والقيمة لتقليل الهدر.",
+        icon: <Boxes size={14} className="text-white" />,
       },
       {
-        title: "ربط تطبيقات متعددة",
-        description: "أول منصة أعمال تجمع كل منتجاتك في مكان واحد.",
-        icon: <Component size={14} className="text-white" />,
+        title: "إدارة الديون",
+        description: "تنظيم المستحقات وتحسين التدفق النقدي.",
+        icon: <Wallet size={14} className="text-white" />,
       },
       {
-        title: "إعداد سهل",
-        description:
-          "منصة أعمال شاملة، إدارة المبيعات، أتمتة التسويق، مكتب المساعدة",
-        icon: <Settings size={14} className="text-white" />,
+        title: "إدارة المصروفات",
+        description: "تحكم كامل في المصروفات لتحسين التخطيط المالي.",
+        icon: <CreditCard size={14} className="text-white" />,
       },
     ],
     am: [
       {
-        title: "አፈጻጸምዎን ይመዝግቡ",
-        description: "ከቡድንዎ ጋር ተገናኝተው ይቆዩ፣ በማንኛውም ቦታ ፈጣን ውሳኔዎች ያድርጉ።",
-        icon: <Mail size={14} className="text-white" />,
+        title: "ዕለታዊ ሽያጭ ክትትል",
+        description: "ግልፅ የዕለት ሪፖርቶች ፈጣን ውሳኔ ያግዙ።",
+        icon: <ShoppingCart size={14} className="text-white" />,
       },
       {
-        title: "ብጁ ትንተናዎች",
-        description:
-          "በደመና ውስጥ ሙሉ የሽያጭ ዳሽቦርድ ያግኙ። እንቅስቃሴ፣ ገቢ፣ እና ማህበራዊ መለኪያዎችን በአንድ ቦታ ይመልከቱ።",
-        icon: <TrendingUp size={14} className="text-white" />,
+        title: "ዕለታዊ የሂሳብ መዝጊያ",
+        description: "ትክክለኛ መዝጊያ ለፋይናንስ ግልፅነት።",
+        icon: <CalendarCheck size={14} className="text-white" />,
       },
       {
-        title: "የቡድን አስተዳደር",
-        description: "የእኛ የቀን መቁጠሪያ ከደንበኞችና ፕሮጀክቶች ጋር ምን እየተካሄደ እንደሆነ ያሳውቃል።",
-        icon: <Users size={14} className="text-white" />,
+        title: "ወርሃዊ የሂሳብ ሪፖርት",
+        description: "የፋይናንስ አፈፃፀምን በግልፅ ያሳያል።",
+        icon: <BarChart3 size={14} className="text-white" />,
       },
       {
-        title: "ድራም ድህረ ገፅዎን ይገነቡ",
-        description:
-          "የድህረ ገፅ አቀራረብ ወይም ፕሮግራሚንግ ሳትወቁም ድራም ድህረ ገፅ እንዲገነቡ የሚያስችል መሣሪያ።",
-        icon: <PencilLine size={14} className="text-white" />,
+        title: "የእቃ አስተዳደር",
+        description: "መጠንና ዋጋ በቀላሉ ይቆጣጠሩ።",
+        icon: <Boxes size={14} className="text-white" />,
       },
       {
-        title: "ብዙ መተግበሪያዎችን ያገናኙ",
-        description: "ከአንድ ቦታ የምርቶችዎን ሁሉ አቀናብሮ የሚያቀርብ የመጀመሪያው የንግድ መድረክ።",
-        icon: <Component size={14} className="text-white" />,
+        title: "የእዳ አስተዳደር",
+        description: "የሚከፈሉ ገንዘቦችን በትክክል ያደራጁ።",
+        icon: <Wallet size={14} className="text-white" />,
       },
       {
-        title: "ቀላል መተከል",
-        description:
-          "ከመጀመሪያ እስከመጨረሻ የንግድ መድረክ፣ የሽያጭ አስተዳደር፣ የማስታወቂያ ማበረታታ፣ የእገዛ መድረክ።",
-        icon: <Settings size={14} className="text-white" />,
+        title: "የወጪ አስተዳደር",
+        description: "ወጪዎችን ሁልጊዜ ይቆጣጠሩ።",
+        icon: <CreditCard size={14} className="text-white" />,
       },
     ],
     zh: [
       {
-        title: "衡量你的表现",
-        description: "与团队保持联系，随时做出快速决策。",
-        icon: <Mail size={14} className="text-white" />,
+        title: "每日销售跟踪",
+        description: "清晰的每日报告，助力快速决策。",
+        icon: <ShoppingCart size={14} className="text-white" />,
       },
       {
-        title: "自定义分析",
-        description:
-          "在云端获取完整的销售仪表板。活动、收入和社交指标一目了然。",
-        icon: <TrendingUp size={14} className="text-white" />,
+        title: "每日财务结算",
+        description: "精准结算，确保财务透明。",
+        icon: <CalendarCheck size={14} className="text-white" />,
       },
       {
-        title: "团队管理",
-        description: "我们的日历让你了解客户和项目的动态。",
-        icon: <Users size={14} className="text-white" />,
+        title: "月度财务报告",
+        description: "专业报告，清晰呈现财务表现。",
+        icon: <BarChart3 size={14} className="text-white" />,
       },
       {
-        title: "创建你的网站",
-        description: "即使你不了解网页设计或编程，也能创建梦想网站的工具。",
-        icon: <PencilLine size={14} className="text-white" />,
+        title: "库存管理",
+        description: "掌握库存数量与价值，减少浪费。",
+        icon: <Boxes size={14} className="text-white" />,
       },
       {
-        title: "连接多个应用",
-        description: "首个将所有产品集中在一个平台的商业系统。",
-        icon: <Component size={14} className="text-white" />,
+        title: "债务与应收管理",
+        description: "高效管理欠款，改善现金流。",
+        icon: <Wallet size={14} className="text-white" />,
       },
       {
-        title: "轻松设置",
-        description: "端到端商业平台，销售管理，营销自动化，帮助台",
-        icon: <Settings size={14} className="text-white" />,
+        title: "费用管理",
+        description: "随时掌控支出，优化成本。",
+        icon: <CreditCard size={14} className="text-white" />,
       },
     ],
     hi: [
       {
-        title: "अपने प्रदर्शन को मापें",
-        description: "अपनी टीम से जुड़े रहें और कहीं भी त्वरित निर्णय लें।",
-        icon: <Mail size={14} className="text-white" />,
+        title: "दैनिक बिक्री ट्रैकिंग",
+        description: "स्पष्ट दैनिक रिपोर्ट से तेज़ निर्णय लें।",
+        icon: <ShoppingCart size={14} className="text-white" />,
       },
       {
-        title: "कस्टम विश्लेषण",
-        description:
-          "क्लाउड में एक पूर्ण बिक्री डैशबोर्ड प्राप्त करें। गतिविधि, राजस्व और सामाजिक मापदंड एक ही स्थान पर देखें।",
-        icon: <TrendingUp size={14} className="text-white" />,
+        title: "दैनिक लेखा समापन",
+        description: "सटीक समापन से वित्तीय पारदर्शिता।",
+        icon: <CalendarCheck size={14} className="text-white" />,
       },
       {
-        title: "टीम प्रबंधन",
-        description:
-          "हमारा कैलेंडर आपको ग्राहकों और परियोजनाओं की जानकारी देता है।",
-        icon: <Users size={14} className="text-white" />,
+        title: "मासिक लेखा रिपोर्ट",
+        description: "स्पष्ट वित्तीय जानकारी के साथ रिपोर्ट।",
+        icon: <BarChart3 size={14} className="text-white" />,
       },
       {
-        title: "अपनी वेबसाइट बनाएं",
-        description:
-          "एक उपकरण जो आपको वेबसाइट बनाने देता है, भले ही आपको वेब डिज़ाइन या प्रोग्रामिंग का ज्ञान न हो।",
-        icon: <PencilLine size={14} className="text-white" />,
+        title: "स्टॉक प्रबंधन",
+        description: "मात्रा और मूल्य पर नज़र रखें।",
+        icon: <Boxes size={14} className="text-white" />,
       },
       {
-        title: "कई ऐप्स को जोड़ें",
-        description:
-          "एक ऐसा प्लेटफ़ॉर्म जो आपके सभी उत्पादों को एक ही स्थान पर लाता है।",
-        icon: <Component size={14} className="text-white" />,
+        title: "ऋण प्रबंधन",
+        description: "देय राशि को व्यवस्थित करें।",
+        icon: <Wallet size={14} className="text-white" />,
       },
       {
-        title: "आसान सेटअप",
-        description:
-          "एंड-टू-एंड बिजनेस प्लेटफ़ॉर्म, बिक्री प्रबंधन, मार्केटिंग ऑटोमेशन, हेल्प डेस्क",
-        icon: <Settings size={14} className="text-white" />,
+        title: "खर्च प्रबंधन",
+        description: "खर्चों पर पूरा नियंत्रण रखें।",
+        icon: <CreditCard size={14} className="text-white" />,
       },
     ],
   };
