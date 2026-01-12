@@ -10,42 +10,43 @@ const Team = () => {
           <div className="w-full flex justify-center items-start flex-col md:flex-row pl-10 gap-3">
             <div className="w-full md:w-1/2 flex justify-center items-start flex-col gap-3">
               <span
-                className={`${
-                  Lang === "ar" ? "arfont" : "fontBold"
-                } bg-indigo-500 text-white rounded p-1 my-5 text-base`}
+                className={`${Lang === "ar" ? "arfont" : "fontBold"
+                  } bg-indigo-500 text-white rounded p-1 my-5 text-base`}
               >
                 {t("nav.Our Team")}
               </span>
               <h2
-                className={`${
-                  Lang === "ar" ? "arfont" : "fontBold"
-                } text-indigo-500 text-2xl md:text-3xl lg:text-5xl capitalize`}
+                className={`${Lang === "ar" ? "arfont" : "fontBold"
+                  } text-indigo-500 text-2xl md:text-3xl lg:text-5xl capitalize`}
               >
                 {t("team_section.title")}
               </h2>
               <p
-                className={`${
-                  Lang === "ar" ? "arfont" : "fontBold"
-                } text-base md:text-1xl lg:text-[1.2rem] text-gray-400`}
+                className={`${Lang === "ar" ? "arfont" : "fontBold"
+                  } text-base md:text-1xl lg:text-[1.2rem] text-gray-400`}
               >
                 {t("team_section.description")}
               </p>
             </div>
             <div className="w-full md:w-1/2 p-10 flex justify-center items-center flex-col sm:flex-row md:flex-row gap-5">
-              <button
-                className={`${
-                  Lang === "ar" ? "arfont" : "fontBold"
-                } w-full md:w-1/2 cursor-pointer bg-gray-700 p-3 rounded text-white   hover:bg-indigo-500 duration-300 transition-all`}
+              <a
+                href="https://wa.me/252634645195?text=sc%20walaal"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${Lang === "ar" ? "arfont" : "fontBold"
+                  } w-full md:w-1/2 cursor-pointer bg-gray-700 p-3 rounded text-white   hover:bg-indigo-500 duration-300 transition-all text-center block`}
               >
                 {t("team_section.buttons.learn_more")}
-              </button>
-              <button
-                className={`${
-                  Lang === "ar" ? "arfont" : "fontBold"
-                } w-full md:w-1/2 cursor-pointer bg-indigo-500  hover:bg-gray-700 p-3 rounded text-white duration-300 transition-all`}
+              </a>
+              <a
+                href="https://wa.me/252634645195?text=sc%20walaal"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${Lang === "ar" ? "arfont" : "fontBold"
+                  } w-full md:w-1/2 cursor-pointer bg-indigo-500  hover:bg-gray-700 p-3 rounded text-white duration-300 transition-all text-center block`}
               >
                 {t("team_section.buttons.get_started")}
-              </button>
+              </a>
             </div>
           </div>
           <Team_Cards />

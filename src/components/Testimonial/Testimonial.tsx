@@ -29,7 +29,7 @@ export default function Testimonial() {
         title: "تقنية سهلة",
         message: "أدوات التكامل سريعة وسهلة الاستخدام للمطورين.",
         rate: 4,
-        image: "/Images/Frame2.jpg",
+        image: "/Images/T1.png",
       },
       {
         id: 3,
@@ -38,7 +38,7 @@ export default function Testimonial() {
         title: "زيادة الإنتاجية",
         message: "أصبح فريقنا أكثر إنتاجية بفضل تصميم Flex السهل.",
         rate: 5,
-        image: "/Images/Frame3.jpg",
+        image: "/Images/T2.png",
       },
       {
         id: 4,
@@ -401,7 +401,7 @@ export default function Testimonial() {
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="object-cover"
+                    className="object-cover w-full h-full"
                   />
                 </div>
 

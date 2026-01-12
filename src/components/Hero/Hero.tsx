@@ -19,9 +19,8 @@ const HeroSection = () => {
           >
             <div className="flex justify-start items-start flex-col">
               <span
-                className={`${
-                  Lang === "ar" ? "arfont" : "fontBold"
-                } dark:bg-indigo-500 dark:shadow-2xl dark:text-gray-50 text-gray-50 text-center p-2 rounded bg-green-500 text-xs md:text-lg`}
+                className={`${Lang === "ar" ? "arfont" : "fontBold"
+                  } dark:bg-indigo-500 dark:shadow-2xl dark:text-gray-50 text-gray-50 text-center p-2 rounded bg-green-500 text-xs md:text-lg`}
               >
                 {t("header.welcome")}
               </span>
@@ -34,33 +33,35 @@ const HeroSection = () => {
                 {t("header.title")}
               </h2>
               <p
-                className={`${
-                  Lang === "ar" ? "arfont" : "fontBold"
-                } dark:text-gray-200 text-lg font-medium text-gray-100 mt-4`}
+                className={`${Lang === "ar" ? "arfont" : "fontBold"
+                  } dark:text-gray-200 text-lg font-medium text-gray-100 mt-4`}
               >
                 {t("header.subtitle")}
               </p>
               <div className="w-full flex justify-start items-center flex-col md:flex-row gap-3.5 lg:flex-row  p-5 space-4">
-                <button
-                  className={`${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  } w-full md:w-1/2 bg-indigo-500 text-gray-50 p-3 mr-3 rounded cursor-pointer hover:bg-indigo-600  transition duration-300`}
+                <a
+                  href="https://wa.me/252634645195?text=sc%20walaal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${Lang === "ar" ? "arfont" : "fontBold"
+                    } w-full md:w-1/2 bg-indigo-500 text-gray-50 p-3 mr-3 rounded cursor-pointer hover:bg-indigo-600  transition duration-300 text-center block`}
                 >
                   {t("header.register_button")}
-                </button>
-                <button
-                  className={`${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  } w-full md:w-1/2 cursor-pointer shadow-2xl p-3 dark:bg-gray-700 dark:text-gray-200  hover:bg-indigo-600 transition duration-300 hover:text-gray-50 rounded`}
+                </a>
+                <a
+                  href="https://wa.me/252634645195?text=sc%20walaal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${Lang === "ar" ? "arfont" : "fontBold"
+                    } w-full md:w-1/2 cursor-pointer shadow-2xl p-3 dark:bg-gray-700 dark:text-gray-200  hover:bg-indigo-600 transition duration-300 hover:text-gray-50 rounded text-center block`}
                 >
                   {t("header.login_button")}
-                </button>
+                </a>
               </div>
               <div>
                 <p
-                  className={`${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  } text-lg/loose text-gray-100 mt-5 mb-5 font-medium`}
+                  className={`${Lang === "ar" ? "arfont" : "fontBold"
+                    } text-lg/loose text-gray-100 mt-5 mb-5 font-medium`}
                 >
                   {t("header.mintext")}
                 </p>

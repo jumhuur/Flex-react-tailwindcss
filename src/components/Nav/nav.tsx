@@ -25,9 +25,8 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
             <ul className="h-[80px] flex justify-center items-center space-x-4">
               <li className=" flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
-                  className={`${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
+                  className={`${Lang === "ar" ? "arfont" : "fontBold"
+                    } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
                   to={"/"}
                 >
                   {t("nav.Home")}
@@ -35,9 +34,8 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
               </li>
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300">
                 <Link
-                  className={`${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
+                  className={`${Lang === "ar" ? "arfont" : "fontBold"
+                    } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
                   to={"/features"}
                 >
                   {t("nav.Features")}
@@ -45,9 +43,8 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
               </li>
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
-                  className={`${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
+                  className={`${Lang === "ar" ? "arfont" : "fontBold"
+                    } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
                   to={"/pricing"}
                 >
                   {t("nav.Pricing")}
@@ -55,15 +52,14 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
               </li>
               <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
-                  className={`${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
+                  className={`${Lang === "ar" ? "arfont" : "fontBold"
+                    } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
                   to={"/team"}
                 >
                   {t("nav.Our Team")}
                 </Link>
               </li>
-              <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
+              {/* <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
                   className={`${
                     Lang === "ar" ? "arfont" : "fontBold"
@@ -72,13 +68,12 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
                 >
                   {t("nav.Careers")}
                 </Link>
-              </li>
+              </li> */}
               <li className="relative flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                 <Link
                   onClick={() => Langactive_handale()}
-                  className={`${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  } flex justify-center items-center flex-row text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
+                  className={`${Lang === "ar" ? "arfont" : "fontBold"
+                    } flex justify-center items-center flex-row text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
                   to={"#"}
                 >
                   {t("nav.Language")} <ChevronDown size={12} />
@@ -193,20 +188,24 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
             </ul>
           </div>
           <div className="h-[80px] hidden lg:flex justify-evenly items-center gap-2">
-            <button
-              className={`${
-                Lang === "ar" ? "arfont" : "fontBold"
-              } w-full dark:text-gray-200 bg-gray-700 dark:hover:bg-gray-600 hover:bg-gray-500 transition-all duration-300 text-gray-500 text-base rounded p-2 capitalize cursor-pointer`}
+            <a
+              href="https://wa.me/252634645195?text=sc%20walaal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${Lang === "ar" ? "arfont" : "fontBold"
+                } w-full dark:text-gray-200 bg-gray-700 dark:hover:bg-gray-600 hover:bg-gray-500 transition-all duration-300 text-gray-500 text-base rounded p-2 capitalize cursor-pointer text-center`}
             >
               {t("header.register_button")}
-            </button>
-            <button
-              className={`${
-                Lang === "ar" ? "arfont" : "fontBold"
-              } w-full bg-indigo-500 hover:bg-indigo-600 text-gray-50 text-base rounded p-2 cursor-pointer capitalize transition-all duration-300`}
+            </a>
+            <a
+              href="https://wa.me/252634645195?text=sc%20walaal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${Lang === "ar" ? "arfont" : "fontBold"
+                } w-full bg-indigo-500 hover:bg-indigo-600 text-gray-50 text-base rounded p-2 cursor-pointer capitalize transition-all duration-300 text-center`}
             >
               {t("header.login_button")}
-            </button>
+            </a>
           </div>
         </div>
       </div>

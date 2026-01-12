@@ -374,17 +374,15 @@ const P_Cards = () => {
           >
             <div className="w-full p-4 flex justify-between items-start place-content-between flex-row">
               <span
-                className={`${
-                  Lang === "ar" ? "arfont" : "fontBold"
-                } text-white text-base lg:text-xl`}
+                className={`${Lang === "ar" ? "arfont" : "fontBold"
+                  } text-white text-base lg:text-xl`}
               >
                 {card.name}
               </span>
               {card.tag && (
                 <span
-                  className={`${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  } text-[12px] md:text-[14px] text-gray-100 bg-green-500/50 rounded p-1 text-center`}
+                  className={`${Lang === "ar" ? "arfont" : "fontBold"
+                    } text-[12px] md:text-[14px] text-gray-100 bg-green-500/50 rounded p-1 text-center`}
                 >
                   {card.tag}
                 </span>
@@ -393,23 +391,20 @@ const P_Cards = () => {
             <div className="w-full flex items-start justify-center flex-col relative">
               <p className="w-full">
                 <span
-                  className={`${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  } text-base text-white absolute top-0`}
+                  className={`${Lang === "ar" ? "arfont" : "fontBold"
+                    } text-base text-white absolute top-0`}
                 >
                   {card.currency}
                 </span>
                 <span
-                  className={`${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  }  m-3 text-indigo-500 text-4xl lg:text-5xl`}
+                  className={`${Lang === "ar" ? "arfont" : "fontBold"
+                    }  m-3 text-indigo-500 text-4xl lg:text-5xl`}
                 >
                   {card.price}{" "}
                 </span>
                 <span
-                  className={`${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  } text-base text-white absolute bottom-0 capitalize`}
+                  className={`${Lang === "ar" ? "arfont" : "fontBold"
+                    } text-base text-white absolute bottom-0 capitalize`}
                 >
                   {card.billingCycle}
                 </span>
@@ -417,33 +412,35 @@ const P_Cards = () => {
             </div>
 
             <p
-              className={`${
-                Lang === "ar" ? "arfont" : "fontBold"
-              } text-gray-200  text-1xl my-4 capitalize`}
+              className={`${Lang === "ar" ? "arfont" : "fontBold"
+                } text-gray-200  text-1xl my-4 capitalize`}
             >
               {card.description}
             </p>
             <div className="w-full flex justify-center items-center flex-col gap-4">
-              <button
-                className={`${
-                  Lang === "ar" ? "arfont" : "fontBold"
-                } capitalize cursor-pointer p-4 rounded w-full bg-indigo-500 hover:bg-indigo-800 transition-all duration-300 text-white text-base md:text-1xl`}
+              <a
+                href="https://wa.me/252634645195?text=sc%20walaal"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${Lang === "ar" ? "arfont" : "fontBold"
+                  } capitalize cursor-pointer p-4 rounded w-full bg-indigo-500 hover:bg-indigo-800 transition-all duration-300 text-white text-base md:text-1xl text-center block`}
               >
                 {t("join_section.buttons.learn_more")}
-              </button>
-              <button
-                className={`${
-                  Lang === "ar" ? "arfont" : "fontBold"
-                } capitalize cursor-pointer p-4 rounded w-full bg-gray-900 hover:bg-gray-950 transition-all duration-300 text-white text-base md:text-1xl`}
+              </a>
+              <a
+                href="https://wa.me/252634645195?text=sc%20walaal"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${Lang === "ar" ? "arfont" : "fontBold"
+                  } capitalize cursor-pointer p-4 rounded w-full bg-gray-900 hover:bg-gray-950 transition-all duration-300 text-white text-base md:text-1xl text-center block`}
               >
                 {t("join_section.buttons.get_started")}
-              </button>
+              </a>
             </div>
             <div className="">
               <ul
-                className={`${
-                  Lang === "ar" ? "arfont" : "fontBold"
-                } w-full flex justify-center items-start flex-col m-2`}
+                className={`${Lang === "ar" ? "arfont" : "fontBold"
+                  } w-full flex justify-center items-start flex-col m-2`}
               >
                 {card.features.map((adeeg, index) => (
                   <li

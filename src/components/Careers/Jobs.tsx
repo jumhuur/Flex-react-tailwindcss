@@ -303,25 +303,25 @@ const Jobs = () => {
         >
           <div className="w-2/3">
             <h2
-              className={`${
-                Lang === "ar" ? "arfont" : "fontBold"
-              } text-base md:text-1xl text-indigo-500 capitalize m-1`}
+              className={`${Lang === "ar" ? "arfont" : "fontBold"
+                } text-base md:text-1xl text-indigo-500 capitalize m-1`}
             >
               {Job.title}
             </h2>
             <p
-              className={`${
-                Lang === "ar" ? "arfont" : "fontBold"
-              } text-gray-50 text-lg capitalize`}
+              className={`${Lang === "ar" ? "arfont" : "fontBold"
+                } text-gray-50 text-lg capitalize`}
             >
               {Job.desc}
             </p>
           </div>
           <div className="flex justify-center items-start w-1/3 h-full">
-            <button
-              className={`${
-                Lang === "ar" ? "arfont" : "fontBold"
-              } flex justify-center items-center text-[10px] bg-indigo-500 text-gray-100 font-medium capitalize rounded p-2 gap-1 cursor-pointer hover:bg-indigo-700 hover:text-gray-50 transition-all duration-300`}
+            <a
+              href="https://wa.me/252634645195?text=sc%20walaal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${Lang === "ar" ? "arfont" : "fontBold"
+                } flex justify-center items-center text-[10px] bg-indigo-500 text-gray-100 font-medium capitalize rounded p-2 gap-1 cursor-pointer hover:bg-indigo-700 hover:text-gray-50 transition-all duration-300 text-center block`}
             >
               {t("join_team_section.btn")}{" "}
               {Lang == "ar" ? (
@@ -329,7 +329,7 @@ const Jobs = () => {
               ) : (
                 <CircleArrowRightIcon className="text-gray-50  hover:text-gray-100" />
               )}
-            </button>
+            </a>
           </div>
         </div>
       ))}

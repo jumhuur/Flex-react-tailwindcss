@@ -1,4 +1,3 @@
-import Careers from "./components/Careers/Careers";
 import Getstart from "./components/CTA/Getstart";
 import Faq from "./components/Faq/Faq";
 import Features_web from "./components/Features/Features";
@@ -15,7 +14,7 @@ function App() {
         <Features_web />
         <Pricing_cards />
         <Team />
-        <Careers />
+        {/* <Careers /> */}
         <Faq />
         <MainTestimonial />
       </div>
