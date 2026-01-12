@@ -52,3 +52,37 @@ a {
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee_ar {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee_ar {
+  animation: marquee_ar 40s linear infinite;
+}
+
+.group:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+.group:hover .animate-marquee_ar {
+  animation-play-state: paused;
+}

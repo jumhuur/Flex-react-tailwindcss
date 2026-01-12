@@ -1,9 +1,6 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { LangCode } from "../../helpers/taypes";
 export default function Testimonial() {
-  const [id, setid] = useState<number>(0);
   interface testimonials {
     id: number;
     name: string;
@@ -14,130 +11,6 @@ export default function Testimonial() {
     image: string;
   }
   const testimonials: Record<LangCode, testimonials[]> = {
-    en: [
-      {
-        id: 1,
-        name: "Macauley Herring",
-        position: "CEO & Founder",
-        title: "Streamlined and powerful",
-        message:
-          "Flex helped us centralize our operations and scale faster than expected.",
-        rate: 5,
-        image: "/Images/Frame1.jpg",
-      },
-      {
-        id: 2,
-        name: "Ivan Mathews",
-        position: "CTO",
-        title: "Tech made simple",
-        message:
-          "The integration tools are clean, fast, and developer-friendly.",
-        rate: 4,
-        image: "/Images/Frame2.jpg",
-      },
-      {
-        id: 3,
-        name: "Elen Benitez",
-        position: "CPO",
-        title: "Productivity boost",
-        message:
-          "Our team became more productive thanks to Flex’s intuitive design.",
-        rate: 5,
-        image: "/Images/Frame3.jpg",
-      },
-      {
-        id: 4,
-        name: "Alya Levine",
-        position: "Backend Developer",
-        title: "Reliable infrastructure",
-        message:
-          "Flex’s backend tools are scalable and secure—exactly what we needed.",
-        rate: 4,
-        image: "/Images/Frame4.jpg",
-      },
-      {
-        id: 5,
-        name: "Rosemary Hernandez",
-        position: "iOS Developer",
-        title: "Mobile-first mindset",
-        message:
-          "Building mobile apps with Flex has been smooth and efficient.",
-        rate: 5,
-        image: "/Images/Frame5.jpg",
-      },
-      {
-        id: 6,
-        name: "Jamal Yusuf",
-        position: "Customer Success Lead",
-        title: "Support that cares",
-        message:
-          "Their 24/7 support team is responsive and truly understands our needs.",
-        rate: 5,
-        image: "/Images/Frame6.jpg",
-      },
-    ],
-    so: [
-      {
-        id: 1,
-        name: "mawliiid maxamad",
-        position: "Maamulaha Guud brothers car decoration",
-        title: "Isku xirka fudud",
-        message:
-          "nidaamkan waa nidaam xisaabeed oo isku dhamays tiran waxaanan hada adeegsanayay mudoo 4 bilood runtii isticmaalkiisa iyo hab xisaabeed-kiisaba wuu fudud yahay.",
-        rate: 5,
-        image: "/Images/mawliid.jpg",
-      },
-      {
-        id: 2,
-        name: "Ivan Mathews",
-        position: "Maamulaha Teknoolojiyada",
-        title: "Tiknoolojiyad la fahmi karo",
-        message:
-          "Qalabyada is dhexgalka waa sahlan yihiin, degdeg ah, waana u fudud yihiin horumariyeyaasha.",
-        rate: 4,
-        image: "/Images/Frame2.jpg",
-      },
-      {
-        id: 3,
-        name: "Elen Benitez",
-        position: "Maamulaha Wax Soo Saarka",
-        title: "Wax soo saar kordhay",
-        message:
-          "Kooxdayadu waxay noqotay mid wax ku ool ah mahadnaqa naqshadda Flex.",
-        rate: 5,
-        image: "/Images/Frame3.jpg",
-      },
-      {
-        id: 4,
-        name: "Alya Levine",
-        position: "Horumariye Backend",
-        title: "Kaabayaasha la isku halayn karo",
-        message:
-          "Qalabyada backend-ka ee Flex waa la ballaadhin karo oo ammaan ah.",
-        rate: 4,
-        image: "/Images/Frame4.jpg",
-      },
-      {
-        id: 5,
-        name: "Rosemary Hernandez",
-        position: "Horumariye iOS",
-        title: "Moobilka ayaa mudnaanta leh",
-        message:
-          "Abuurista app-yada moobilka Flex waa mid sahlan oo waxtar leh.",
-        rate: 5,
-        image: "/Images/Frame5.jpg",
-      },
-      {
-        id: 6,
-        name: "Jamal Yusuf",
-        position: "Hoggaamiyaha Guusha Macaamiisha",
-        title: "Taageero dhab ah",
-        message:
-          "Kooxda taageerada 24/7 waa jawaab degdeg ah waxayna fahmaan baahidayada.",
-        rate: 5,
-        image: "/Images/Frame6.jpg",
-      },
-    ],
     ar: [
       {
         id: 1,
@@ -151,8 +24,8 @@ export default function Testimonial() {
       },
       {
         id: 2,
-        name: "Ivan Mathews",
-        position: "مدير التكنولوجيا",
+        name: "xamse cismaan",
+        position: "المدير العام – Rabiic Store",
         title: "تقنية سهلة",
         message: "أدوات التكامل سريعة وسهلة الاستخدام للمطورين.",
         rate: 4,
@@ -160,8 +33,8 @@ export default function Testimonial() {
       },
       {
         id: 3,
-        name: "Elen Benitez",
-        position: "مدير المنتج",
+        name: "qawdhan muuse",
+        position: "المدير العام – maazim online",
         title: "زيادة الإنتاجية",
         message: "أصبح فريقنا أكثر إنتاجية بفضل تصميم Flex السهل.",
         rate: 5,
@@ -169,8 +42,8 @@ export default function Testimonial() {
       },
       {
         id: 4,
-        name: "Alya Levine",
-        position: "مطور Backend",
+        name: "ayaan nuura",
+        position: "المدير العام – Qadan beuty salon",
         title: "بنية تحتية موثوقة",
         message: "أدوات Flex الخلفية قابلة للتوسع وآمنة تمامًا.",
         rate: 4,
@@ -178,8 +51,8 @@ export default function Testimonial() {
       },
       {
         id: 5,
-        name: "Rosemary Hernandez",
-        position: "مطور iOS",
+        name: "Istaahil ismaaciil",
+        position: "المدير العام – Huda Design",
         title: "تجربة موبايل ممتازة",
         message: "تطوير تطبيقات الموبايل باستخدام Flex كان سلسًا وفعالًا.",
         rate: 5,
@@ -195,173 +68,299 @@ export default function Testimonial() {
         image: "/Images/Frame6.jpg",
       },
     ],
-    zh: [
+
+    en: [
       {
         id: 1,
-        name: "Macauley Herring",
-        position: "首席执行官兼创始人",
-        title: "高效整合",
-        message: "Flex 帮助我们整合业务流程，实现快速增长。",
+        name: "Mawlid Mohamed",
+        position: "General Manager – Brothers Car Decoration",
+        title: "Easy and Efficient Integration",
+        message:
+          "This accounting system is fully integrated. I have been using it for four months, and honestly, its simplicity and ease of use helped me organize my business much better.",
         rate: 5,
-        image: "/Images/Frame1.jpg",
+        image: "/Images/mawlid.jpg",
       },
       {
         id: 2,
-        name: "Ivan Mathews",
-        position: "首席技术官",
-        title: "技术简洁",
-        message: "集成工具快速、简洁，开发者使用非常方便。",
+        name: "Xamse Osman",
+        position: "General Manager – Rabiic Store",
+        title: "Simple Technology",
+        message: "Integration tools are fast and easy for developers to use.",
         rate: 4,
         image: "/Images/Frame2.jpg",
       },
       {
         id: 3,
-        name: "Elen Benitez",
-        position: "首席产品官",
-        title: "效率提升",
-        message: "得益于 Flex 的直观设计，我们的团队效率显著提升。",
+        name: "Qawdhan Muse",
+        position: "General Manager – Maazim Online",
+        title: "Increased Productivity",
+        message:
+          "Our team became more productive thanks to Flex’s simple design.",
         rate: 5,
         image: "/Images/Frame3.jpg",
       },
       {
         id: 4,
-        name: "Alya Levine",
-        position: "后端开发工程师",
-        title: "稳定可靠",
-        message: "Flex 的后端工具可扩展且安全，完全满足我们的需求。",
+        name: "Ayaan Nuura",
+        position: "General Manager – Qadan Beauty Salon",
+        title: "Reliable Infrastructure",
+        message: "Flex backend tools are scalable and highly secure.",
         rate: 4,
         image: "/Images/Frame4.jpg",
       },
       {
         id: 5,
-        name: "Rosemary Hernandez",
-        position: "iOS开发工程师",
-        title: "移动优先",
-        message: "使用 Flex 构建移动应用非常顺畅高效。",
+        name: "Istaahil Ismail",
+        position: "General Manager – Huda Design",
+        title: "Excellent Mobile Experience",
+        message: "Building mobile apps with Flex was smooth and efficient.",
         rate: 5,
         image: "/Images/Frame5.jpg",
       },
       {
         id: 6,
         name: "Jamal Yusuf",
-        position: "客户成功主管",
-        title: "贴心支持",
-        message: "他们的支持团队全天候响应，真正理解我们的需求。",
+        position: "Head of Customer Success",
+        title: "Real Support",
+        message:
+          "The support team is always available, responsive, and understands our needs.",
         rate: 5,
         image: "/Images/Frame6.jpg",
       },
     ],
-    hi: [
+
+    so: [
       {
         id: 1,
-        name: "Macauley Herring",
-        position: "सीईओ और संस्थापक",
-        title: "संगठित और प्रभावशाली",
+        name: "Mawliid Maxamed",
+        position: "Maamulaha Guud – Brothers Car Decoration",
+        title: "Isku-xir sahlan oo wax ku ool ah",
         message:
-          "Flex ने हमारे संचालन को केंद्रीकृत करने और अपेक्षा से तेज़ विकास में मदद की।",
+          "Nidaamkan xisaabeed waa mid dhammeystiran. Afar bilood ayaan isticmaalayay, runtii fudaydkiisa ayaa iga caawiyay inaan si fiican u habeeyo ganacsigayga.",
         rate: 5,
-        image: "/Images/Frame1.jpg",
+        image: "/Images/mawlid.jpg",
       },
       {
         id: 2,
-        name: "Ivan Mathews",
-        position: "मुख्य तकनीकी अधिकारी",
-        title: "सरल तकनीक",
-        message: "इंटीग्रेशन टूल्स तेज़, साफ़ और डेवलपर्स के लिए अनुकूल हैं।",
+        name: "Xamse Cismaan",
+        position: "Maamulaha Guud – Rabiic Store",
+        title: "Tignoolajiyad sahlan",
+        message:
+          "Qalabka isku-xirku waa degdeg oo sahlan, gaar ahaan horumariyeyaasha.",
         rate: 4,
         image: "/Images/Frame2.jpg",
       },
       {
         id: 3,
-        name: "Elen Benitez",
-        position: "मुख्य उत्पाद अधिकारी",
-        title: "उत्पादकता में वृद्धि",
-        message: "Flex के सहज डिज़ाइन की वजह से हमारी टीम अधिक उत्पादक बन गई।",
+        name: "Qawdhan Muuse",
+        position: "Maamulaha Guud – Maazim Online",
+        title: "Wax-soo-saar kordhay",
+        message:
+          "Kooxdayadu waxay noqotay mid wax-soo-saar badan mahadnaqa naqshadda sahlan ee Flex.",
         rate: 5,
         image: "/Images/Frame3.jpg",
       },
       {
         id: 4,
-        name: "Alya Levine",
-        position: "बैकएंड डेवलपर",
-        title: "विश्वसनीय संरचना",
+        name: "Ayaan Nuura",
+        position: "Maamulaha Guud – Qadan Beauty Salon",
+        title: "Kaabeyaal lagu kalsoonaan karo",
         message:
-          "Flex के बैकएंड टूल्स स्केलेबल और सुरक्षित हैं—बिलकुल वैसा जैसा हमें चाहिए था।",
+          "Qalabka Flex waa mid la ballaarin karo isla markaana ammaan ah.",
         rate: 4,
         image: "/Images/Frame4.jpg",
       },
       {
         id: 5,
-        name: "Rosemary Hernandez",
-        position: "iOS डेवलपर",
-        title: "मोबाइल-प्रथम सोच",
-        message: "Flex के साथ मोबाइल ऐप बनाना आसान और प्रभावशाली रहा।",
+        name: "Istaahiil Ismaaciil",
+        position: "Maamulaha Guud – Huda Design",
+        title: "Khibrad mobile oo heer sare ah",
+        message:
+          "Samaynta app-yada mobile iyadoo la adeegsanayo Flex waxay ahayd mid sahlan oo wax ku ool ah.",
         rate: 5,
         image: "/Images/Frame5.jpg",
       },
       {
         id: 6,
         name: "Jamal Yusuf",
-        position: "ग्राहक सफलता प्रमुख",
-        title: "सहयोग जो मायने रखता है",
+        position: "Madaxa Guusha Macaamiisha",
+        title: "Taageero dhab ah",
         message:
-          "उनकी 24/7 सहायता टीम उत्तरदायी है और हमारी ज़रूरतों को समझती है।",
+          "Kooxda taageeradu mar walba way diyaar yihiin, si degdeg ahna way uga jawaabaan.",
         rate: 5,
         image: "/Images/Frame6.jpg",
       },
     ],
+
     am: [
       {
         id: 1,
-        name: "Macauley Herring",
-        position: "ዋና ስራ አስኪያጅ እና መሠረተኛ",
-        title: "የተደራጀ እና ኃይለኛ",
-        message: "Flex ስራዎቻችንን ለማካከል እና ከተጠበቀው የበለይ ፍጥነት ለማድጋት እገዛ አቀረበልን።",
+        name: "ሞሊድ መሀመድ",
+        position: "ዋና ስራ አስኪያጅ – Brothers Car Decoration",
+        title: "ቀላልና ተግባራዊ መዋቅር",
+        message:
+          "ይህ የሂሳብ ስርዓት ሙሉ ተግባራዊ ነው። ለአራት ወራት ተጠቅመዋለሁ፣ ንግዴን ለማደራጀት በጣም ረድቶኛል።",
         rate: 5,
-        image: "/Images/Frame1.jpg",
+        image: "/Images/mawlid.jpg",
       },
       {
         id: 2,
-        name: "Ivan Mathews",
-        position: "ዋና ቴክኖሎጂ መምሪያ",
+        name: "Xamse Osman",
+        position: "ዋና ስራ አስኪያጅ – Rabiic Store",
         title: "ቀላል ቴክኖሎጂ",
-        message: "የመዋዛዘት መሣሪያዎች ፈጣን፣ ንፁህ እና ለአበልጣጮች ተስማሚ ናቸው።",
+        message: "የመዋቅር መሳሪያዎቹ ፈጣንና ለመጠቀም ቀላል ናቸው።",
         rate: 4,
         image: "/Images/Frame2.jpg",
       },
       {
         id: 3,
-        name: "Elen Benitez",
-        position: "ዋና ምርት መምሪያ",
-        title: "የስራ አፈጻጸም መጨመር",
-        message: "በFlex ቀላል እና ተስማሚ ንድፍ የቡድናችን አፈጻጸም በከፍተኛ ሁኔታ ተሻሻለ።",
+        name: "Qawdhan Muse",
+        position: "ዋና ስራ አስኪያጅ – Maazim Online",
+        title: "የስራ ምርታማነት ጨምሯል",
+        message: "ቡድናችን በFlex ቀላል ንድፍ ምክንያት ይበልጥ ምርታማ ሆኗል።",
         rate: 5,
         image: "/Images/Frame3.jpg",
       },
       {
         id: 4,
-        name: "Alya Levine",
-        position: "የኋላ ገፅ አበልጣጭ",
-        title: "የሚታመን መሠረት",
-        message: "የFlex የኋላ መሣሪያዎች ለመስፋፋት ተስማሚ ናቸው፣ እና ደህንነት ያለባቸው።",
+        name: "Ayaan Nuura",
+        position: "ዋና ስራ አስኪያጅ – Qadan Beauty Salon",
+        title: "የታመነ መሠረተ ልማት",
+        message: "Flex የጀርባ መሳሪያዎች የሚስፋፉና በጣም ደህንነታቸው የተጠበቀ ናቸው።",
         rate: 4,
         image: "/Images/Frame4.jpg",
       },
       {
         id: 5,
-        name: "Rosemary Hernandez",
-        position: "የiOS መተግበሪያ አበልጣጭ",
-        title: "የሞባይል ቅድመ ትንታኔ",
-        message: "በFlex መተግበሪያ ማበረታታ ቀላል እና ተመጣጣኝ ነበር።",
+        name: "Istaahil Ismail",
+        position: "ዋና ስራ አስኪያጅ – Huda Design",
+        title: "ምርጥ የሞባይል ተሞክሮ",
+        message: "በFlex ሞባይል መተግበሪያዎችን መገንባት ቀላልና ውጤታማ ነበር።",
         rate: 5,
         image: "/Images/Frame5.jpg",
       },
       {
         id: 6,
         name: "Jamal Yusuf",
-        position: "የደንበኛ ስኬት መሪ",
-        title: "የሚገባ ድጋፍ",
-        message: "የእነሱ የ24/7 ድጋፍ ቡድን ፈጣን ነው፣ እና ፍላጎቶቻችንን በጥልቅ ያስተዋውቃል።",
+        position: "የደንበኞች ስኬት ኃላፊ",
+        title: "እውነተኛ ድጋፍ",
+        message: "የድጋፍ ቡድኑ ሁልጊዜ ዝግጁ እና ፈጣን ነው።",
+        rate: 5,
+        image: "/Images/Frame6.jpg",
+      },
+    ],
+
+    hi: [
+      {
+        id: 1,
+        name: "Mawlid Mohammed",
+        position: "जनरल मैनेजर – Brothers Car Decoration",
+        title: "सरल और प्रभावी एकीकरण",
+        message:
+          "यह अकाउंटिंग सिस्टम पूरी तरह से एकीकृत है। चार महीनों के उपयोग से मेरा काम बेहतर तरीके से व्यवस्थित हो गया।",
+        rate: 5,
+        image: "/Images/mawlid.jpg",
+      },
+      {
+        id: 2,
+        name: "Xamse Osman",
+        position: "जनरल मैनेजर – Rabiic Store",
+        title: "सरल तकनीक",
+        message: "डेवलपर्स के लिए इंटीग्रेशन टूल्स तेज़ और आसान हैं।",
+        rate: 4,
+        image: "/Images/Frame2.jpg",
+      },
+      {
+        id: 3,
+        name: "Qawdhan Muse",
+        position: "जनरल मैनेजर – Maazim Online",
+        title: "उत्पादकता में वृद्धि",
+        message: "Flex के सरल डिज़ाइन से हमारी टीम अधिक उत्पादक हो गई।",
+        rate: 5,
+        image: "/Images/Frame3.jpg",
+      },
+      {
+        id: 4,
+        name: "Ayaan Nuura",
+        position: "जनरल मैनेजर – Qadan Beauty Salon",
+        title: "विश्वसनीय इंफ्रास्ट्रक्चर",
+        message: "Flex के बैकएंड टूल्स सुरक्षित और स्केलेबल हैं।",
+        rate: 4,
+        image: "/Images/Frame4.jpg",
+      },
+      {
+        id: 5,
+        name: "Istaahil Ismail",
+        position: "जनरल मैनेजर – Huda Design",
+        title: "उत्कृष्ट मोबाइल अनुभव",
+        message: "Flex के साथ मोबाइल ऐप विकास सहज और प्रभावी रहा।",
+        rate: 5,
+        image: "/Images/Frame5.jpg",
+      },
+      {
+        id: 6,
+        name: "Jamal Yusuf",
+        position: "हेड ऑफ कस्टमर सक्सेस",
+        title: "वास्तविक समर्थन",
+        message: "सपोर्ट टीम हमेशा उपलब्ध और तेज़ प्रतिक्रिया देती है।",
+        rate: 5,
+        image: "/Images/Frame6.jpg",
+      },
+    ],
+
+    zh: [
+      {
+        id: 1,
+        name: "Mawlid Mohamed",
+        position: "总经理 – Brothers Car Decoration",
+        title: "简单高效的集成",
+        message:
+          "该会计系统功能完善，使用四个月后，业务管理变得更加高效和清晰。",
+        rate: 5,
+        image: "/Images/mawlid.jpg",
+      },
+      {
+        id: 2,
+        name: "Xamse Osman",
+        position: "总经理 – Rabiic Store",
+        title: "简单的技术",
+        message: "集成工具对开发者来说既快速又易用。",
+        rate: 4,
+        image: "/Images/Frame2.jpg",
+      },
+      {
+        id: 3,
+        name: "Qawdhan Muse",
+        position: "总经理 – Maazim Online",
+        title: "提升生产力",
+        message: "Flex 简洁的设计让我们的团队效率大幅提升。",
+        rate: 5,
+        image: "/Images/Frame3.jpg",
+      },
+      {
+        id: 4,
+        name: "Ayaan Nuura",
+        position: "总经理 – Qadan Beauty Salon",
+        title: "可靠的基础架构",
+        message: "Flex 后端工具安全且具备良好的扩展性。",
+        rate: 4,
+        image: "/Images/Frame4.jpg",
+      },
+      {
+        id: 5,
+        name: "Istaahil Ismail",
+        position: "总经理 – Huda Design",
+        title: "出色的移动体验",
+        message: "使用 Flex 开发移动应用非常顺畅高效。",
+        rate: 5,
+        image: "/Images/Frame5.jpg",
+      },
+      {
+        id: 6,
+        name: "Jamal Yusuf",
+        position: "客户成功负责人",
+        title: "真正的支持",
+        message: "支持团队始终在线，响应迅速并理解我们的需求。",
         rate: 5,
         image: "/Images/Frame6.jpg",
       },
@@ -370,114 +369,75 @@ export default function Testimonial() {
 
   const { t, i18n } = useTranslation();
   const Lang = i18n.language;
-  const nextSlide = (num: number) => {
-    setid(() => num % testimonials[Lang as LangCode].length);
-  };
-
-  const AutonextSlide = () => {
-    setid((prev) => (prev += 1) % testimonials[Lang as LangCode]?.length);
-    // console.log(testimonials[Lang as LangCode]);
-    // console.log("count", id);
-  };
-  useEffect(() => {
-    const interval = setInterval(() => {
-      AutonextSlide();
-    }, 6000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  // const prevSlide = () => {
-  //   setid((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  // };
 
   return (
-    <section className="bg-gray-900 text-white py-10 x-4 flex flex-col items-center text-center">
-      <div className="container py-5 md:py-8 lg:py-10">
-        <div className="flex items-center justify-center flex-col md:flex-col  w-full gap-x-4 gap-y-4">
-          <div className="w-full flex justify-center items-center flex-col p-5">
-            <span
-              className={`${
-                Lang === "ar" ? "arfont" : "font-medium"
-              } bg-indigo-500 text-white rounded p-1 my-5 text-base uppercase font-medium`}
-            >
-              {t("test.Tag")}
-            </span>
-            <h2
-              className={`${
-                Lang === "ar" ? "arfont" : "font-medium"
-              } W-96 text-indigo-500 text-2xl md:text-3xl lg:text-5xl my-5`}
-            >
-              {t("test.Title")}
-            </h2>
-            <p className="text-white text-base W-96">{t("test.desc")}</p>
-          </div>
-          <AnimatePresence mode="wait">
-            {testimonials[Lang as LangCode]
-              ?.filter((_, index) => index === id) // kaliya kan hadda muuqda
-              .map((testimonial) => (
-                <motion.div
-                  key={testimonial.id} // key muhiim ah si exit uu u shaqeeyo
-                  initial={{ opacity: 0, y: 0 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  transition={{ duration: 0.5 }}
-                  className="block max-sm:w-full md:w-96"
-                >
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.4, duration: 0.5 }}
-                    className="flex flex-col items-center py-4"
-                  >
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-16 h-16 rounded-full object-cover mb-4"
-                    />
-                    <h3
-                      className={`${
-                        Lang === "ar" ? "arfont" : "font-semibold"
-                      } text-lg`}
-                    >
-                      {testimonial.name}
-                    </h3>
-                    <p
-                      className={`${
-                        Lang === "ar" ? "arfont" : ""
-                      } text-gray-400 text-sm`}
-                    >
-                      {testimonial.position}
-                    </p>
-                  </motion.div>
+    <section className="w-full overflow-hidden py-16 bg-gray-900 ">
+      <div className="mb-10 text-center">
+        <h2 className="text-3xl font-bold text-indigo-500">{t("test.Tag")}</h2>
+        <p className="mt-2 text-white">{t("test.Title")}</p>
+      </div>
 
-                  <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2, duration: 0.6 }}
-                    className={`${
-                      Lang === "ar" ? "arfont" : "font-normal"
-                    } w-full max-sm:max-w-3xl text-2xl md:text-2xl font-medium mb-1 leading-snug`}
+      {/* Wrapper */}
+      <div className="group relative overflow-hidden">
+        {/* Marquee */}
+        <div
+          className={
+            Lang === "ar"
+              ? `flex w-max animate-marquee_ar  gap-6 px-4`
+              : `flex w-max animate-marquee gap-6 px-4`
+          }
+        >
+          {[
+            ...testimonials[Lang as LangCode],
+            ...testimonials[Lang as LangCode],
+          ].map((item, index) => (
+            <div
+              key={`${item.id}-${index}`}
+              className="w-[320px] shrink-0 rounded-2xl bg-gray-800 p-6 shadow-md transition-all duration-300 hover:shadow-xl"
+            >
+              {/* Header */}
+              <div className="flex items-center gap-4">
+                <div className="relative h-12 w-12 overflow-hidden rounded-full">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="object-cover"
+                  />
+                </div>
+
+                <div>
+                  <h4 className="text-sm font-semibold text-white">
+                    {item.name}
+                  </h4>
+                  <p className="text-xs text-gray-500">{item.position}</p>
+                </div>
+              </div>
+
+              {/* Title */}
+              <h5 className="mt-4 text-sm font-semibold text-indigo-600">
+                {item.title}
+              </h5>
+
+              {/* Message */}
+              <p className="mt-2 text-sm text-gray-100 line-clamp-4">
+                {item.message}
+              </p>
+
+              {/* Rating */}
+              <div className="mt-4 flex items-center gap-1">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <span
+                    key={i}
+                    className={`text-sm ${
+                      i < item.rate ? "text-yellow-400" : "text-gray-300"
+                    }`}
                   >
-                    {testimonial.message}
-                  </motion.p>
-                </motion.div>
-              ))}
-          </AnimatePresence>
-          {/* Dots Navigation */}
-          <div className="flex gap-2 mt-6">
-            {testimonials[Lang as LangCode]?.map((test, index) => (
-              <span
-                onClick={() => nextSlide(index)}
-                key={test.id}
-                className={
-                  index === id
-                    ? "w-2.5 h-2.5 rounded-full bg-indigo-500 hover:bg-indigo-400 hover:w-3 hover:h-3 cursor-pointer transition-all duration-300"
-                    : "w-2.5 h-2.5 rounded-full bg-gray-500 hover:bg-indigo-400 hover:w-3 hover:h-3 cursor-pointer transition-all duration-300"
-                }
-              ></span>
-            ))}
-          </div>
+                    ★
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
