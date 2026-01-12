@@ -25,9 +25,9 @@ const Team_Cards = () => {
         url: "Frame3.jpg",
       },
       {
-        name: "Eng Jumhuur",
-        position: "Guusha Macaamiisha",
-        url: "Frame4.jpg",
+        name: "Nasri Maxamad",
+        position: "Suuq Gayn",
+        url: "Fremar55.png",
       },
       {
         name: "Alya Levine",
@@ -57,9 +57,9 @@ const Team_Cards = () => {
         url: "Frame3.jpg",
       },
       {
-        name: "Eng Jumhuur",
-        position: "Customer Success",
-        url: "Frame4.jpg",
+        name: "Nasri Mohamed",
+        position: "Marketing",
+        url: "Fremar55.png",
       },
       {
         name: "Alya Levine",
@@ -89,9 +89,9 @@ const Team_Cards = () => {
         url: "Frame3.jpg",
       },
       {
-        name: "Eng Jumhuur",
-        position: "نجاح العملاء",
-        url: "Frame4.jpg",
+        name: "Nasri Maxamad",
+        position: "التسويق",
+        url: "Fremar55.png",
       },
       {
         name: "Alya Levine",
@@ -121,9 +121,9 @@ const Team_Cards = () => {
         url: "Frame3.jpg",
       },
       {
-        name: "Eng Jumhuur",
-        position: "የደንበኛ ስኬት ባለሙያ",
-        url: "Frame4.jpg",
+        name: "ናስሪ መሀመድ",
+        position: "ማርኬቲንግ",
+        url: "Fremar55.png",
       },
       {
         name: "Alya Levine",
@@ -153,9 +153,9 @@ const Team_Cards = () => {
         url: "Frame3.jpg",
       },
       {
-        name: "Eng Jumhuur",
-        position: "客户成功经理",
-        url: "Frame4.jpg",
+        name: "Nasri Mohamed",
+        position: "市场营销",
+        url: "Fremar55.png",
       },
       {
         name: "Alya Levine",
@@ -185,9 +185,9 @@ const Team_Cards = () => {
         url: "Frame3.jpg",
       },
       {
-        name: "Eng Jumhuur",
-        position: "ग्राहक सफलता",
-        url: "Frame4.jpg",
+        name: "Nasri Mohamed",
+        position: "मार्केटिंग",
+        url: "Fremar55.png",
       },
       {
         name: "Alya Levine",
