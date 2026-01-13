@@ -2,8 +2,8 @@
   "header": {
     "welcome": "欢迎",
     "title": "企业的力量始于系统——智能工具让小型企业也能脱颖而出。",
-    "subtitle": "是什么让 Flex 清晰又简单？",
-    "register_button": "注册",
+    "subtitle": "是什么让 Takriim 清晰又简单？",
+    "register_button": "联系我们",
     "login_button": "试用系统",
     "mintext": "成功的企业不取决于规模，而取决于其所依赖的高效管理系统。"
   },
@@ -23,7 +23,7 @@
     "Language": "语言"
   },
   "join_section": {
-    "title": "加入正在使用 Flex 成长的企业",
+    "title": "加入正在使用 Takriim 成长的企业",
     "description": {
       "01": "现代而强大的系统",
       "02": "高度安全，值得信赖",
@@ -36,7 +36,7 @@
   },
   "features_section": {
     "title": "更清晰的洞察，帮助您高效管理业务与团队",
-    "description": "使用 Flex 的强大功能，轻松分析、规划和管理您的业务。"
+    "description": "使用 Takriim 的强大功能，轻松分析、规划和管理您的业务。"
   },
   "pricing_section": {
     "title": "灵活的定价方案，满足不同企业需求",
@@ -59,7 +59,7 @@
   "faq_section": {
     "tag": "常见问题",
     "title": "常见问题解答",
-    "desc": "Flex 是一站式 SaaS 商业平台，让您通过一个系统轻松管理全部业务。",
+    "desc": "Takriim 是一站式 SaaS 商业平台，让您通过一个系统轻松管理全部业务。",
     "buttons": {
       "ask_us": "咨询我们",
       "contact_us": "联系我们"
@@ -73,7 +73,7 @@
   "Footer": {
     "placeholder": "请输入您的邮箱",
     "btn": "订阅",
-    "at": "Flex. 保留所有权利。"
+    "at": "Takriim. 保留所有权利。"
   },
   "FootNav": {
     "Terms": "条款",

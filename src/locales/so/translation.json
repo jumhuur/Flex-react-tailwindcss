@@ -2,8 +2,8 @@
   "header": {
     "welcome": "Ku soo dhawoow",
     "title": "Awoodda shirkaddaadu waxay ka bilaabataa nidaamka & Qalabka",
-    "subtitle": "Maxaa ka dhigaya Flex mid cad oo sahlan?",
-    "register_button": "Isdiiwaangeli",
+    "subtitle": "Maxaa ka dhigaya Takriim mid cad oo sahlan?",
+    "register_button": "Nala Soo Xiriir",
     "login_button": "Tijaabi System",
     "mintext": "Shirkadaha guuleysta laguma qiimeeyo cabbirkooda, balse nidaamyada ay ku shaqeeyaan."
   },
@@ -23,7 +23,7 @@
     "Language": "Luuqad"
   },
   "join_section": {
-    "title": "Ku biir shirkado badan oo ku koraya Flex",
+    "title": "Ku biir shirkado badan oo ku koraya Takriim",
     "description": {
       "01": "Nidaam casri ah oo awood leh",
       "02": "Ammaan sare oo lagu kalsoonaan karo",
@@ -36,7 +36,7 @@
   },
   "features_section": {
     "title": "Aragti cad oo kaa caawinaysa maaraynta ganacsigaaga",
-    "description": "Adeegso Flex si aad ula socoto una qorshayso hawlahaaga."
+    "description": "Adeegso Takriim si aad ula socoto una qorshayso hawlahaaga."
   },
   "pricing_section": {
     "title": "Qiimeyn dabacsan oo ku habboon shirkaddaada",
@@ -59,7 +59,7 @@
   "faq_section": {
     "tag": "Su’aalaha Badan",
     "title": "Su’aalaha Inta Badan La Isweydiiyo",
-    "desc": "Flex waa nidaam SaaS ah oo kuu oggolaanaya inaad ganacsigaaga ka maamusho hal meel.",
+    "desc": "Takriim waa nidaam SaaS ah oo kuu oggolaanaya inaad ganacsigaaga ka maamusho hal meel.",
     "buttons": {
       "ask_us": "Na Weydii",
       "contact_us": "Nala Soo Xiriir"
@@ -73,7 +73,7 @@
   "Footer": {
     "placeholder": "Geli iimaylkaaga",
     "btn": "Isdiiwaangeli",
-    "at": "Flex. Xuquuqda oo dhan way xafidan tahay."
+    "at": "Takriim. Xuquuqda oo dhan way xafidan tahay."
   },
   "FootNav": {
     "Terms": "Shuruudaha",

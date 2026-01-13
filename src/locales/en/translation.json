@@ -2,8 +2,8 @@
   "header": {
     "welcome": "Welcome",
     "title": "Your company’s strength starts with your system & smart tools",
-    "subtitle": "What makes Flex clear and simple?",
-    "register_button": "Sign Up",
+    "subtitle": "What makes Takriim clear and simple?",
+    "register_button": "Contact Us",
     "login_button": "Try the System",
     "mintext": "Successful companies are not defined by size, but by the systems they rely on to manage their business."
   },
@@ -23,7 +23,7 @@
     "Language": "Language"
   },
   "join_section": {
-    "title": "Join hundreds of companies growing with Flex",
+    "title": "Join hundreds of companies growing with Takriim",
     "description": {
       "01": "Modern and powerful system",
       "02": "High security and full trust",
@@ -36,7 +36,7 @@
   },
   "features_section": {
     "title": "Clearer insights to manage your business and team efficiently",
-    "description": "Use Flex capabilities to analyze, manage, and plan your operations."
+    "description": "Use Takriim capabilities to analyze, manage, and plan your operations."
   },
   "pricing_section": {
     "title": "Flexible pricing plans that fit your business",
@@ -59,7 +59,7 @@
   "faq_section": {
     "tag": "FAQ",
     "title": "Frequently Asked Questions",
-    "desc": "Flex is an all-in-one SaaS platform that lets you manage your business smoothly from one place.",
+    "desc": "Takriim is an all-in-one SaaS platform that lets you manage your business smoothly from one place.",
     "buttons": {
       "ask_us": "Ask Us",
       "contact_us": "Contact Us"
@@ -73,7 +73,7 @@
   "Footer": {
     "placeholder": "Enter your email address",
     "btn": "Subscribe",
-    "at": "Flex. All rights reserved."
+    "at": "Takriim. All rights reserved."
   },
   "FootNav": {
     "Terms": "Terms",

@@ -198,7 +198,7 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
               {t("header.register_button")}
             </a>
             <a
-              href="https://wa.me/252634645195?text=sc%20walaal"
+              href="https://takriim.com"
               target="_blank"
               rel="noopener noreferrer"
               className={`${Lang === "ar" ? "arfont" : "fontBold"
