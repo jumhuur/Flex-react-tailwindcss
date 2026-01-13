@@ -18,8 +18,9 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
         <div className="grid grid-cols-2 items-center justify-center md:grid-cols-[1fr_6fr_2.5fr] lg:grid-cols-[1fr_6fr_2.50fr] gap-3">
           <div className="h-[80px] flex justify-start items-center">
             <Link to={"/"}>
-              <img alt="logo" src={"/Images/Logo.svg"} />
+              <img alt="logo" src={"/Images/Logoonly.png"} />
             </Link>
+            <p className="text-xl text-gray-900 dark:text-white font-bold">Takriim</p>
           </div>
           <div className="hidden lg:block">
             <ul className="h-[80px] flex justify-center items-center space-x-4">
