@@ -11,7 +11,11 @@ export function Footer() {
         <div className="container py-5 md:py-8 lg:py-10">
           <div className="flex justify-center items-center flex-col md:flex-row gap-6 border-b-1 border-gray-500/20">
             <div className="max-sm:w-full md:w-1/2 flex justify-center items-start p-2 flex-col">
-              <img className="my-4" src="/Images/Logo.svg" alt="Logo" />
+              <img
+                className="my-4 w-[55px] h-[55px]"
+                src="/Images/Logoonly.png"
+                alt="Logo"
+              />
               <ul className="flex justify-center items-center flex-row gap-4 p-2">
                 <li className=" flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                   <Link
@@ -53,7 +57,7 @@ export function Footer() {
                     {t("nav.Our Team")}
                   </Link>
                 </li>
-                <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
+                {/* <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
                   <Link
                     className={`${
                       Lang === "ar" ? "arfont" : "fontBold"
@@ -62,7 +66,7 @@ export function Footer() {
                   >
                     {t("nav.Careers")}
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="max-sm:w-full md:w-1/2 flex justify-start items-start flex-row p-2 gap-2 md:gap-4">
