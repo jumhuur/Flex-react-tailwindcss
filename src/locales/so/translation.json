@@ -36,11 +36,93 @@
   },
   "features_section": {
     "title": "Aragti cad oo kaa caawinaysa maaraynta ganacsigaaga",
-    "description": "Adeegso Takriim si aad ula socoto una qorshayso hawlahaaga."
+    "description": "Adeegso Takriim si aad ula socoto una qorshayso hawlahaaga.",
+    "items": [
+      {
+        "title": "La socodka Iibka Maalinlaha ah",
+        "description": "Warbixin maalinle ah oo go’aan degdeg ah kaa caawinaya."
+      },
+      {
+        "title": "Xisaab-xidh Maalinle",
+        "description": "Xisaab sax ah oo daahfurnaan keena."
+      },
+      {
+        "title": "Xisaab-xidh Bille ah",
+        "description": "Warbixin bille ah oo muujinaysa xaaladda maaliyadeed."
+      },
+      {
+        "title": "Maamulka Alaabada",
+        "description": "La socod tiro iyo qiime si khasaaro loo yareeyo."
+      },
+      {
+        "title": "Maamulka Daymaha",
+        "description": "Nidaamin daymaha iyo lacagaha lagaa rabo."
+      },
+      {
+        "title": "Maamulka Kharashaadka",
+        "description": "La soco kharashaadka wakhti kasta."
+      }
+    ]
   },
   "pricing_section": {
     "title": "Qiimeyn dabacsan oo ku habboon shirkaddaada",
-    "description": "Dooro qorshaha kugu habboon"
+    "description": "Dooro qorshaha kugu habboon",
+    "plans": [
+      {
+        "name": "Yar",
+        "price": 10,
+        "currency": "$",
+        "billingCycle": "Bishiiba",
+        "description": "Astaamo aasaasi ah ilaa 400 alaab",
+        "features": [
+          "Taageero farsamo oo joogto ah",
+          "Ilaalin iyo kormeer amni",
+          "Kaydin xog joogto ah",
+          "In ka badan 65 iib maalintii"
+        ],
+        "buttons": {
+          "primary": "Bilow Hadda",
+          "secondary": "Wax Badan Ogow"
+        },
+        "tag": null
+      },
+      {
+        "name": "Dhexdhexaad",
+        "price": 25,
+        "currency": "$",
+        "billingCycle": "Bishiiba",
+        "description": "Astaamo horumarsan ilaa 600 alaab",
+        "features": [
+          "Taageero farsamo oo joogto ah",
+          "Ilaalin iyo kormeer amni",
+          "Kaydin xog joogto ah",
+          "In ka badan 135 iib maalintii"
+        ],
+        "buttons": {
+          "primary": "Bilow Hadda",
+          "secondary": "Wax Badan Ogow"
+        },
+        "tag": "Kan Ugu Caansan"
+      },
+      {
+        "name": "Weyn",
+        "price": 45,
+        "currency": "$",
+        "billingCycle": "Bishiiba",
+        "description": "Xal dhammaystiran ilaa 1000 alaab",
+        "features": [
+          "Taageero farsamo oo joogto ah",
+          "Ilaalin iyo kormeer amni",
+          "Kaydin xog joogto ah",
+          "In ka badan 200 iib maalintii"
+        ],
+        "buttons": {
+          "primary": "Bilow Hadda",
+          "secondary": "Wax Badan Ogow"
+        },
+        "tag": null
+      }
+    ]
   },
   "team_section": {
     "title": "La kulan Kooxda",
@@ -48,7 +130,39 @@
     "buttons": {
       "learn_more": "Shaqooyin Bannaan",
       "get_started": "Dhaqankeena"
-    }
+    },
+    "members": [
+      {
+        "name": "Eng Jumhuur",
+        "position": "Maamulaha Guud & Aasaasaha",
+        "url": "Frame1-png.webp"
+      },
+      {
+        "name": "Ivan Mathews",
+        "position": "Maamulaha Teknoolojiyada",
+        "url": "Frame2.webp"
+      },
+      {
+        "name": "Elen Benitez",
+        "position": "Maamulaha Wax Soo Saarka",
+        "url": "Frame3.webp"
+      },
+      {
+        "name": "Nasri Maxamad",
+        "position": "Suuq Gayn",
+        "url": "Fremar55.webp"
+      },
+      {
+        "name": "Alya Levine",
+        "position": "Horumariye Backend",
+        "url": "Frame5.webp"
+      },
+      {
+        "name": "Rosemary Hernandez",
+        "position": "Horumariye iOS",
+        "url": "Frame6.webp"
+      }
+    ]
   },
   "join_team_section": {
     "tag": "Shaqooyin Bannaan",
@@ -63,12 +177,95 @@
     "buttons": {
       "ask_us": "Na Weydii",
       "contact_us": "Nala Soo Xiriir"
-    }
+    },
+    "items": [
+      {
+        "id": 1,
+        "question": "Waa maxay qorshayaasha qiimeynta ee nidaamka?",
+        "answer": "Nidaamku wuxuu bixiyaa saddex qorshe oo dabacsan: Yar, Dhexdhexaad, iyo Weyn, kuwaas oo ku saleysan tirada alaabta iyo iibka maalinlaha ah."
+      },
+      {
+        "id": 2,
+        "question": "Ma beddeli karaa ama ma kor u qaadi karaa qorshaha mar dambe?",
+        "answer": "Haa, waad beddeli ama kor u qaadi kartaa qorshahaaga wakhti kasta adigoon lumin wax xog ah."
+      },
+      {
+        "id": 3,
+        "question": "Maxay yihiin adeegyada aasaasiga ah ee nidaamka?",
+        "answer": "Nidaamku wuxuu ka kooban yahay la socodka iibka maalinlaha ah, xisaab-xidh maalinle iyo bille, maamulka alaabada, daymaha, iyo kharashaadka hal dashboard."
+      },
+      {
+        "id": 4,
+        "question": "Nidaamku ma ammaan baa, xogtana si joogto ah ma loo kaydiyaa?",
+        "answer": "Haa, nidaamku wuxuu leeyahay ammaan sare, kormeer joogto ah, iyo kaydin xog oo joogto ah."
+      },
+      {
+        "id": 5,
+        "question": "Ma jiraa taageero farsamo?",
+        "answer": "Haa, dhammaan qorshayaasha waxaa ku jira taageero farsamo oo joogto ah si laguu caawiyo wakhti kasta."
+      }
+    ]
   },
   "test": {
     "Tag": "Aragtida Macaamiisha",
     "Title": "Waxa ay Yiraahdaan Macaamiisheena",
-    "desc": "Sheekooyin dhab ah oo ka imanaya dad dhab ah."
+    "desc": "Sheekooyin dhab ah oo ka imanaya dad dhab ah.",
+    "items": [
+      {
+        "id": 1,
+        "name": "Mawliid Maxamed",
+        "position": "Maamulaha Guud – Brothers Car Decoration",
+        "title": "Isku-xir sahlan oo wax ku ool ah",
+        "message": "Nidaamkan xisaabeed waa mid dhammeystiran. Afar bilood ayaan isticmaalayay, runtii fudaydkiisa ayaa iga caawiyay inaan si fiican u habeeyo ganacsigayga.",
+        "rate": 5,
+        "image": "/Images/mawlid.webp"
+      },
+      {
+        "id": 2,
+        "name": "Xamse Cismaan",
+        "position": "Maamulaha Guud – Rabiic Store",
+        "title": "Tignoolajiyad sahlan",
+        "message": "Qalabka isku-xirku waa degdeg oo sahlan, gaar ahaan horumariyeyaasha.",
+        "rate": 4,
+        "image": "/Images/Frame2.webp"
+      },
+      {
+        "id": 3,
+        "name": "Qawdhan Muuse",
+        "position": "Maamulaha Guud – Maazim Online",
+        "title": "Wax-soo-saar kordhay",
+        "message": "Kooxdayadu waxay noqotay mid wax-soo-saar badan mahadnaqa naqshadda sahlan ee Flex.",
+        "rate": 5,
+        "image": "/Images/Frame3.webp"
+      },
+      {
+        "id": 4,
+        "name": "Ayaan Nuura",
+        "position": "Maamulaha Guud – Qadan Beauty Salon",
+        "title": "Kaabeyaal lagu kalsoonaan karo",
+        "message": "Qalabka Flex waa mid la ballaarin karo isla markaana ammaan ah.",
+        "rate": 4,
+        "image": "/Images/Frame4.webp"
+      },
+      {
+        "id": 5,
+        "name": "Istaahiil Ismaaciil",
+        "position": "Maamulaha Guud – Huda Design",
+        "title": "Khibrad mobile oo heer sare ah",
+        "message": "Samaynta app-yada mobile iyadoo la adeegsanayo Flex waxay ahayd mid sahlan oo wax ku ool ah.",
+        "rate": 5,
+        "image": "/Images/Frame5.webp"
+      },
+      {
+        "id": 6,
+        "name": "Jamal Yusuf",
+        "position": "Madaxa Guusha Macaamiisha",
+        "title": "Taageero dhab ah",
+        "message": "Kooxda taageeradu mar walba way diyaar yihiin, si degdeg ahna way uga jawaabaan.",
+        "rate": 5,
+        "image": "/Images/Frame6.webp"
+      }
+    ]
   },
   "Footer": {
     "placeholder": "Geli iimaylkaaga",
@@ -79,5 +276,9 @@
     "Terms": "Shuruudaha",
     "Privacy": "Asturnaanta",
     "Cookies": "Cookies"
+  },
+  "seo": {
+    "title": "Takriim — Awoodda shirkaddaadu waxay ka bilaabataa nidaamka & Qalabka",
+    "description": "Shirkadaha guuleysta laguma qiimeeyo cabbirkooda, balse nidaamyada ay ku shaqeeyaan."
   }
 }

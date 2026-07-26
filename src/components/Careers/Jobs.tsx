@@ -1,6 +1,6 @@
 import { CircleArrowRightIcon, CircleArrowLeftIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { LangCode } from "../../helpers/taypes";
+import { LangCode } from "../../helpers/types";
 const Jobs = () => {
   interface Jobs {
     id: number;
@@ -304,7 +304,7 @@ const Jobs = () => {
           <div className="w-2/3">
             <h2
               className={`${Lang === "ar" ? "arfont" : "fontBold"
-                } text-base md:text-1xl text-indigo-500 capitalize m-1`}
+                } m-1 text-base capitalize text-indigo-500 md:text-xl`}
             >
               {Job.title}
             </h2>

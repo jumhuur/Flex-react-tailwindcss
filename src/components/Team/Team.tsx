@@ -1,13 +1,12 @@
 import { useTranslation } from "react-i18next";
-import Team_Cards from "./Team_Cards";
+import TeamCards from "./TeamCards";
 const Team = () => {
   const { t, i18n } = useTranslation();
   const Lang = i18n.language;
   return (
-    <>
-      <div className="bg-gray-900">
+    <section className="bg-gray-900" aria-labelledby="team-title">
         <div className="container py-5 md:py-8 lg:py-10">
-          <div className="w-full flex justify-center items-start flex-col md:flex-row pl-10 gap-3">
+          <div className="flex w-full flex-col items-start justify-center gap-3 px-4 md:flex-row">
             <div className="w-full md:w-1/2 flex justify-center items-start flex-col gap-3">
               <span
                 className={`${Lang === "ar" ? "arfont" : "fontBold"
@@ -16,6 +15,7 @@ const Team = () => {
                 {t("nav.Our Team")}
               </span>
               <h2
+                id="team-title"
                 className={`${Lang === "ar" ? "arfont" : "fontBold"
                   } text-indigo-500 text-2xl md:text-3xl lg:text-5xl capitalize`}
               >
@@ -23,7 +23,7 @@ const Team = () => {
               </h2>
               <p
                 className={`${Lang === "ar" ? "arfont" : "fontBold"
-                  } text-base md:text-1xl lg:text-[1.2rem] text-gray-400`}
+                  } text-base text-gray-400 md:text-xl`}
               >
                 {t("team_section.description")}
               </p>
@@ -49,10 +49,9 @@ const Team = () => {
               </a>
             </div>
           </div>
-          <Team_Cards />
+          <TeamCards />
         </div>
-      </div>
-    </>
+    </section>
   );
 };
 

@@ -36,11 +36,93 @@
   },
   "features_section": {
     "title": "Clearer insights to manage your business and team efficiently",
-    "description": "Use Takriim capabilities to analyze, manage, and plan your operations."
+    "description": "Use Takriim capabilities to analyze, manage, and plan your operations.",
+    "items": [
+      {
+        "title": "Daily Sales Tracking",
+        "description": "Clear daily reports to support fast decisions."
+      },
+      {
+        "title": "Daily Accounting Closure",
+        "description": "Accurate daily closing for full transparency."
+      },
+      {
+        "title": "Monthly Accounting Reports",
+        "description": "Professional reports with clear insights."
+      },
+      {
+        "title": "Inventory Management",
+        "description": "Track stock quantity and value easily."
+      },
+      {
+        "title": "Debt & Receivables Management",
+        "description": "Organize dues and improve cash flow."
+      },
+      {
+        "title": "Expense Management",
+        "description": "Monitor expenses anytime with full control."
+      }
+    ]
   },
   "pricing_section": {
     "title": "Flexible pricing plans that fit your business",
-    "description": "Choose the plan that matches your needs"
+    "description": "Choose the plan that matches your needs",
+    "plans": [
+      {
+        "name": "Basic",
+        "price": 10,
+        "currency": "$",
+        "billingCycle": "Monthly",
+        "description": "Essential features for up to 400 products",
+        "features": [
+          "Continuous technical support",
+          "System security and monitoring",
+          "Regular data backups",
+          "More than 65 sales per day"
+        ],
+        "buttons": {
+          "primary": "Get Started",
+          "secondary": "Learn More"
+        },
+        "tag": null
+      },
+      {
+        "name": "Standard",
+        "price": 25,
+        "currency": "$",
+        "billingCycle": "Monthly",
+        "description": "Advanced features for up to 600 products",
+        "features": [
+          "Continuous technical support",
+          "System security and monitoring",
+          "Regular data backups",
+          "More than 135 sales per day"
+        ],
+        "buttons": {
+          "primary": "Get Started",
+          "secondary": "Learn More"
+        },
+        "tag": "Most Popular"
+      },
+      {
+        "name": "Premium",
+        "price": 45,
+        "currency": "$",
+        "billingCycle": "Monthly",
+        "description": "Complete solution for up to 1000 products",
+        "features": [
+          "Continuous technical support",
+          "System security and monitoring",
+          "Regular data backups",
+          "More than 200 sales per day"
+        ],
+        "buttons": {
+          "primary": "Get Started",
+          "secondary": "Learn More"
+        },
+        "tag": null
+      }
+    ]
   },
   "team_section": {
     "title": "Meet the Team",
@@ -48,7 +130,39 @@
     "buttons": {
       "learn_more": "We’re Hiring",
       "get_started": "Our Culture"
-    }
+    },
+    "members": [
+      {
+        "name": "Eng Jumhuur",
+        "position": "CEO & Founder",
+        "url": "Frame1-png.webp"
+      },
+      {
+        "name": "Ivan Mathews",
+        "position": "CTO",
+        "url": "Frame2.webp"
+      },
+      {
+        "name": "Elen Benitez",
+        "position": "CPO",
+        "url": "Frame3.webp"
+      },
+      {
+        "name": "Nasri Mohamed",
+        "position": "Marketing",
+        "url": "Fremar55.webp"
+      },
+      {
+        "name": "Alya Levine",
+        "position": "Backend Developer",
+        "url": "Frame5.webp"
+      },
+      {
+        "name": "Rosemary Hernandez",
+        "position": "iOS Developer",
+        "url": "Frame6.webp"
+      }
+    ]
   },
   "join_team_section": {
     "tag": "Open Positions",
@@ -63,12 +177,95 @@
     "buttons": {
       "ask_us": "Ask Us",
       "contact_us": "Contact Us"
-    }
+    },
+    "items": [
+      {
+        "id": 1,
+        "question": "What pricing plans are available?",
+        "answer": "The system offers three flexible plans: Small, Medium, and Large, based on the number of products and daily sales volume, suitable for all business sizes."
+      },
+      {
+        "id": 2,
+        "question": "Can I upgrade or change my plan later?",
+        "answer": "Yes, you can upgrade or change your plan at any time easily without losing any data."
+      },
+      {
+        "id": 3,
+        "question": "What core services does the system include?",
+        "answer": "The system includes daily sales tracking, daily and monthly accounting closure, inventory management, debts, and expenses through a single dashboard."
+      },
+      {
+        "id": 4,
+        "question": "Is the system secure and are data backups handled regularly?",
+        "answer": "Absolutely. The system provides high-level security with continuous monitoring and regular data backups."
+      },
+      {
+        "id": 5,
+        "question": "Is technical support available?",
+        "answer": "Yes, all plans include continuous technical support to assist you anytime and ensure business continuity."
+      }
+    ]
   },
   "test": {
     "Tag": "Testimonials",
     "Title": "What Our Clients Say",
-    "desc": "Real stories from real people — across industries and cultures."
+    "desc": "Real stories from real people — across industries and cultures.",
+    "items": [
+      {
+        "id": 1,
+        "name": "Mawlid Mohamed",
+        "position": "General Manager – Brothers Car Decoration",
+        "title": "Easy and Efficient Integration",
+        "message": "This accounting system is fully integrated. I have been using it for four months, and honestly, its simplicity and ease of use helped me organize my business much better.",
+        "rate": 5,
+        "image": "/Images/mawlid.webp"
+      },
+      {
+        "id": 2,
+        "name": "Xamse Osman",
+        "position": "General Manager – Rabiic Store",
+        "title": "Simple Technology",
+        "message": "Integration tools are fast and easy for developers to use.",
+        "rate": 4,
+        "image": "/Images/Frame2.webp"
+      },
+      {
+        "id": 3,
+        "name": "Qawdhan Muse",
+        "position": "General Manager – Maazim Online",
+        "title": "Increased Productivity",
+        "message": "Our team became more productive thanks to Flex’s simple design.",
+        "rate": 5,
+        "image": "/Images/Frame3.webp"
+      },
+      {
+        "id": 4,
+        "name": "Ayaan Nuura",
+        "position": "General Manager – Qadan Beauty Salon",
+        "title": "Reliable Infrastructure",
+        "message": "Flex backend tools are scalable and highly secure.",
+        "rate": 4,
+        "image": "/Images/Frame4.webp"
+      },
+      {
+        "id": 5,
+        "name": "Istaahil Ismail",
+        "position": "General Manager – Huda Design",
+        "title": "Excellent Mobile Experience",
+        "message": "Building mobile apps with Flex was smooth and efficient.",
+        "rate": 5,
+        "image": "/Images/Frame5.webp"
+      },
+      {
+        "id": 6,
+        "name": "Jamal Yusuf",
+        "position": "Head of Customer Success",
+        "title": "Real Support",
+        "message": "The support team is always available, responsive, and understands our needs.",
+        "rate": 5,
+        "image": "/Images/Frame6.webp"
+      }
+    ]
   },
   "Footer": {
     "placeholder": "Enter your email address",
@@ -79,5 +276,9 @@
     "Terms": "Terms",
     "Privacy": "Privacy",
     "Cookies": "Cookies"
+  },
+  "seo": {
+    "title": "Takriim — Your company’s strength starts with your system & smart tools",
+    "description": "Successful companies are not defined by size, but by the systems they rely on to manage their business."
   }
 }

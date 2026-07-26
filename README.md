@@ -75,14 +75,14 @@ Below are some screenshots of the landing page
 
 1-**arbic**
 
-![ar](/public/Images/Screen_shoots/ar.png)
+![ar](/public/Images/Screen_shoots/ar.webp)
 
 2-**soomali**
 
-![so](/public/Images/Screen_shoots/so.png)
+![so](/public/Images/Screen_shoots/so.webp)
 
 3-**chines**
 
-![ar](/public/Images/Screen_shoots/zh.png)
+![ar](/public/Images/Screen_shoots/zh.webp)
 
 ### **Thank You**

@@ -1,8 +1,8 @@
 import Getstart from "./components/CTA/Getstart";
 import Faq from "./components/Faq/Faq";
-import Features_web from "./components/Features/Features";
+import Features from "./components/Features/Features";
 import HeroSection from "./components/Hero/Hero";
-import Pricing_cards from "./components/Pracing/Pricing";
+import Pricing from "./components/Pricing/Pricing";
 import Team from "./components/Team/Team";
 import MainTestimonial from "./components/Testimonial/Testimonialmain";
 function App() {
@@ -11,8 +11,8 @@ function App() {
       <div>
         <HeroSection />
         <Getstart />
-        <Features_web />
-        <Pricing_cards />
+        <Features />
+        <Pricing />
         <Team />
         {/* <Careers /> */}
         <Faq />

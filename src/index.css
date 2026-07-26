@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @font-face {
   font-family: "MyFont";
-  src: url("./assets/Fonts/Poppins-Regular.ttf") format("woff2");
+  src: url("./assets/Fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,14 +9,14 @@
 
 @font-face {
   font-family: "Arfont";
-  src: url("./assets/Fonts/AL-Mohanad-Extra-Bold.ttf") format("woff2");
+  src: url("./assets/Fonts/AL-Mohanad-Extra-Bold.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Boldfont";
-  src: url("./assets/Fonts/Poppins-Bold.ttf") format("woff2");
+  src: url("./assets/Fonts/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -85,4 +85,15 @@ a {
 
 .group:hover .animate-marquee_ar {
   animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

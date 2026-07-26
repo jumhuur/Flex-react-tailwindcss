@@ -1,200 +1,168 @@
-import { ChevronDown } from "lucide-react";
-import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { ChevronDown, Menu, X } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+
+const navItems = [
+  { label: "nav.Home", path: "/" },
+  { label: "nav.Features", path: "/features" },
+  { label: "nav.Pricing", path: "/pricing" },
+  { label: "nav.Our Team", path: "/team" },
+];
+
+const languages = [
+  { code: "en", label: "lang.en" },
+  { code: "ar", label: "lang.ar" },
+  { code: "so", label: "lang.so" },
+  { code: "am", label: "lang.am" },
+  { code: "zh", label: "lang.zh" },
+  { code: "hi", label: "lang.hi" },
+];
+
 const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
-  const [langactive, setlangactive] = useState<boolean>(false);
-  const Langactive_handale = (): boolean => {
-    setlangactive(!langactive);
-    return langactive;
+  const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navRef = useRef<HTMLElement>(null);
+  const languageButtonRef = useRef<HTMLButtonElement>(null);
+  const mobileMenuButtonRef = useRef<HTMLButtonElement>(null);
+  const { t, i18n } = useTranslation();
+  const language = i18n.language;
+  const fontClass = language === "ar" ? "arfont" : "fontBold";
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+    setIsLanguageOpen(false);
   };
 
-  const { t, i18n } = useTranslation();
-  const Lang = i18n.language;
+  const selectLanguage = (code: string) => {
+    changeLanguage(code);
+    setIsLanguageOpen(false);
+    setIsMobileMenuOpen(false);
+  };
+
+  useEffect(() => {
+    const closeOnOutsideClick = (event: PointerEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setIsMobileMenuOpen(false);
+        setIsLanguageOpen(false);
+      }
+    };
+
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsMobileMenuOpen(false);
+        setIsLanguageOpen(false);
+
+        if (isMobileMenuOpen) {
+          mobileMenuButtonRef.current?.focus();
+        } else if (isLanguageOpen) {
+          languageButtonRef.current?.focus();
+        }
+      }
+    };
+
+    document.addEventListener("pointerdown", closeOnOutsideClick);
+    document.addEventListener("keydown", closeOnEscape);
+
+    return () => {
+      document.removeEventListener("pointerdown", closeOnOutsideClick);
+      document.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [isLanguageOpen, isMobileMenuOpen]);
+
   return (
-    <nav className="h-[80px] sticky top-0 z-20 backdrop-blur-md">
-      <div className="container">
-        <div className="grid grid-cols-2 items-center justify-center md:grid-cols-[1fr_6fr_2.5fr] lg:grid-cols-[1fr_6fr_2.50fr] gap-3">
-          <div className="h-[80px] flex justify-start items-center">
-            <Link to={"/"}>
-              <img alt="logo" src={"/Images/Logoonly.png"} />
-            </Link>
-            <p className="text-xl text-gray-900 dark:text-white font-bold">Takriim</p>
-          </div>
-          <div className="hidden lg:block">
-            <ul className="h-[80px] flex justify-center items-center space-x-4">
-              <li className=" flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
-                <Link
-                  className={`${Lang === "ar" ? "arfont" : "fontBold"
-                    } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                  to={"/"}
-                >
-                  {t("nav.Home")}
-                </Link>
-              </li>
-              <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300">
-                <Link
-                  className={`${Lang === "ar" ? "arfont" : "fontBold"
-                    } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                  to={"/features"}
-                >
-                  {t("nav.Features")}
-                </Link>
-              </li>
-              <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
-                <Link
-                  className={`${Lang === "ar" ? "arfont" : "fontBold"
-                    } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                  to={"/pricing"}
-                >
-                  {t("nav.Pricing")}
-                </Link>
-              </li>
-              <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
-                <Link
-                  className={`${Lang === "ar" ? "arfont" : "fontBold"
-                    } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                  to={"/team"}
-                >
-                  {t("nav.Our Team")}
-                </Link>
-              </li>
-              {/* <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
-                <Link
-                  className={`${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  } text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                  to={"/jobs"}
-                >
-                  {t("nav.Careers")}
-                </Link>
-              </li> */}
-              <li className="relative flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
-                <Link
-                  onClick={() => Langactive_handale()}
-                  className={`${Lang === "ar" ? "arfont" : "fontBold"
-                    } flex justify-center items-center flex-row text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                  to={"#"}
-                >
-                  {t("nav.Language")} <ChevronDown size={12} />
-                </Link>
-                <AnimatePresence>
-                  {langactive && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 50 }}
-                      transition={{ duration: 0.5 }}
-                      className="rounded z-20 visible opacity-100 translate-y-0  transition-all duration-500 ease-in-out bg-gray-700 p-4 flex justify-center items-center absolute top-[35px] -right-8"
-                    >
-                      <ul className="w-full">
-                        <li
-                          onClick={() => changeLanguage("en")}
-                          className="flex justify-start  items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-50 cursor-pointer hover:bg-gray-800  transition-all duration-300 ease-in-out"
-                        >
-                          {/* <img
-                          className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
-                          src={`/Images/en.jpg`}
-                          loading="lazy"
-                          alt="flag_image"
-                        />{" "} */}
-                          {t("lang.en")}
-                        </li>
-                        <li
-                          onClick={() => changeLanguage("ar")}
-                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-50 cursor-pointer hover:bg-gray-800  transition-all duration-300 ease-in-out arfont"
-                        >
-                          {/* <img
-                          className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
-                          src={`/Images/ar.jpg`}
-                          loading="lazy"
-                          alt="flag_image"
-                        />{" "} */}
-                          {t("lang.ar")}
-                        </li>
-                        <li
-                          onClick={() => changeLanguage("so")}
-                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-50 cursor-pointer hover:bg-gray-800  transition-all duration-300 ease-in-out"
-                        >
-                          {/* <img
-                          className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
-                          src={`/Images/so.png`}
-                          loading="lazy"
-                          alt="flag_image"
-                        />{" "} */}
-                          {t("lang.so")}
-                        </li>
-                        <li
-                          onClick={() => changeLanguage("am")}
-                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-50 cursor-pointer hover:bg-gray-800  transition-all duration-300 ease-in-out"
-                        >
-                          {/* <img
-                          className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
-                          src={`/Images/am.jpg`}
-                          loading="lazy"
-                          alt="flag_image"
-                        />{" "} */}
-                          {t("lang.am")}
-                        </li>
+    <nav
+      ref={navRef}
+      className="sticky top-0 z-20 h-[80px] bg-gray-900/80 backdrop-blur-md"
+    >
+      <div className="container flex h-full items-center justify-between">
+        <Link
+          to="/"
+          onClick={closeMobileMenu}
+          className="flex items-center gap-2"
+          aria-label="Takriim home"
+        >
+          <img
+            className="h-10 w-10 object-contain"
+            alt="Takriim logo"
+            src="/Images/Logoonly.webp"
+            width={62}
+            height={62}
+          />
+          <span className="text-xl font-bold text-white">Takriim</span>
+        </Link>
 
-                        <li
-                          onClick={() => changeLanguage("zh")}
-                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 text-gray-50 cursor-pointer hover:bg-gray-800  transition-all duration-300 ease-in-out"
-                        >
-                          {/* <img
-                          className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
-                          src={`/Images/zh.jpg`}
-                          loading="lazy"
-                          alt="flag_image"
-                        />{" "} */}
-                          {t("lang.zh")}
-                        </li>
-                        <li
-                          onClick={() => changeLanguage("hi")}
-                          className="flex justify-start items-start flex-row  gap-1 rounded my-2 text-lg p-1 px-3 text-gray-50 cursor-pointer hover:bg-gray-800  transition-all duration-300 ease-in-out"
-                        >
-                          {/* <img
-                          className="w-[25px] h-[25px] rounded-4xl border-1 border-indigo-300"
-                          src={`/Images/hi.jpg`}
-                          loading="lazy"
-                          alt="flag_image"
-                        />{" "} */}
-                          {t("lang.hi")}
-                        </li>
-                      </ul>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+        <div className="hidden items-center gap-8 lg:flex">
+          <ul className="flex items-center gap-5">
+            {navItems.map((item) => (
+              <li
+                key={item.path}
+                className="border-b-2 border-transparent transition duration-300 hover:border-indigo-500"
+              >
+                <Link
+                  className={`${fontClass} text-lg capitalize text-white transition duration-300 hover:text-indigo-300`}
+                  to={item.path}
+                >
+                  {t(item.label)}
+                </Link>
               </li>
+            ))}
 
-              {/* <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
-                <Link
-                  onClick={() => changeLanguage("en")}
-                  className="text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition-colors duration-300 capitalize"
-                  to={"#"}
-                >
-                  english
-                </Link>
-              </li>
-              <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
-                <Link
-                  onClick={() => changeLanguage("ar")}
-                  className="text-lg text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition-colors duration-300 capitalize"
-                  to={"#"}
-                >
-                  Arbic
-                </Link>
-              </li> */}
-            </ul>
-          </div>
-          <div className="h-[80px] hidden lg:flex justify-evenly items-center gap-2">
+            <li className="relative">
+              <button
+                ref={languageButtonRef}
+                type="button"
+                onClick={() => setIsLanguageOpen((current) => !current)}
+                className={`${fontClass} flex items-center gap-1 border-b-2 border-transparent text-lg capitalize text-white transition duration-300 hover:border-indigo-500 hover:text-indigo-300`}
+                aria-expanded={isLanguageOpen}
+                aria-haspopup="menu"
+              >
+                {t("nav.Language")}
+                <ChevronDown
+                  size={14}
+                  className={`transition-transform ${
+                    isLanguageOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              <AnimatePresence>
+                {isLanguageOpen && (
+                  <motion.ul
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 8 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-9 end-0 min-w-44 rounded-lg border border-gray-600 bg-gray-800 p-2 shadow-xl"
+                    role="menu"
+                  >
+                    {languages.map((item) => (
+                      <li key={item.code}>
+                        <button
+                          type="button"
+                          onClick={() => selectLanguage(item.code)}
+                          className={`${item.code === "ar" ? "arfont" : "fontBold"} w-full rounded px-3 py-2 text-start text-white transition hover:bg-gray-700 ${
+                            language === item.code ? "bg-indigo-500" : ""
+                          }`}
+                          role="menuitem"
+                        >
+                          {t(item.label)}
+                        </button>
+                      </li>
+                    ))}
+                  </motion.ul>
+                )}
+              </AnimatePresence>
+            </li>
+          </ul>
+
+          <div className="flex items-center gap-2">
             <a
               href="https://wa.me/252634645195?text=sc%20walaal"
               target="_blank"
               rel="noopener noreferrer"
-              className={`${Lang === "ar" ? "arfont" : "fontBold"
-                } w-full dark:text-gray-200 bg-gray-700 dark:hover:bg-gray-600 hover:bg-gray-500 transition-all duration-300 text-gray-500 text-base rounded p-2 capitalize cursor-pointer text-center`}
+              className={`${fontClass} rounded bg-gray-700 px-4 py-2 text-center text-base capitalize text-gray-200 transition hover:bg-gray-600`}
             >
               {t("header.register_button")}
             </a>
@@ -202,14 +170,124 @@ const Nav = ({ changeLanguage }: { changeLanguage: (lng: string) => void }) => {
               href="https://takriim.com"
               target="_blank"
               rel="noopener noreferrer"
-              className={`${Lang === "ar" ? "arfont" : "fontBold"
-                } w-full bg-indigo-500 hover:bg-indigo-600 text-gray-50 text-base rounded p-2 cursor-pointer capitalize transition-all duration-300 text-center`}
+              className={`${fontClass} rounded bg-indigo-500 px-4 py-2 text-center text-base capitalize text-white transition hover:bg-indigo-600`}
             >
               {t("header.login_button")}
             </a>
           </div>
         </div>
+
+        <button
+          ref={mobileMenuButtonRef}
+          type="button"
+          onClick={() => {
+            setIsMobileMenuOpen((current) => !current);
+            setIsLanguageOpen(false);
+          }}
+          className="rounded-lg p-2 text-white transition hover:bg-gray-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 lg:hidden"
+          aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={isMobileMenuOpen}
+          aria-controls="mobile-navigation"
+        >
+          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
+
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            id="mobile-navigation"
+            initial={{ opacity: 0, y: -12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            transition={{ duration: 0.2 }}
+            className="absolute inset-x-0 top-full border-t border-gray-700 bg-gray-900/98 shadow-2xl lg:hidden"
+          >
+            <div className="container max-h-[calc(100vh-80px)] overflow-y-auto py-5">
+              <ul className="flex flex-col gap-1">
+                {navItems.map((item) => (
+                  <li key={item.path}>
+                    <Link
+                      className={`${fontClass} block rounded-lg px-4 py-3 text-lg capitalize text-white transition hover:bg-gray-800 hover:text-indigo-300`}
+                      to={item.path}
+                      onClick={closeMobileMenu}
+                    >
+                      {t(item.label)}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="my-4 border-t border-gray-700 pt-4">
+                <button
+                  type="button"
+                  onClick={() => setIsLanguageOpen((current) => !current)}
+                  className={`${fontClass} flex w-full items-center justify-between rounded-lg px-4 py-3 text-lg text-white transition hover:bg-gray-800`}
+                  aria-expanded={isLanguageOpen}
+                  aria-controls="mobile-languages"
+                >
+                  {t("nav.Language")}
+                  <ChevronDown
+                    size={18}
+                    className={`transition-transform ${
+                      isLanguageOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                <AnimatePresence>
+                  {isLanguageOpen && (
+                    <motion.ul
+                      id="mobile-languages"
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      className="grid grid-cols-2 gap-2 overflow-hidden px-4 pt-2"
+                    >
+                      {languages.map((item) => (
+                        <li key={item.code}>
+                          <button
+                            type="button"
+                            onClick={() => selectLanguage(item.code)}
+                            className={`${item.code === "ar" ? "arfont" : "fontBold"} w-full rounded-lg border border-gray-700 px-3 py-2 text-start text-white transition hover:bg-gray-800 ${
+                              language === item.code
+                                ? "border-indigo-400 bg-indigo-500"
+                                : ""
+                            }`}
+                          >
+                            {t(item.label)}
+                          </button>
+                        </li>
+                      ))}
+                    </motion.ul>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              <div className="grid grid-cols-1 gap-3 border-t border-gray-700 pt-4 sm:grid-cols-2">
+                <a
+                  href="https://wa.me/252634645195?text=sc%20walaal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={closeMobileMenu}
+                  className={`${fontClass} rounded-lg bg-gray-700 px-4 py-3 text-center capitalize text-gray-100 transition hover:bg-gray-600`}
+                >
+                  {t("header.register_button")}
+                </a>
+                <a
+                  href="https://takriim.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={closeMobileMenu}
+                  className={`${fontClass} rounded-lg bg-indigo-500 px-4 py-3 text-center capitalize text-white transition hover:bg-indigo-600`}
+                >
+                  {t("header.login_button")}
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

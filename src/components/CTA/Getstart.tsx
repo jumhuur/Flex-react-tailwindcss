@@ -16,13 +16,16 @@ const Getstart = () => {
     <>
       <div className="bg-gray-900" data-aos="fade-up">
         <div className="container  py-5 md:py-8 lg:py-10">
-          <div className="flex tems-center flex-col md:flex-row justify-center gap-10">
+          <div className="flex flex-col items-center justify-center gap-10 md:flex-row">
             <div className="w-full  md:w-1/2 flex justify-center items-center relative">
               <img
-                alt="Image_flex"
+                alt="Takriim business management dashboard illustration"
                 className="z-10"
                 src="/Images/cta.svg"
+                width={750}
+                height={500}
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="w-full md:w-1/2 p-0 lg:p-10 ">
@@ -35,21 +38,21 @@ const Getstart = () => {
               <ul className="w-full text-white">
                 <li
                   className={`${Lang === "ar" ? "arfont" : "fontBold"
-                    } m-3 lg:m-5 flex justify-start items-center gap-2 text-1xl lg:text-2xl`}
+                    } m-3 flex items-center justify-start gap-2 text-xl lg:m-5 lg:text-2xl`}
                 >
                   <CircleCheckBig size={18} className="text-indigo-500" />{" "}
                   {t("join_section.description.01")}
                 </li>
                 <li
                   className={`${Lang === "ar" ? "arfont" : "fontBold"
-                    } m-3 lg:m-5 flex justify-start items-center gap-2 text-1xl lg:text-2xl`}
+                    } m-3 flex items-center justify-start gap-2 text-xl lg:m-5 lg:text-2xl`}
                 >
                   <CircleCheckBig size={18} className="text-indigo-500" />{" "}
                   {t("join_section.description.02")}
                 </li>
                 <li
                   className={`${Lang === "ar" ? "arfont" : "fontBold"
-                    } m-3 lg:m-5 flex justify-start items-center gap-2 text-1xl lg:text-2xl`}
+                    } m-3 flex items-center justify-start gap-2 text-xl lg:m-5 lg:text-2xl`}
                 >
                   <CircleCheckBig size={18} className="text-indigo-500" />{" "}
                   {t("join_section.description.03")}

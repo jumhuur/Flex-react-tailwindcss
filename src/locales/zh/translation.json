@@ -36,11 +36,93 @@
   },
   "features_section": {
     "title": "更清晰的洞察，帮助您高效管理业务与团队",
-    "description": "使用 Takriim 的强大功能，轻松分析、规划和管理您的业务。"
+    "description": "使用 Takriim 的强大功能，轻松分析、规划和管理您的业务。",
+    "items": [
+      {
+        "title": "每日销售跟踪",
+        "description": "清晰的每日报告，助力快速决策。"
+      },
+      {
+        "title": "每日财务结算",
+        "description": "精准结算，确保财务透明。"
+      },
+      {
+        "title": "月度财务报告",
+        "description": "专业报告，清晰呈现财务表现。"
+      },
+      {
+        "title": "库存管理",
+        "description": "掌握库存数量与价值，减少浪费。"
+      },
+      {
+        "title": "债务与应收管理",
+        "description": "高效管理欠款，改善现金流。"
+      },
+      {
+        "title": "费用管理",
+        "description": "随时掌控支出，优化成本。"
+      }
+    ]
   },
   "pricing_section": {
     "title": "灵活的定价方案，满足不同企业需求",
-    "description": "选择最适合您业务的方案"
+    "description": "选择最适合您业务的方案",
+    "plans": [
+      {
+        "name": "基础版",
+        "price": 10,
+        "currency": "$",
+        "billingCycle": "每月",
+        "description": "最多支持 400 个产品的基础功能",
+        "features": [
+          "持续技术支持",
+          "系统安全与监控",
+          "定期数据备份",
+          "每日超过 65 笔销售"
+        ],
+        "buttons": {
+          "primary": "立即开始",
+          "secondary": "了解更多"
+        },
+        "tag": null
+      },
+      {
+        "name": "标准版",
+        "price": 25,
+        "currency": "$",
+        "billingCycle": "每月",
+        "description": "最多支持 600 个产品的高级功能",
+        "features": [
+          "持续技术支持",
+          "系统安全与监控",
+          "定期数据备份",
+          "每日超过 135 笔销售"
+        ],
+        "buttons": {
+          "primary": "立即开始",
+          "secondary": "了解更多"
+        },
+        "tag": "最受欢迎"
+      },
+      {
+        "name": "高级版",
+        "price": 45,
+        "currency": "$",
+        "billingCycle": "每月",
+        "description": "最多支持 1000 个产品的完整解决方案",
+        "features": [
+          "持续技术支持",
+          "系统安全与监控",
+          "定期数据备份",
+          "每日超过 200 笔销售"
+        ],
+        "buttons": {
+          "primary": "立即开始",
+          "secondary": "了解更多"
+        },
+        "tag": null
+      }
+    ]
   },
   "team_section": {
     "title": "认识我们的团队",
@@ -48,7 +130,39 @@
     "buttons": {
       "learn_more": "加入我们",
       "get_started": "我们的文化"
-    }
+    },
+    "members": [
+      {
+        "name": "Eng Jumhuur",
+        "position": "首席执行官兼创始人",
+        "url": "Frame1-png.webp"
+      },
+      {
+        "name": "Ivan Mathews",
+        "position": "首席技术官",
+        "url": "Frame2.webp"
+      },
+      {
+        "name": "Elen Benitez",
+        "position": "首席产品官",
+        "url": "Frame3.webp"
+      },
+      {
+        "name": "Nasri Mohamed",
+        "position": "市场营销",
+        "url": "Fremar55.webp"
+      },
+      {
+        "name": "Alya Levine",
+        "position": "后端开发工程师",
+        "url": "Frame5.webp"
+      },
+      {
+        "name": "Rosemary Hernandez",
+        "position": "iOS开发工程师",
+        "url": "Frame6.webp"
+      }
+    ]
   },
   "join_team_section": {
     "tag": "招聘中",
@@ -63,12 +177,95 @@
     "buttons": {
       "ask_us": "咨询我们",
       "contact_us": "联系我们"
-    }
+    },
+    "items": [
+      {
+        "id": 1,
+        "question": "系统提供哪些定价方案？",
+        "answer": "系统提供小型、中型和大型三种灵活方案，基于产品数量和每日销售量。"
+      },
+      {
+        "id": 2,
+        "question": "之后可以升级或更改方案吗？",
+        "answer": "可以，您可以随时升级或更改方案，且不会丢失任何数据。"
+      },
+      {
+        "id": 3,
+        "question": "系统包含哪些核心功能？",
+        "answer": "系统包括每日销售跟踪、每日和月度财务结算、库存、债务和费用管理。"
+      },
+      {
+        "id": 4,
+        "question": "系统是否安全？数据会定期备份吗？",
+        "answer": "当然，系统提供高等级安全防护、持续监控以及定期数据备份。"
+      },
+      {
+        "id": 5,
+        "question": "是否提供技术支持？",
+        "answer": "是的，所有方案均包含持续的技术支持服务。"
+      }
+    ]
   },
   "test": {
     "Tag": "客户评价",
     "Title": "客户怎么说",
-    "desc": "来自不同行业和文化的真实客户故事。"
+    "desc": "来自不同行业和文化的真实客户故事。",
+    "items": [
+      {
+        "id": 1,
+        "name": "Mawlid Mohamed",
+        "position": "总经理 – Brothers Car Decoration",
+        "title": "简单高效的集成",
+        "message": "该会计系统功能完善，使用四个月后，业务管理变得更加高效和清晰。",
+        "rate": 5,
+        "image": "/Images/mawlid.webp"
+      },
+      {
+        "id": 2,
+        "name": "Xamse Osman",
+        "position": "总经理 – Rabiic Store",
+        "title": "简单的技术",
+        "message": "集成工具对开发者来说既快速又易用。",
+        "rate": 4,
+        "image": "/Images/Frame2.webp"
+      },
+      {
+        "id": 3,
+        "name": "Qawdhan Muse",
+        "position": "总经理 – Maazim Online",
+        "title": "提升生产力",
+        "message": "Flex 简洁的设计让我们的团队效率大幅提升。",
+        "rate": 5,
+        "image": "/Images/Frame3.webp"
+      },
+      {
+        "id": 4,
+        "name": "Ayaan Nuura",
+        "position": "总经理 – Qadan Beauty Salon",
+        "title": "可靠的基础架构",
+        "message": "Flex 后端工具安全且具备良好的扩展性。",
+        "rate": 4,
+        "image": "/Images/Frame4.webp"
+      },
+      {
+        "id": 5,
+        "name": "Istaahil Ismail",
+        "position": "总经理 – Huda Design",
+        "title": "出色的移动体验",
+        "message": "使用 Flex 开发移动应用非常顺畅高效。",
+        "rate": 5,
+        "image": "/Images/Frame5.webp"
+      },
+      {
+        "id": 6,
+        "name": "Jamal Yusuf",
+        "position": "客户成功负责人",
+        "title": "真正的支持",
+        "message": "支持团队始终在线，响应迅速并理解我们的需求。",
+        "rate": 5,
+        "image": "/Images/Frame6.webp"
+      }
+    ]
   },
   "Footer": {
     "placeholder": "请输入您的邮箱",
@@ -79,5 +276,9 @@
     "Terms": "条款",
     "Privacy": "隐私",
     "Cookies": "Cookie"
+  },
+  "seo": {
+    "title": "Takriim — 企业的力量始于系统——智能工具让小型企业也能脱颖而出。",
+    "description": "成功的企业不取决于规模，而取决于其所依赖的高效管理系统。"
   }
 }

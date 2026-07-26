@@ -1,130 +1,122 @@
+import { useState, type FormEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+
+const footerLinks = [
+  { label: "nav.Home", path: "/" },
+  { label: "nav.Features", path: "/features" },
+  { label: "nav.Pricing", path: "/pricing" },
+  { label: "nav.Our Team", path: "/team" },
+];
+
+const legalLabels = [
+  "FootNav.Terms",
+  "FootNav.Privacy",
+  "FootNav.Cookies",
+];
+
 export function Footer() {
+  const [email, setEmail] = useState("");
   const { t, i18n } = useTranslation();
-  const Lang = i18n.language;
-  const Full_Year = String(new Date().getFullYear());
+  const language = i18n.language;
+  const fontClass = language === "ar" ? "arfont" : "fontBold";
+  const fullYear = new Date().getFullYear();
+
+  const handleSubscribe = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const message = encodeURIComponent(
+      `Newsletter subscription request\nEmail: ${email.trim()}`,
+    );
+    window.open(
+      `https://wa.me/252634645195?text=${message}`,
+      "_blank",
+      "noopener,noreferrer",
+    );
+    setEmail("");
+  };
 
   return (
-    <>
-      <div className="bg-gray-800">
-        <div className="container py-5 md:py-8 lg:py-10">
-          <div className="flex justify-center items-center flex-col md:flex-row gap-6 border-b-1 border-gray-500/20">
-            <div className="max-sm:w-full md:w-1/2 flex justify-center items-start p-2 flex-col">
+    <footer className="bg-gray-800">
+      <div className="container py-5 md:py-8 lg:py-10">
+        <div className="flex flex-col items-center justify-center gap-6 border-b border-gray-500/20 md:flex-row">
+          <div className="flex w-full flex-col items-start justify-center p-2 md:w-1/2">
+            <Link to="/" aria-label="Takriim home">
               <img
-                className="my-4 w-[55px] h-[55px]"
-                src="/Images/Logoonly.png"
-                alt="Logo"
+                className="my-4 h-[55px] w-[55px]"
+                src="/Images/Logoonly.webp"
+                alt="Takriim logo"
+                width={62}
+                height={62}
               />
-              <ul className="flex justify-center items-center flex-row gap-4 p-2">
-                <li className=" flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
-                  <Link
-                    className={`${
-                      Lang === "ar" ? "arfont" : "fontBold"
-                    } max-sm:text-[10px] md:text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                    to={"#"}
+            </Link>
+
+            <nav aria-label="Footer navigation">
+              <ul className="flex flex-wrap items-center gap-x-4 gap-y-2 p-2">
+                {footerLinks.map((item) => (
+                  <li
+                    key={item.path}
+                    className="border-b-2 border-transparent transition duration-300 hover:border-indigo-500"
                   >
-                    {t("nav.Home")}
-                  </Link>
-                </li>
-                <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300">
-                  <Link
-                    className={`${
-                      Lang === "ar" ? "arfont" : "fontBold"
-                    } max-sm:text-[10px] md:text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                    to={"#"}
-                  >
-                    {t("nav.Features")}
-                  </Link>
-                </li>
-                <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
-                  <Link
-                    className={`${
-                      Lang === "ar" ? "arfont" : "fontBold"
-                    } max-sm:text-[10px] md:text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                    to={"#"}
-                  >
-                    {t("nav.Pricing")}
-                  </Link>
-                </li>
-                <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
-                  <Link
-                    className={`${
-                      Lang === "ar" ? "arfont" : "fontBold"
-                    } max-sm:text-[10px] md:text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                    to={"#"}
-                  >
-                    {t("nav.Our Team")}
-                  </Link>
-                </li>
-                {/* <li className="flex justify-center items-center border-b-2 border-transparent hover:border-b-2 hover:border-indigo-500 transition duration-300 ">
-                  <Link
-                    className={`${
-                      Lang === "ar" ? "arfont" : "fontBold"
-                    } max-sm:text-[10px] md:text-base text-gray-900 dark:text-white hover:text-gray-900 dark:hover:text-gray-50 transition duration-300 capitalize`}
-                    to={"#"}
-                  >
-                    {t("nav.Careers")}
-                  </Link>
-                </li> */}
+                    <Link
+                      className={`${fontClass} text-sm capitalize text-white transition hover:text-indigo-300 md:text-base`}
+                      to={item.path}
+                    >
+                      {t(item.label)}
+                    </Link>
+                  </li>
+                ))}
               </ul>
-            </div>
-            <div className="max-sm:w-full md:w-1/2 flex justify-start items-start flex-row p-2 gap-2 md:gap-4">
-              <input
-                className={`${
-                  Lang === "ar" ? "arfont" : "fontBold"
-                } bg-gray-900 text-base md:text-1xl text-indigo-400 placeholder:text-gray-400 p-2 px-4 outline-0 rounded`}
-                type="email"
-                placeholder={t("Footer.placeholder")}
-                required
-              />
-              <button
-                className={`${
-                  Lang === "ar" ? "arfont" : "fontBold"
-                } p-2 text-gray-50 bg-indigo-500 text-[14px] md:text-base rounded`}
-              >
-                {t("Footer.btn")}
-              </button>
-            </div>
+            </nav>
           </div>
-          <div className="flex justify-between items-start max-sm:flex-col md:flex-row p-6">
-            <div>
-              <p
-                className={`text-gray-400 text-base ${
-                  Lang === "ar" ? "arfont" : "fontBold"
-                }`}
+
+          <form
+            onSubmit={handleSubscribe}
+            className="flex w-full flex-col items-stretch gap-2 p-2 sm:flex-row md:w-1/2 md:gap-4"
+          >
+            <label htmlFor="footer-email" className="sr-only">
+              {t("Footer.placeholder")}
+            </label>
+            <input
+              id="footer-email"
+              name="email"
+              className={`${fontClass} min-w-0 flex-1 rounded bg-gray-900 px-4 py-3 text-base text-indigo-300 outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-indigo-500`}
+              type="email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              placeholder={t("Footer.placeholder")}
+              autoComplete="email"
+              required
+            />
+            <button
+              type="submit"
+              className={`${fontClass} rounded bg-indigo-500 px-5 py-3 text-sm text-white transition hover:bg-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300 md:text-base`}
+            >
+              {t("Footer.btn")}
+            </button>
+          </form>
+        </div>
+
+        <div className="flex flex-col items-start justify-between gap-4 p-6 md:flex-row">
+          <p className={`${fontClass} text-base text-gray-400`}>
+            © {fullYear} {t("Footer.at")}
+          </p>
+
+          <ul
+            className="flex flex-wrap items-center gap-4"
+            aria-label="Legal information"
+          >
+            {legalLabels.map((label) => (
+              <li
+                key={label}
+                className={`${fontClass} text-base text-gray-400`}
               >
-                © {Full_Year} {t("Footer.at")}
-              </p>
-            </div>
-            <div>
-              <ul className="flex justify-center items-center flex-row gap-4">
-                <li
-                  className={`text-gray-400 text-base cursor-pointer ${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  }`}
-                >
-                  {t("FootNav.Terms")}
-                </li>
-                <li
-                  className={`text-gray-400 text-base cursor-pointer ${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  }`}
-                >
-                  {t("FootNav.Privacy")}
-                </li>
-                <li
-                  className={`text-gray-400 text-base cursor-pointer ${
-                    Lang === "ar" ? "arfont" : "fontBold"
-                  }`}
-                >
-                  {t("FootNav.Cookies")}
-                </li>
-              </ul>
-            </div>
-          </div>
+                {t(label)}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
-    </>
+    </footer>
   );
 }

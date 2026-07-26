@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import P_Cards from "./PricingCards";
+import PricingCards from "./PricingCards";
 
-const Pricing_cards = () => {
+const Pricing = () => {
   const { t, i18n } = useTranslation();
   const LangCode = i18n.language;
   return (
@@ -31,11 +31,11 @@ const Pricing_cards = () => {
               {t("pricing_section.description")}
             </p>
           </div>
-          <P_Cards />
+          <PricingCards />
         </div>
       </div>
     </>
   );
 };
 
-export default Pricing_cards;
+export default Pricing;
